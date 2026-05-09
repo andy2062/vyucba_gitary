@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Gitarový Generátor - JSON & Fetch</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; padding: 20px; background: #fdfaf6; }
+        .controls { margin-bottom: 20px; padding: 15px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: inline-block; }
+        select { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid #d2b48c; background: #fff; cursor: pointer; }
+        h2 { color: #4B3621; margin-top: 10px; }
+        #fretboard { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <label for="scalePicker"><strong>Vyberte lekciu:</strong> </label>
+        <select id="scalePicker" onchange="updateView()">
+            <option value="">-- Načítavam dáta... --</option>
+        </select>
+    </div>
+
+    <h2 id="scaleTitle">Pripravené na hru</h2>
+        <!-- Diagram hmatníka -->
+<div id="fretboard"></div>
+
+<!-- Nový blok pre popis stupnice -->
+<div id="scaleDescription" style="margin-top: 20px; padding: 15px; background: #fff; border-left: 5px solid #A0522D; border-radius: 4px; max-width: 600px; line-height: 1.6;">
+    Vyberte stupnicu pre zobrazenie detailov...
+</div>
+
+<script>
+let guitarDatabase = {}; // Sem sa uložia dáta z JSON
+
+const cfg = {
+    startX: 70,
+    startY: 40,
+    fretWidth: 65,
+    stringGap: 28,
+    dotRadius: 11,
+    stringNames: ['e', 'h', 'G', 'D', 'A', 'E']
+};
+
+/**
+ * NAČÍTANIE DÁT CEZ FETCH
+ */
+async function loadScales() {
+    try {
+        const response = await fetch('stupnice.json');
+        if (!response.ok) throw new Error('Nepodarilo sa načítať JSON súbor.');
+        
+        guitarDatabase = await response.json();
+        
+        // Naplnenie select menu
+        const picker = document.getElementById('scalePicker');
+        picker.innerHTML = ""; // Vyčistiť úvodnú správu
+        
+        for (let key in guitarDatabase) {
+            let option = document.createElement('option');
+            option.value = key;
+            option.innerText = guitarDatabase[key].title;
+            picker.appendChild(option);
+        }
+        
+        updateView(); // Prvé vykreslenie
+    } catch (error) {
+        console.error("Chyba:", error);
+        document.getElementById('scaleTitle').innerText = "Chyba pri načítaní dát.";
+    }
+}
+
+function updateView() {
+    const selectedKey = document.getElementById('scalePicker').value;
+    if (!selectedKey) return;
+
+    const data = guitarDatabase[selectedKey];
+    
+    // 1. Aktualizácia nadpisu
+    document.getElementById('scaleTitle').innerText = data.title;
+    
+    // 2. Vykreslenie diagramu (použijeme predtým vytvorenú funkciu)
+    renderGuitar(data.notes, data.frets, data.startFret || 1);
+    
+    // 3. Aktualizácia textového popisu
+    const descElement = document.getElementById('scaleDescription');
+    if (data.description) {
+        descElement.innerHTML = data.description;
+        descElement.style.display = "block"; // Zobraziť, ak existuje popis
+    } else {
+        descElement.innerHTML = "";
+        descElement.style.display = "none"; // Skryť, ak popis chýba
+    }
+}
+
+function renderGuitar(notes, numFrets, startFret = 1) {
+    const container = document.getElementById('fretboard');
+    const dynamicWidth = cfg.startX + (numFrets * cfg.fretWidth) + 40;
+    const height = 240;
+
+    let svg = `<svg width="${dynamicWidth}" height="${height}" viewBox="0 0 ${dynamicWidth} ${height}">`;
+    
+    // 1. Názvy strún
+    cfg.stringNames.forEach((name, i) => {
+        let y = cfg.startY + (i * cfg.stringGap);
+        svg += `<text x="${cfg.startX - 45}" y="${y}" fill="#888" font-size="16" font-style="italic" dominant-baseline="central">${name}</text>`;
+    });
+
+    // 2. Pražce a dynamické čísla pod nimi
+    for (let i = 0; i <= numFrets; i++) {
+        let x = cfg.startX + (i * cfg.fretWidth);
+        
+        // Ak začíname od 1. pražca, nultý (index 0) bude hrubý (Nut). 
+        // Ak začíname vyššie (napr. od 5.), všetky pražce sú tenké.
+        let isNut = (i === 0 && startFret === 1);
+        svg += `<line x1="${x}" y1="${cfg.startY}" x2="${x}" y2="${cfg.startY + 140}" stroke="#333" stroke-width="${isNut ? 6 : 2}" />`;
+        
+        // Vykreslenie čísel pražcov
+        if (i < numFrets) {
+            let currentFretNumber = startFret + i; 
+            let textX = x + (cfg.fretWidth / 2);
+            let textY = cfg.startY + 140 + 25;
+            svg += `<text x="${textX}" y="${textY}" fill="#555" font-size="14" font-family="Arial" text-anchor="middle" font-weight="bold">${currentFretNumber}.</text>`;
+        }
+    }
+
+    // 3. Struny
+    for (let i = 0; i < 6; i++) {
+        let y = cfg.startY + (i * cfg.stringGap);
+        svg += `<line x1="${cfg.startX}" y1="${y}" x2="${cfg.startX + (numFrets * cfg.fretWidth)}" y2="${y}" stroke="#444" stroke-width="${1+(i*0.5)}" />`;
+    }
+
+    // 4. Tóny (Logika pre CX sa mení, aby zohľadnila startFret)
+    notes.forEach(note => {
+        let stringIdx = note[0] - 1;
+        let fretIdx = note[1]; // Reálne číslo pražca (napr. 5)
+         const defaultColor = "#A0522D"; 
+    let color = (note[2] && note[2] !== "") ? note[2] : defaultColor;
+        
+        let finger = note[3];
+        
+        let cy = cfg.startY + (stringIdx * cfg.stringGap);
+        let cx;
+
+        if (fretIdx === 0) {
+            // Prázdna struna (vždy pred nultým pražcom, bez ohľadu na polohu)
+            cx = cfg.startX - 20;
+        } else {
+            // Výpočet pozície: (Reálny pražec - Prvý zobrazený pražec)
+            let relativeFret = fretIdx - startFret;
+            cx = cfg.startX + (relativeFret * cfg.fretWidth) + (cfg.fretWidth / 2);
+        }
+        
+        // Vykreslenie tónu len ak je v rozsahu viditeľných pražcov (plus nultý)
+        if (fretIdx === 0 || (fretIdx >= startFret && fretIdx < startFret + numFrets)) {
+            svg += `<circle cx="${cx}" cy="${cy}" r="${cfg.dotRadius}" fill="${color}" stroke="#000" stroke-width="1" />`;
+            if (finger) {
+                svg += `<text x="${cx}" y="${cy}" fill="white" font-size="12" text-anchor="middle" dominant-baseline="central" font-weight="bold">${finger}</text>`;
+            }
+        }
+    });
+
+    svg += `</svg>`;
+    container.innerHTML = svg;
+}
+
+// Pri volaní z updateView potom použijete:
+// renderGuitar(data.notes, data.frets, data.startFret || 1);
+
+// Spustiť načítavanie po načítaní stránky
+window.onload = loadScales;
+</script>
+</body>
+</html>
