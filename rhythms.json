@@ -1,0 +1,86 @@
+[
+  {
+    "name": "pop_4_4_1",
+    "label": "Pop 4/4_1",
+    "image": "rytmy/rytmus441.svg",
+    "audio": "rytmy/4_1.mp3"
+  },
+  {
+    "name": "pop_4_4_2",
+    "label": "Pop 4/4_2",
+    "image": "rytmy/rytmus442.svg",
+    "audio": "rytmy/4_2.mp3"
+  },
+   {
+    "name": "pop_4_4_3",
+    "label": "Pop 4/4_3",
+    "image": "rytmy/rytmus443.png",
+    "audio": "rytmy/4_3.mp3"
+  },
+   {
+    "name": "pop_4_4_4",
+    "label": "Pop 4/4_4",
+    "image": "rytmy/rytmus444.png",
+    "audio": "rytmy/4_4.mp3"
+  },
+   {
+    "name": "pop_4_4_5",
+    "label": "Pop 4/4_5",
+    "image": "rytmy/rytmus445.png",
+    "audio": "rytmy/4_5.mp3"
+  },
+   {
+    "name": "pop_4_4_6",
+    "label": "Pop 4/4_6",
+    "image": "rytmy/rytmus446.png",
+    "audio": "rytmy/4_6.mp3"
+  },
+   {
+    "name": "pop_4_4_7",
+    "label": "Pop 4/4_7",
+    "image": "rytmy/rytmus447.png",
+    "audio": "rytmy/4_7.mp3"
+  },
+   {
+    "name": "pop_6_8",
+    "label": "Pop 6/8",
+    "image": "rytmy/rytmus68.png",
+    "audio": "rytmy/68.mp3"
+  },
+   {
+    "name": "tango",
+    "label": "Tango",
+    "image": "rytmy/tango.png",
+    "audio": "rytmy/tango.mp3"
+  }, 
+  {
+    "name": "rumba",
+    "label": "Rumba",
+    "image": "rytmy/Rumba.png",
+    "audio": "rytmy/rumba.mp3"
+  }, 
+  {
+    "name": "wals",
+    "label": "Wals",
+    "image": "rytmy/vals.png",
+    "audio": "rytmy/wals.mp3"
+  },
+  {
+    "name": "valcik",
+    "label": "Valčík 3/4",
+    "image": "rytmy/valcik.svg",
+    "audio": "rytmy/valcik.mp3"
+  },
+  {
+  "name": "Miesto, kde sa neumiera",
+  "label": "Miesto, kde sa neumiera",
+    "image": "rytmy/smatan.png",
+    "audio": "rytmy/wals.mp3"
+},
+  {
+    "name": "polka",
+    "label": "Polka 2/4",
+    "image": "rytmy/polka.svg",
+    "audio": "rytmy/polka.mp3"
+  }
+]
