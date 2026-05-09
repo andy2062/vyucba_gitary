@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Škola – Cvičenia</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #222;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.exerciseText {
+  margin-top: 10px;
+  display: none;
+}
+
+.chord {
+  color: orange;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎸 Hudobná škola – Cvičenia</h1>
+
+<!-- KATEGÓRIA -->
+<div class="section">
+  <h2>🎵 Rytmické cvičenia</h2>
+
+  <div class="card">
+    <b>Základný rytmus</b><br>
+    Tempo: 80 BPM
+
+    <br>
+    <button onclick="toggle('ex1')">Zobraziť</button>
+
+    <div id="ex1" class="exerciseText">
+      ↓ ↓ ↑ ↑ ↓ ↑<br>
+      <span class="chord" onclick="showChord('G')">G</span>
+      <span class="chord" onclick="showChord('D')">D</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <b>Moderný pop rytmus</b><br>
+    Tempo: 100 BPM
+
+    <br>
+    <button onclick="toggle('ex2')">Zobraziť</button>
+
+    <div id="ex2" class="exerciseText">
+      ↓ ↓ ↑ ↓ ↑<br>
+      <span class="chord" onclick="showChord('Em')">Em</span>
+      <span class="chord" onclick="showChord('C')">C</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- TECHNIKA -->
+<div class="section">
+  <h2>🎸 Technika</h2>
+
+  <div class="card">
+    <b>Striedavý úhoz</b>
+
+    <br>
+    <button onclick="toggle('ex3')">Zobraziť</button>
+
+    <div id="ex3" class="exerciseText">
+      ↓ ↑ ↓ ↑ ↓ ↑<br>
+      Pomaly a presne
+    </div>
+  </div>
+
+  <div class="card">
+    <b>Arpeggio</b>
+
+    <br>
+    <button onclick="toggle('ex4')">Zobraziť</button>
+
+    <div id="ex4" class="exerciseText">
+      P I M A M I<br>
+      <span class="chord" onclick="showChord('Am')">Am</span>
+    </div>
+  </div>
+</div>
+
+
+<!-- VEĽKÝ AKORD -->
+<div style="margin-top:30px;">
+  <h2>🎸 Akord</h2>
+
+  <svg viewBox="0 0 200 260">
+    <text id="chordTitle" x="100" y="20" text-anchor="middle"></text>
+    <g id="strings"></g>
+    <g id="frets"></g>
+    <g id="dots"></g>
+  </svg>
+</div>
+
+
+<script src="chord.js"></script>
+
+<script>
+// toggle zobrazenia
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+
+// základ hmatníka
+function drawBase() {
+  const strings = document.getElementById("strings");
+  const frets = document.getElementById("frets");
+
+  strings.innerHTML = "";
+  frets.innerHTML = "";
+
+  for (let i = 0; i < 6; i++) {
+    let x = 20 + i * 30;
+
+    let line = document.createElementNS("http://www.w3.org/2000/svg","line");
+    line.setAttribute("x1", x);
+    line.setAttribute("y1", 40);
+    line.setAttribute("x2", x);
+    line.setAttribute("y2", 200);
+    line.setAttribute("stroke", "black");
+
+    strings.appendChild(line);
+  }
+
+  for (let i = 0; i < 5; i++) {
+    let y = 40 + i * 30;
+
+    let line = document.createElementNS("http://www.w3.org/2000/svg","line");
+    line.setAttribute("x1", 20);
+    line.setAttribute("y1", y);
+    line.setAttribute("x2", 170);
+    line.setAttribute("y2", y);
+    line.setAttribute("stroke", "black");
+
+    frets.appendChild(line);
+  }
+}
+</script>
+
+</body>
+</html>
