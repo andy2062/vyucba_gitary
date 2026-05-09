@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>Piesne</title>
+<link rel="stylesheet" href="style_sv2.css">
+
+</head>
+
+<body>
+ 
+<div id="left">
+    
+<h3>Kategórie</h3>
+<select id="categories"></select>
+
+
+<h3>Autori</h3>
+ <select id="authors"></select>
+  
+    <h2>Piesne</h2>
+  <div id="songList"></div>
+</div>
+
+<div id="right">
+   <div style="margin-bottom:10px;">
+    Transpose
+    <span>
+      <button class="button button1" onclick="changeTranspose(-1)">−</button> 
+      <button class="button button1" onclick="changeTranspose(1)">+</button> 
+      <button class="button button1" onclick="toggleNotation()">♯ / ♭</button>
+    </span>
+  </div>
+
+  <h2 id="title">Vyber pieseň</h2>
+
+  <div id="rhythmBox"></div>
+  <div id="songChords"></div><br>
+<div id="youtubeBox"></div>
+  <!-- sem sa vloží SVG tab -->
+  <div id="songTabs"></div><br>
+
+  <div id="songText"></div>
+</div>
+
+<div id="akord">
+    <svg viewBox="0 0 200 260">
+      <text id="chordTitle" x="100" y="20" text-anchor="middle"></text>
+      <g id="strings"></g>
+      <g id="frets"></g>
+      <g id="dots"></g>
+    </svg>
+    <div id="chordNav"></div>
+  </div>
+<script src="novy_chord1.js"></script>
+<script src="player3.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<title>Databáza akordov</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #f4f6f9;
+  margin: 20px;
+}
+
+/* GRID AKORDOV */
+#chordList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.chordBtn {
+  padding: 8px 14px;
+  border: 1px solid #999;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.chordBtn:hover {
+  background: #ddd;
+}
+
+#akord {
+  background: #f9f9f9;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+}
+
+/* CARD */
+.chordCard {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.chordCard:hover {
+  transform: scale(1.05);
+}
+
+/* VEĽKÝ AKORD */
+#akordBox {
+  margin-top: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  width: 220px;
+}
+
+#chordTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Databáza akordov</h1>
+
+<input type="text" id="search" placeholder="Hľadaj akord...">
+
+<!-- ZOZNAM AKORDOV -->
+<div id="chordList"></div>
+
+<!-- 🔥 VEĽKÝ AKORD POD ZOZNAMOM -->
+<div id="akord" style="margin-top:30px;">
+  
+  <h2 id="chordTitle">Vyber akord</h2>
+
+  <svg width="200" height="220">
+    <g id="frets"></g>
+    <g id="strings"></g>
+    <g id="dots"></g>
+  </svg>
+<div id="chordNav"></div>
+</div>
+
+<script src="novy_chord1.js"></script>
+
+<script>
+
+// ===============================
+// 🎸 RENDER LIST
+// ===============================
+function renderChordList() {
+
+  if (!chordsLoaded) return;
+
+  const list = document.getElementById("chordList");
+  list.innerHTML = "";
+
+  const names = Object.keys(chordsDB).sort();
+
+  names.forEach(name => {
+
+    const btn = document.createElement("button");
+    btn.className = "chordBtn";
+    btn.textContent = name;
+
+    btn.onclick = () => showChord(name);
+
+    list.appendChild(btn);
+  });
+}
+
+// GLOBAL
+window.renderChordList = renderChordList;
+
+document.getElementById("search").addEventListener("input", e => {
+
+  const value = e.target.value.toLowerCase();
+
+  document.querySelectorAll(".chordBtn").forEach(btn => {
+    btn.style.display = btn.textContent.toLowerCase().includes(value)
+      ? "inline-block"
+      : "none";
+  });
+
+});
+// ===============================
+// INIT
+// ===============================
+
+setTimeout(renderChordList, 200);
+
+</script>
+
+</body>
+</html>

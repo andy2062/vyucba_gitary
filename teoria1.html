@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teória</title>
+    <style>
+    .desc-box {
+        min-height: 40px;
+        margin: 10px 0;
+        padding: 8px;
+        background: #f9f9f9;
+        border-left: 4px solid #ddd;
+        font-size: 0.9em;
+        color: #555;
+        max-width: 180px; /* Aby text nepresahoval šírku klaviatúry */
+    }
+</style>
+</head>
+<body>
+    <div class="music-container" style="display: flex; gap: 20px; justify-content: space-around; flex-wrap: wrap; font-family: sans-serif;">
+    
+    <!-- 1. SEKCIJA: STUPNICE -->
+    <div class="column">
+        <h3>Stupnice</h3>
+       <select id="scalePicker" onchange="onScaleChange()">
+    <option value="">-- Vyber stupnicu --</option>
+</select>
+ <div id="scaleDesc" class="desc-box"></div> <!-- Popis stupnice -->
+        <div id="pianoScale" style="margin-top:15px;"></div>
+       
+    </div>
+
+    <!-- 2. SEKCIJA: INTERVALY -->
+    <div class="column">
+        <h3>Intervaly</h3>
+       <select id="intervalPicker" onchange="onSubItemChange('interval')">
+    <option value="">-- Najprv vyber stupnicu --</option>
+</select>
+ <p id="intervalDesc" class="desc-box"></p> <!-- Popis intervalu -->
+        <div id="pianoInterval" style="margin-top:15px;"></div>
+       
+    </div>
+
+    <!-- 3. SEKCIJA: AKORDY -->
+    <div class="column">
+        <h3>Akordy</h3>
+        <select id="chordPicker" onchange="onSubItemChange('chord')">
+    <option value="">-- Najprv vyber stupnicu --</option>
+</select>
+<div id="chordDesc" class="desc-box"></div> <!-- Popis akordu -->
+        <div id="pianoChord" style="margin-top:15px;"></div>
+    </div>
+
+</div>
+<script>
+    let musicDatabase = {};
+let currentScale = null;
+
+// Definícia farieb tónov
+/*
+const noteColors = {
+    "C": "#FF4136", "C#": "#FF851B", "Db": "#FF851B",
+    "D": "#FFDC00", "D#": "#B10DC9", "Eb": "#B10DC9",
+    "E": "#0074D9", "F": "#2ECC40", "F#": "#168037",
+    "Gb": "#01FF70", "G": "#757575", "G#": "#F012BE",
+    "Ab": "#F012BE", "A": "#7FDBFF", "A#": "#39CCCC",
+    "Bb": "#39CCCC", "H": "#85144b"
+};
+*/
+const noteColors = {
+    "C": "#FF4136", "C#": "#FF851B", "Db": "#FF851B",
+    "D": "#FFDC00", "D#": "#B10DC9", "Eb": "#B10DC9",
+    "E": "#0074D9", "Fb": "#0074D9", // Fb je to isté čo E
+    "F": "#2ECC40", "E#": "#2ECC40", // E# je to isté čo F
+    "F#": "#01FF70", "Gb": "#01FF70",
+    "G": "#AAAAAA", "G#": "#F012BE", "Ab": "#F012BE",
+    "A": "#7FDBFF", "A#": "#39CCCC", "Bb": "#39CCCC",
+    "H": "#85144b", "Cb": "#85144b", // Cb je to isté čo H
+    "C": "#FF4136", "H#": "#FF4136"  // H# je to isté čo C
+};
+
+async function init() {
+    try {
+        const response = await fetch('database.json');
+        if (!response.ok) throw new Error("Súbor database.json nenájdený.");
+        musicDatabase = await response.json();
+        
+        const scalePicker = document.getElementById('scalePicker');
+        if (!scalePicker) return;
+
+        scalePicker.innerHTML = '<option value="">-- Vyber stupnicu --</option>';
+        Object.keys(musicDatabase).forEach(key => {
+            let opt = document.createElement('option');
+            opt.value = key;
+            opt.innerText = musicDatabase[key].title || key;
+            scalePicker.appendChild(opt);
+        });
+        
+        // Prvotné zobrazenie prázdnych klaviatúr
+        renderVerticalPiano("pianoScale", [], "C", 1);
+        renderVerticalPiano("pianoInterval", [], "C", 1);
+        renderVerticalPiano("pianoChord", [], "C", 1);
+
+    } catch (e) { 
+        console.error("Chyba:", e); 
+    }
+}
+
+function onScaleChange() {
+    const key = document.getElementById('scalePicker').value;
+    currentScale = musicDatabase[key];
+
+    const sDesc = document.getElementById('scaleDesc');
+    const iDesc = document.getElementById('intervalDesc');
+    const cDesc = document.getElementById('chordDesc');
+
+    if (!currentScale) {
+        if (sDesc) sDesc.innerText = "";
+        renderVerticalPiano("pianoScale", [], "C", 1);
+        updateSubSelect('intervalPicker', []);
+        updateSubSelect('chordPicker', []);
+        return;
+    }
+
+    // Nastavenie popisu stupnice
+    if (sDesc) sDesc.innerText = currentScale.desc || currentScale.description || "";
+    if (iDesc) iDesc.innerText = "";
+    if (cDesc) cDesc.innerText = "";
+
+    renderVerticalPiano("pianoScale", currentScale.pianoNotes || [], currentScale.pianoStart || "C", currentScale.startOctave || 1);
+
+    updateSubSelect('intervalPicker', currentScale.intervals || []);
+    updateSubSelect('chordPicker', currentScale.chords || []);
+    
+    // Reset zvyšných klaviatúr
+    renderVerticalPiano("pianoInterval", [], currentScale.pianoStart || "C", currentScale.startOctave || 1);
+    renderVerticalPiano("pianoChord", [], currentScale.pianoStart || "C", currentScale.startOctave || 1);
+}
+
+function onSubItemChange(type) {
+    const idx = document.getElementById(type + 'Picker').value;
+    const containerId = "piano" + type.charAt(0).toUpperCase() + type.slice(1);
+    const descElement = document.getElementById(type + "Desc");
+    
+    if (idx === "" || !currentScale) {
+        if (descElement) descElement.innerText = "";
+        renderVerticalPiano(containerId, [], currentScale?.pianoStart || "C", currentScale?.startOctave || 1);
+        return;
+    }
+
+    const data = type === 'interval' ? currentScale.intervals[idx] : currentScale.chords[idx];
+
+    if (data) {
+        if (descElement) descElement.innerText = data.desc || data.description || "";
+        renderVerticalPiano(containerId, data.notes || [], currentScale.pianoStart || "C", currentScale.startOctave || 1);
+    }
+}
+
+function updateSubSelect(elementId, items) {
+    const select = document.getElementById(elementId);
+    if (!select) return;
+    select.innerHTML = items.length > 0 ? '<option value="">-- Vyber --</option>' : '<option value="">-- Najprv vyber stupnicu --</option>';
+    items.forEach((item, index) => {
+        let opt = document.createElement('option');
+        opt.value = index;
+        opt.innerText = item.name;
+        select.appendChild(opt);
+    });
+}
+
+
+function renderVerticalPiano(containerId, highlightNotes = [], startNote = "C", startOctave = 1) {
+    // Mapa pre teoretické tóny na biele klávesy
+    const theoryToWhite = { "E#": "F", "Fb": "E", "H#": "C", "Cb": "H" };
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const whiteWidth = 100, whiteHeight = 35;
+    const blackWidth = 65, blackHeight = 22;
+
+    const masterPattern = [
+        { white: 'H', black: null },
+        { white: 'A', black: ['A#', 'Bb'] },
+        { white: 'G', black: ['G#', 'Ab'] },
+        { white: 'F', black: ['F#', 'Gb'] },
+        { white: 'E', black: null },
+        { white: 'D', black: ['D#', 'Eb'] },
+        { white: 'C', black: ['C#', 'Db'] }
+    ];
+
+    let startIndex = masterPattern.findIndex(k => k.white === startNote);
+    if (startIndex === -1) startIndex = 6;
+
+    let keys = [];
+    let currentOctave = startOctave + 2;
+
+    for (let i = 0; i < 15; i++) {
+        let patternIdx = (startIndex + i) % masterPattern.length;
+        let keyData = masterPattern[patternIdx];
+        if (i > 0 && keyData.white === 'H') currentOctave--;
+        keys.push({ ...keyData, octave: currentOctave });
+    }
+
+    let svg = `<svg width="${whiteWidth + 5}" height="${keys.length * whiteHeight}" style="border:1px solid #ccc;">`;
+
+        // Biele klávesy
+        // Pri vykresľovaní bielych kláves upravíme podmienku:
+    keys.forEach((key, i) => {
+        let y = i * whiteHeight;
+        
+        // Skontrolujeme, či v highlightNotes nie je tón priamo, alebo jeho teoretický ekvivalent
+        let isHighlighted = highlightNotes.some(n => {
+            let noteOnly = n.replace(/[0-9]/g, ''); // odstráni číslo oktávy
+            return n === key.white || 
+                   n === (key.white + key.octave) ||
+                   (theoryToWhite[noteOnly] === key.white && n.includes(key.octave));
+        });
+
+        if (isHighlighted) {
+            // Nájdeme presný názov tónu z highlightNotes, aby sme ho vypísali (napr. E# namiesto F)
+            let activeName = highlightNotes.find(n => {
+                let noteOnly = n.replace(/[0-9]/g, '');
+                return n === key.white || n === (key.white + key.octave) || theoryToWhite[noteOnly] === key.white;
+            });
+            
+            let fill = noteColors[activeName.replace(/[0-9]/g, '')] || "#FF4136";
+            
+            svg += `<rect x="0" y="${y}" width="${whiteWidth}" height="${whiteHeight}" fill="${fill}" stroke="#333" />`;
+            svg += `<text x="${whiteWidth - 10}" y="${y + whiteHeight/2}" text-anchor="end" font-size="11" font-weight="bold" fill="white" dominant-baseline="central">${activeName}</text>`;
+        } else {
+            svg += `<rect x="0" y="${y}" width="${whiteWidth}" height="${whiteHeight}" fill="white" stroke="#333" />`;
+        }
+    });
+
+// Čierne klávesy
+keys.forEach((key, i) => {
+    if (key.black) {
+        let y = (i * whiteHeight) - (blackHeight / 2);
+        if (y < 0) return;
+        
+        const activeAlias = key.black.find(alias => highlightNotes.some(n => n === alias || n === (alias + key.octave)));
+        const isHighlighted = !!activeAlias;
+        const fill = isHighlighted ? (noteColors[activeAlias] || "#FF4136") : "black";
+
+        svg += `<rect x="0" y="${y}" width="${blackWidth}" height="${blackHeight}" fill="${fill}" rx="2" />`;
+        
+        // ZMENA: Text sa vykreslí len ak je klávesa aktívna
+        if (isHighlighted) {
+            svg += `<text x="${blackWidth / 2}" y="${y + blackHeight/2}" text-anchor="middle" font-size="9" font-weight="bold" fill="white" dominant-baseline="central">${activeAlias}</text>`;
+        }
+    }
+});
+
+    svg += `</svg>`;
+    container.innerHTML = svg;
+}
+
+window.onload = init;
+</script>
+</body>
+</html>
