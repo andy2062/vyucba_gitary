@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cvičenia ľavej ruky</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: #111;
+  color: white;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  font-size: 24px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #444;
+  padding-bottom: 5px;
+}
+
+.exercise {
+  background: #1e1e1e;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.exercise:hover {
+  background: #333;
+}
+
+.pattern {
+  font-family: monospace;
+  font-size: 20px;
+  margin-top: 10px;
+  color: hsl(62, 92%, 50%);
+  white-space: pre-line;
+}
+
+.active {
+  border: 2px solid orange;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+🎸 Cvičenia – ľavá ruka
+</header>
+
+<div class="container">
+
+<div class="section">
+    <h2>🟢 Prípravné prstové cvičenia</h2>
+
+    <div class="exercise" onclick="showExercise(this, 'Dvíhanie')">
+      Dvíhanie položených prstov
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Jedna')">
+      Stláčanie struny prstami
+      <div class="pattern"></div>
+    </div>
+
+     <div class="exercise" onclick="showExercise(this, 'Dve struny1')">
+      Striedanie dvoch strún 1
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Dve struny2')">
+      Striedanie dvoch strún 2
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Dve struny3')">
+      Striedanie dvoch strún 3
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Dve struny4')">
+      Striedanie dvoch strún 4
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Súčasne1')">
+      Súčasné striedanie dvoch strún 
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Súčasne fix')">
+      Súčasné striedanie dvoch strún s pripútanými prstami
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, 'Nezavislosť')">
+      Cvičenie nezávislosti prstov (Spider - Pavúk)
+      <div class="pattern"></div>
+    </div>
+
+  </div>
+   
+  <!-- ROZCVIČKA -->
+  <div class="section">
+    <h2>🟢 Rozcvička</h2>
+
+    <div class="exercise" onclick="showExercise(this, '1-2-3-4')">
+      1-2-3-4 (základ)
+      <div class="pattern"></div>
+    </div>
+
+    <div class="exercise" onclick="showExercise(this, '1-3-2-4')">
+      1-3-2-4 (náročnejšie)
+      <div class="pattern"></div>
+    </div>
+
+  </div>
+
+  <!-- CHROMATIKA -->
+  <div class="section">
+    <h2>🔵 Chromatika</h2>
+
+    <div class="exercise" onclick="showExercise(this, 'chromatic')">
+      Chromatika hore/dole
+      <div class="pattern"></div>
+    </div>
+
+  </div>
+
+  <!-- PRESKOKY -->
+  <div class="section">
+    <h2>🟣 Preskoky</h2>
+
+    <div class="exercise" onclick="showExercise(this, 'skip')">
+      Preskoky prstov
+      <div class="pattern"></div>
+    </div>
+
+  </div>
+
+  <!-- SILA -->
+  <div class="section">
+    <h2>🟠 Sila prstov</h2>
+
+    <div class="exercise" onclick="showExercise(this, 'strength')">
+      Držanie tónov
+      <div class="pattern"></div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+
+const exercises = {
+
+    "Dvíhanie": 
+    ` Položíme prsty ľavej ruky v VII. poli na tretiu (G) strunu do každého poľa jeden prst.
+Prsty dávame tesne pred pražec! Strunu jemne stláčame a uvoľňujeme.
+Potom cvičíme osamostatnenie prstov takto :
+
+Dvíhanie jedného prsta:
+
+1., 2., a 3. prst necháme ležať, dvíhame 4. prst a kladieme ho späť.
+
+2., 3., a 4. prst ostanú ležať, dvíhame a ukladáme 1. prst
+
+1., 3., a 4. prst ostanú ležať, dvíhame a ukladáme 2. prst
+
+1., 2., a 4. prst ostanú ležať, dvíhame a ukladáme 3. prst
+
+Dvíhanie dvoch prstov:
+
+3., a 4. prst ostane ležať, dvíhame 1. a 2. prst
+
+1., a 2. prst ostane ležať, dvíhame 3. a 4. prst
+
+1., a 4. prst ostane ležať, dvíhame 2. a 3. prst
+
+Dvíhanie troch prstov:
+
+1.ostane ležať, dvíhame 2., 3., a 4. prst
+
+4.ostane ležať dvíhame 1., 2., a 3. prst`,
+
+  "Jedna":
+  `Pri týchto cvičeniach zo začiatku hráme čo najpomalšie a snažíme sa, aby každý tón znel čo najdlhšie. Ide tu hlavne o súhru ľavej a pravej ruky tzn. aby pravá ruka brnkla strunu v okamihu, keď ľavá ruka stlačí strunu. Súhra rúk pri hre s prázdnou strunou.
+Stlačenie: Pravá a ľavá ruka je pripravená nad strunou, nesmie sa jej dotýkať a v momente, keď ľavá ruka pritlačí strunu pravá ruka brnkne strunu.
+Odťah: Pravá ruka je pripravená nad strunou ľavá ruka drží znejúci tón a v momente, keď ľavá ruka sa odtiahne pravá ruka brnkne strunu .
+
+Čísla znamenajú:
+
+0=prázdna struna, 1=ukazovák, 2=prostredník, 3=prsteník, 4=malíček
+
+Cvičenia s prázdnou strunou:
+
+0..1..0..1
+
+0..2..0..2
+
+0..3..0..3
+
+0..4..0..4
+
+Cvičenia dvojíc prstov na jednej strune:
+
+1..2..1..2
+
+1..3..1..3
+
+1..4..1..4
+
+2..3..2..3
+
+2..4..2..4
+
+3..4..3..4
+
+Cvičenia trojíc prstov na jednej strune:
+
+1..2..3..1..2..3
+
+1..3..2..1..3..2
+
+1..2..4..1..2..4
+
+1..4..2..1..4..2
+
+1..3..4..1..3..4
+
+1..4..3..1..4..3
+
+2..3..4..2..3..4
+
+2..4..3..2..4..3
+
+Cvičenia štvoríc prstov na jednej strune
+
+1..2..3..4..1..2..3..4
+1..2..4..3..1..2..4..3
+
+1..3..2..4..1..3..2..4
+
+1..3..4..2..1..3..4..2`,
+
+"Dve struny1":
+`Nasledujúce cvičenia cvičiť na rôznych dvojiciach strún aj vzdialenejších od seba napr.: H D, H A
+
+Prvý prst je vždy položený na strune a strieda sa iba druhý prst:
+
+G--2-1---1--2-1---1-
+D------2--------2---
+
+Prvý prst je položený na strune strieda sa tretí prst:
+
+G--3-1---1--3-1---1-
+D------3--------3---
+
+Prvý prst je položený na strune strieda sa štvrtý prst:
+
+G--4-1---1--4-1---1-
+D------4--------4---
+
+Druhý prst je položený na strune strieda sa tretí prst:
+
+G--3-2---2--3-2---2-
+D------3--------3---
+
+Druhý prst je položený na strune strieda sa štvrtý
+
+G--4-2---2--4-2---2-
+D------4--------4---
+
+Tretí prst je položený na strune strieda sa štvrtý
+
+G--4-3---3--4-3---3-
+D------4--------4--`,
+
+"Dve struny2":
+`Druhý prst hrá iba na strune D prvý strieda struny G, D:
+
+G--1--------1-------
+D----2-1-2----2-1-2-
+
+Tretí hrá iba na strune D prvý struny G, D strieda:
+
+G--1--------1-------
+D----3-1-3----3-1-3-
+
+Štvrtý hrá iba na strune D:
+
+G--1--------1-------
+D----4-1-4----4-1-4-
+
+Tretí hrá iba na strune D druhý strieda G, D strunu:
+
+G--2--------2-------
+D----3-2-3----3-2-3-
+
+Štvrtý hrá iba na strune D:
+
+G--2--------2-------
+D----4-2-4----4-2-4-
+
+Štvrtý hrá iba na strune D, tretí strieda struny G, D:
+
+G--3--------3-------
+D----4-3-4----4-3-4-
+
+Ďalšie cvičenia:
+
+G--1-------1-------
+D----3-2-3---3-2-3-
+
+G--1--------1-------
+D----4-2-4----4-2-4-
+
+G--1--------1-------
+D----4-3-4----4-3-4-
+
+G--1--------1-------
+D----4-2-3----4-2-3-
+
+G--1--------1-------
+D----3-2-4----3-2-4-
+
+G--2--------2-------
+D----4-3-4----4-3-4-`,
+
+"Dve struny3":
+`Striedanie dvojíc prstov na dvoch strunách:
+
+G--2-1-------1--2-1-------1-
+D------2-1-2--------2-1-2---
+
+G--3-1-------1--3-1-------1-
+D------3-1-3--------3-1-3---
+
+G--4-1-------1--4-1-------1-
+D------4-1-4--------4-1-4---
+
+G--3-2-------2--3-2-------2-
+D------3-2-3--------3-2-3---
+
+G--4-2-------2--4-2-------2-
+D------4-2-4--------4-2-4---
+
+G--4-3-------3--4-3-------3-
+D------4-3-4--------4-3-4---
+
+G--2-1-------1--2-1-------1-
+D------3-2-3--------3-2-3---
+
+G--2-1-------1--2-1-------1-
+D------4-2-4--------4-2-4---
+
+G--2-1-------1--2-1-------1-
+D------4-3-4--------4-3-4---
+
+G--3-1-------1--3-1-------1-
+D------3-2-3--------3-2-3---
+
+G--3-1-------1--3-1-------1-
+D------4-2-4--------4-2-4---
+
+G--3-1-------1--3-1-------1-
+D------4-3-4--------4-3-4---
+
+G--3-2-------2--3-2-------2-
+D------3-1-3--------3-1-3---
+
+G--3-2-------2--3-2-------2-
+D------4-1-4--------4-1-4---
+
+G--4-1-------1--4-1-------1-
+D------3-2-3--------3-2-3---
+
+Zložitejšie varianty:
+
+G--1-2-----4-3-----1-2-----4-3-----
+D------3-2-----1-2-----3-2-----1-2-
+
+G-1-2-----3-4------1-2-----3-4-----
+D-----3-4-----2-3------3-4-----2-3-`,
+
+"Dve struny4":
+`Striedanie trojíc prstov na dvoch strunách:
+
+G--3-2-1-----------1-2-3-2-1-----------1-
+D--------3-2-1-2-3-----------3-2-1-2-3---
+
+
+G--4-2-1-----------1-2-4-2-1-----------1-
+D--------4-2-1-2-4-----------4-2-1-2-4---
+
+
+G--4-3-1-----------1-3-4-3-1-----------1-
+D--------4-3-1-3-4-----------4-3-1-3-4---
+
+
+G--4-3-2-----------2-3-4-3-2-----------2-
+D--------4-3-2-3-4-----------4-3-2-3-4---
+
+
+G--3-2-1-----------1-2-3-2-1-----------1-
+D--------4-2-1-2-4-----------4-2-1-2-4---
+
+
+G--3-2-1-----------1-2-3-2-1-----------1-
+D--------4-3-1-3-4-----------4-3-1-3-4---
+
+
+G--3-2-1-----------1-2-3-2-1-----------1-
+D--------4-3-2-3-4-----------4-3-2-3-4---
+
+
+G--4-2-1-----------1-2-4-2-1-----------1-
+D--------4-3-1-3-4-----------4-3-1-3-4---
+
+
+G--4-2-1-----------1-2-4-2-1-----------1-
+D--------4-3-1-3-4-----------4-3-1-3-4---
+
+
+G--4-3-1-----------1-3-4-3-1-----------1-
+D--------4-2-1-2-4-----------4-2-1-2-4---`,
+
+"Súčasne1":
+`Dva prsty súčasne vymeníme na dvoch strunách. Za dvojicu strún neskôr vyberáme aj vzdialenejšie struny. Výmena musí vychádzať iba z prstov, nemalo by sa meniť postavenie zápästia.
+
+
+G--1--2--1--2-
+D--2--1--2--1-
+
+
+G--1--3--1--3-
+D--3--1--3--1-
+
+
+G--1--4--1--4-
+D--4--1--4--1-
+
+
+G--2--3--2--3-
+D--3--2--3--2-
+
+
+G--2--4--2--4-
+D--4--2--4--2-
+
+
+G--3--4--3--4-
+D--4--3--4--3-`,
+
+"Súčasne fix":
+`Tretí a štvrtý prst sú položené na strune G čísla v zátvorke. Striedame súčasne prvý a druhý prst na strunách H, D.
+
+H---------1--2--1--2-
+G-(3)(4)-------------
+D---------2--1--2--1-
+
+
+Prvý a štvrtý prst je zadržaný, striedame 2. a 3.
+
+H---------2--3--2--3-
+G-(1)(4)-------------
+D---------3--2--3--2-
+
+
+Prvý a druhý prst je zadržaný, striedame 3. a 4.
+
+H---------3--4--3--4-
+G-(1)(2)-------------
+D---------4--3--4--3-
+
+
+Druhý a štvrtý prst je zadržaný, striedame 1. a 3.
+
+H--------1--3--1--3-
+G-(2)(4)------------
+D--------3--1--3--1-
+
+
+Prvý a tretí prst je zadržaný, striedame 2. a 4.
+
+H--------2--4--2--4-
+G-(1)(3)------------
+D--------4--2--4--2-`,
+
+
+"Nezavislosť":
+`Po prvom uložení prstov prekladáme vždy iba jeden prst na ďalšie struny - ostatné držíme položené na mieste.
+
+
+E---------------------3-4-
+H-----------------1-2-----
+G-------------3-4---------
+D---------1-2-------------
+A-----3-4-----------------
+E-1-2---------------------
+
+
+
+E-1-2---------------------
+H-----3-4-----------------
+G---------1-2-------------
+D-------------3-4---------
+A-----------------1-2-----
+E---------------------3-4-
+
+
+
+E---------------------2-4-
+H-----------------1-3-----
+G-------------2-4---------
+D---------1-3-------------
+A-----2-4-----------------
+E-1-3---------------------
+
+
+
+E-1-3---------------------
+H-----2-4-----------------
+G---------1-3-------------
+D-------------2-4---------
+A-----------------1-3-----
+E---------------------2-4-
+
+
+
+E---------------------2-3-
+H-----------------1-4-----
+G-------------2-3---------
+D---------1-4-------------
+A-----2-3-----------------
+E-1-4---------------------
+
+
+
+E-1-4---------------------
+H-----2-3-----------------
+G---------1-4-------------
+D-------------2-3---------
+A-----------------1-4-----
+E---------------------2-3-`,
+
+  "1-2-3-4":
+`E|----------------|
+H|----------------|
+G|----------------|
+D|----------------|
+A|----------------|
+E|--1-2-3-4-------|`,
+
+  "1-3-2-4":
+`E|----------------|
+H|----------------|
+G|----------------|
+D|----------------|
+A|----------------|
+E|--1-3-2-4-------|`,
+
+  "chromatic":
+`E|--1-2-3-4--|
+H|--1-2-3-4--|
+G|--1-2-3-4--|
+D|--1-2-3-4--|`,
+
+  "skip":
+`E|--1---3---2---4--|
+H|------------------|
+G|------------------|`,
+
+  "strength":
+`E|--1---1---1---1--|
+H|--2---2---2---2--|
+G|--3---3---3---3--|`
+
+};
+
+// klik
+function showExercise(el, type) {
+
+  // odstrániť active
+  document.querySelectorAll(".exercise").forEach(e => {
+    e.classList.remove("active");
+    e.querySelector(".pattern").textContent = "";
+  });
+
+  el.classList.add("active");
+
+  el.querySelector(".pattern").textContent = exercises[type];
+}
+
+</script>
+
+</body>
+</html>
