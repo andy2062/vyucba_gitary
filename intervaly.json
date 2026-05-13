@@ -1,0 +1,60 @@
+{
+  "intervals": [
+    {
+      "name": "Malá sekunda (m2)",
+      "semitones": 1,
+      "pianoNotes": ["E1", "F1"],
+      "desc": "Najmenší interval (1 poltón). Na gitare je to vzdialenosť 1 pražca."
+    },
+    {
+      "name": "Veľká sekunda (v2)",
+      "semitones": 2,
+      "pianoNotes": ["C1", "D1"],
+      "desc": "Celý tón (2 poltóny). Na gitare je to vzdialenosť 2 pražcov."
+    },
+    {
+      "name": "Malá tercia (m3)",
+      "semitones": 3,
+      "pianoNotes": ["C1", "Eb1"],
+      "desc": "Interval 3 poltónov. Napr. C - Eb. Typický pre molové akordy."
+    },
+    {
+      "name": "Zväčšená sekunda (zv2)",
+      "semitones": 3,
+      "pianoNotes": ["C1", "D#1"],
+      "desc": "Znie rovnako ako malá tercia, ale zapisuje sa ako C - D#."
+    },
+    {
+      "name": "Veľká tercia (v3)",
+      "semitones": 4,
+      "pianoNotes": ["C1", "E1"],
+      "desc": "Interval zložený zo dvoch celých tónov (4 poltóny). Typický pre durové akordy."
+    },
+    {
+      "name": "Veľká sexta (v6)",
+      "semitones": 9,
+      "pianoNotes": ["C1", "A1"],
+      "desc": "Interval zložený zo dvoch celých tónov (4 poltóny). Typický pre durové akordy."
+    },
+    {
+        "title": "A mol stupnica",
+        "pianoStart": "A",
+     "name": "Stupnica A dur",
+      "semitones": 9,
+     "pianoNotes": ["A1", "H1", "C#2", "D2", "E2", "F#2", "G#2","A2"],
+        "desc": "Stupnica začínajúca tónom A."
+  },
+    {
+      "name": "Čistá kvinta (č5)",
+      "semitones": 7,
+      "pianoNotes": ["C1", "G1"],
+      "desc": "Interval zložený zo dvoch celých tónov (4 poltóny). Typický pre durové akordy."
+    },
+     {
+      "name": "Veľká tercia A (v3)",
+      "semitones": 4,
+      "pianoNotes": ["A1", "C#2"],
+      "desc": "Interval zložený zo dvoch celých tónov (4 poltóny). Typický pre durové akordy."
+    }
+  ]
+}
