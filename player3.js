@@ -564,7 +564,7 @@ const FLATS_TO_SHARPS = {
 
 function transposeChord(chord, shift) {
 
-  let match = chord.match(/^([A-G](#|b)?)(.*)$/);
+  let match = chord.match(/^([A-H](#|b)?)(.*)$/);
   if (!match) return chord;
 
   let root = match[1];
