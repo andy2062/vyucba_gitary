@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; font-family: Arial, sans-serif;">
+  
+  <path d="M 190 40 L 130 40 M 140 33 L 130 40 L 140 47" stroke="#475569" stroke-width="2" fill="none"/>
+  <text x="110" y="35" font-size="13" font-weight="bold" fill="#475569" text-anchor="end">stupnice s bé</text>
+  <text x="110" y="53" font-size="12" fill="#64748b" text-anchor="end">každá 4.</text>
+
+  <path d="M 410 40 L 470 40 M 460 33 L 470 40 L 460 47" stroke="#475569" stroke-width="2" fill="none"/>
+  <text x="490" y="35" font-size="13" font-weight="bold" fill="#475569" text-anchor="start">stupnice s #</text>
+  <text x="490" y="53" font-size="12" fill="#64748b" text-anchor="start">každá 5.</text>
+
+  <circle cx="300" cy="310" r="180" stroke="#0f172a" stroke-width="2" fill="none"/>
+
+  <line x1="300" y1="122" x2="300" y2="138" stroke="#0f172a" stroke-width="2"/>
+  <text x="300" y="93" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">C</text>
+  <text x="300" y="115" font-size="20" font-weight="bold" fill="#475569" text-anchor="middle">0</text>
+  <text x="300" y="156" font-size="22" font-weight="bold" fill="#475569" text-anchor="middle">a</text>
+
+  <line x1="384" y1="144" x2="376" y2="158" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="415" y="125" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">G</text>
+  <text x="394" y="121" font-size="20" fill="#64748b" text-anchor="middle">1#</text>
+  <text x="371" y="172" font-size="22" fill="#475569" text-anchor="middle">e</text>
+
+  <line x1="440" y1="214" x2="460" y2="206" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="485" y="200" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">D</text>
+  <text x="466" y="193" font-size="20" fill="#64748b" text-anchor="middle">2#</text>
+  <text x="424" y="226" font-size="22" fill="#475569" text-anchor="middle">h</text>
+
+  <line x1="468" y1="310" x2="494" y2="310" stroke="#0f172a" stroke-width="2"/>
+  <text x="512" y="316" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="start">A</text>
+  <text x="496" y="304" font-size="20" fill="#64748b" text-anchor="middle">3#</text>
+  <text x="442" y="315" font-size="22" fill="#475569" text-anchor="middle">fis</text>
+
+  <line x1="446" y1="400" x2="460" y2="410" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="496" y="430" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">E</text>
+  <text x="472" y="420" font-size="20" fill="#64748b" text-anchor="middle">4#</text>
+  <text x="422" y="394" font-size="22" fill="#475569" text-anchor="middle">cis</text>
+
+  <line x1="388" y1="478" x2="382" y2="460" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="420" y="504" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">H</text>
+  <text x="394" y="504" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">5#</text>
+  <text x="435" y="530" font-size="22" fill="#e11d48" text-anchor="middle">Ces</text>
+  <text x="398" y="530" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">7b</text>
+  <text x="392" y="450" font-size="22" fill="#e11d48" text-anchor="middle">as</text>
+  <text x="362" y="450" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">7b</text>
+  <text x="392" y="420" font-size="22" fill="#0284c7" text-anchor="middle">gis</text>
+  <text x="362" y="420" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">5#</text>
+
+  <line x1="300" y1="480" x2="300" y2="500" stroke="#0f172a" stroke-width="2"/>
+  <text x="300" y="530" font-size="22" font-weight="bold" fill="#0284c7" text-anchor="middle">Fis</text>
+  <text x="270" y="530" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">6#</text>
+  <text x="305" y="552" font-size="22" font-weight="bold" fill="#e11d48" text-anchor="middle">Ges</text>
+  <text x="270" y="552" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">6b</text>
+  <text x="312" y="464" font-size="22" fill="#e11d48" text-anchor="middle">es</text>
+  <text x="284" y="464" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">6b</text>
+  <text x="312" y="442" font-size="22" fill="#0284c7" text-anchor="middle">dis</text>
+  <text x="284" y="442" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">6#</text>
+
+  <line x1="210" y1="478" x2="218" y2="462" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="215" y="504" font-size="22" font-weight="bold" fill="#0284c7" text-anchor="middle">Cis</text>
+  <text x="180" y="504" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">7#</text>
+  <text x="215" y="530" font-size="22" font-weight="bold" fill="#e11d48" text-anchor="middle">Des</text>
+  <text x="180" y="530" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">5b</text>
+  <text x="242" y="456" font-size="22" font-weight="bold" fill="#e11d48" text-anchor="middle">b</text>
+  <text x="222" y="456" font-size="20" font-weight="bold" fill="#e11d48" text-anchor="middle">5b</text>
+  <text x="240" y="430" font-size="22" fill="#0284c7" text-anchor="middle">ais</text>
+  <text x="210" y="430" font-size="20" font-weight="bold" fill="#0284c7" text-anchor="middle">7#</text>
+
+  <line x1="158" y1="402" x2="140" y2="412" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="110" y="430" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">As</text>
+  <text x="131" y="418" font-size="20" fill="#64748b" text-anchor="middle">4b</text>
+  <text x="176" y="402" font-size="22" fill="#475569" text-anchor="middle">f</text>
+
+  <line x1="132" y1="310" x2="112" y2="310" stroke="#0f172a" stroke-width="2"/>
+  <text x="88" y="316" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="end">Es</text>
+  <text x="104" y="304" font-size="20" fill="#64748b" text-anchor="middle">3b</text>
+  <text x="158" y="315" font-size="22" fill="#475569" text-anchor="middle">c</text>
+
+  <line x1="156" y1="220" x2="138" y2="210" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="110" y="200" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">B</text>
+  <text x="131" y="193" font-size="20" fill="#64748b" text-anchor="middle">2b</text>
+  <text x="176" y="226" font-size="22" fill="#475569" text-anchor="middle">g</text>
+
+  <line x1="208" y1="144" x2="218" y2="158" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="185" y="125" font-size="22" font-weight="bold" fill="#0f172a" text-anchor="middle">F</text>
+  <text x="204" y="121" font-size="20" fill="#64748b" text-anchor="middle">1b</text>
+  <text x="229" y="172" font-size="22" fill="#475569" text-anchor="middle">d</text>
+
+</svg>
