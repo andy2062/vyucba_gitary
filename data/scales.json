@@ -1,0 +1,102 @@
+[
+  {
+    "type": "scale",
+    "title": "C dur - základná pozícia",
+    "playMode": "cumulative",
+     "quality":"dur",
+    "group":"Ionian",
+    "position": 1,
+    "description": "Stupnica C dur",
+    "notes": [
+      { "note": "C", "string": 5, "fret": 3, "finger": "3", "root": true },
+      { "note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "F", "string": 4, "fret": 3, "finger": "3" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      { "note": "H", "string": 2, "fret": 0, "finger": "0" },
+     {  "note": "C",  "string": 2, "fret": 1, "finger": "1", "root": true }
+    ]
+  },
+  {
+    "type": "scale",
+    "title": "G dur - základná pozícia",
+     "quality":"dur",
+  "group":"Ionian",
+    "position": 1,
+    "description": "Stupnica G dur",
+    "notes": [
+      { "note": "G", "string": 6, "fret": 3, "finger": "3", "root": true },
+      { "note": "A", "string": 5, "fret": 0, "finger": "0" },
+      { "note": "H", "string": 5, "fret": 2, "finger": "2" },
+      { "note": "C", "string": 5, "fret": 3, "finger": "3" },
+      { "note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "4" },
+     {  "note": "G",  "string": 3, "fret": 0, "finger": "0", "root": true },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+       { "note": "H", "string": 2, "fret": 0, "finger": "0" },
+        { "note": "C", "string": 2, "fret": 1, "finger": "1" },
+         { "note": "D", "string": 2, "fret": 3, "finger": "3" },
+          { "note": "E", "string": 1, "fret": 0, "finger": "0" },
+           { "note": "F#", "string": 1, "fret": 2, "finger": "2" },
+           {  "note": "G",  "string": 1, "fret": 3, "finger": "3", "root": true }
+    ]
+  },
+    {
+    "type": "scale",
+    "title": "A dur - základná pozícia",
+     "quality":"dur",
+  "group":"Ionian",
+    "position": 1,
+    "description": "Stupnica A dur",
+    "notes": [
+      { "note": "A", "string": 5, "fret": 0, "finger": "0", "root": true },
+      { "note": "H", "string": 5, "fret": 2, "finger": "2" },
+      { "note": "C#", "string": 5, "fret": 4, "finger": "4" },
+      { "note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "4" },
+      { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+     {  "note": "A",  "string": 3, "fret": 2, "finger": "2", "root": true }
+    ]
+  },
+  {
+    "type": "scale",
+    "title": "A dur - 1. pozícia",
+     "quality":"dur",
+  "group":"Ionian",
+    "position": 1,
+    "description": "Stupnica A dur",
+    "notes": [
+      { "note": "A", "string": 6, "fret": 5, "finger": "2", "root": true },
+      { "note": "H", "string": 6, "fret": 7, "finger": "4" },
+      { "note": "C#", "string": 5, "fret": 4, "finger": "1" },
+      { "note": "D", "string": 5, "fret": 5, "finger": "2" },
+      { "note": "E", "string": 5, "fret": 7, "finger": "4" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "1" },
+      { "note": "G#", "string": 4, "fret": 6, "finger": "3" },
+     {  "note": "A",  "string": 4, "fret": 7, "finger": "4", "root": true }
+    ]
+  },
+  {
+    "type": "scale",
+    "title": "A dur - 2. pozícia",
+     "quality":"dur",
+  "group":"Ionian",
+    "scale": "A dur",
+    "position": 2,
+    "description": "A dur vo vyššej polohe",
+    "notes": [
+      { "note": "C#", "string": 6, "fret": 9, "finger": "1" },
+      { "note": "D", "string": 6, "fret": 10, "finger": "2" },
+      { "note": "E", "string": 6, "fret": 12, "finger": "4" },
+      { "note": "F#", "string": 5, "fret": 9, "finger": "1" },
+      { "note": "G#", "string": 5, "fret": 11, "finger": "3" },
+      { "note": "A", "string": 5, "fret": 12, "finger": "4" },
+      { "note": "H", "string": 4, "fret": 9, "finger": "1" },
+      { "note": "C#", "string": 4, "fret": 11, "finger": "3" }
+    ]
+  }
+   
+]

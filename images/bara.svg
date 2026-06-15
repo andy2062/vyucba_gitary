@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 140" width="100%" height="100%" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; font-family: Arial, sans-serif;">
+  
+  <text x="25" y="75" font-size="16" font-weight="bold" fill="#0f172a" text-anchor="middle">A</text>
+  
+  <line x1="45" y1="40" x2="45" y2="100" stroke="#0f172a" stroke-width="3"/>
+
+  <line x1="45" y1="70" x2="735" y2="70" stroke="#475569" stroke-width="2"/>
+
+  <line x1="100" y1="55" x2="100" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="72.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">I.</text>
+  <text x="72.5" y="55" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">A#</text>
+  <text x="72.5" y="95" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">Hb</text>
+
+  <line x1="155" y1="55" x2="155" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="127.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">II.</text>
+  <text x="127.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">H</text>
+  
+
+  <line x1="210" y1="55" x2="210" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="182.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">III.</text>
+  <text x="182.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">C</text>
+
+  <line x1="265" y1="55" x2="265" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="237.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">IV.</text>
+  <text x="237.5" y="55" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">C#</text>
+  <text x="237.5" y="95" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">Db</text>
+
+  <line x1="320" y1="55" x2="320" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="292.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">V.</text>
+  <text x="292.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">D</text>
+
+  <line x1="375" y1="55" x2="375" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="347.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">VI.</text>
+  <text x="347.5" y="55" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">D#</text>
+  <text x="347.5" y="95" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">Eb</text>
+
+  <line x1="430" y1="55" x2="430" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="402.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">VII.</text>
+  <text x="402.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">E</text>
+
+  <line x1="485" y1="55" x2="485" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="457.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">VIII.</text>
+  <text x="457.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">F</text>
+
+  <line x1="540" y1="55" x2="540" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="512.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">IX.</text>
+  <text x="512.5" y="55" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">F#</text>
+  <text x="512.5" y="95" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">Gb</text>
+
+  <line x1="595" y1="55" x2="595" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="567.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">X.</text>
+  <text x="567.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">G</text>
+
+  <line x1="650" y1="55" x2="650" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="622.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">XI.</text>
+  <text x="622.5" y="55" font-size="14" font-weight="bold" fill="#0284c7" text-anchor="middle">G#</text>
+  <text x="622.5" y="95" font-size="13" font-weight="bold" fill="#e11d48" text-anchor="middle">Ab</text>
+
+  <line x1="705" y1="55" x2="705" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="677.5" y="30" font-size="12" fill="#64748b" text-anchor="middle">XII.</text>
+  <text x="677.5" y="55" font-size="14" font-weight="bold" fill="#0f172a" text-anchor="middle">A</text>
+  
+  <line x1="735" y1="55" x2="735" y2="85" stroke="#0f172a" stroke-width="2"/>
+</svg>

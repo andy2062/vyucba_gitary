@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guitar Learning System</title>
+<link rel="stylesheet" href="css/style_gs.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="topPanel">
+
+        <h2>Guitar Learning System</h2>
+
+        <div class="controls">
+
+            <select id="categorySelect"></select>
+
+            <select id="exerciseSelect"></select>
+
+            <select id="shapeSelect">
+    <option value="">Všetky tvary akordov</option>
+    <option value="E">Tvar E</option>
+    <option value="A">Tvar A</option>
+</select>
+
+<select id="qualitySelect">
+    <option value="">Všetky druhy akordov</option>
+    <option value="major">Dur</option>
+    <option value="minor">Mol</option>
+</select>
+
+            <button onclick="prevItem()">&#9664;</button>
+
+            <button onclick="nextItem()">&#9654;</button>
+
+            <button onclick="toggleAutoplay()">
+                Play - Stop
+            </button>
+
+        </div>
+
+        <div class="infoBox">
+
+            <div id="title"></div>
+
+            <div id="description"></div>
+
+            <div id="extraInfo"></div>
+
+        </div>
+
+        <div class="speedBox">
+
+            Rýchlosť:
+            <span id="speedValue">900 ms</span>
+
+            <br><br>
+
+            <input
+                type="range"
+                min="400"
+                max="2000"
+                step="100"
+                value="900"
+                id="speedSlider"
+            >
+
+        </div>
+
+    </div>
+
+    <div id="fretboardWrap">
+
+        <svg id="fretboard"
+             viewBox="0 0 1200 420">
+        </svg>
+
+    </div>
+
+</div>
+
+<script src="./js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 220" width="100%" height="100%" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; font-family: Arial, sans-serif;">
+  
+  <defs>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10b981"/>
+    </marker>
+  </defs>
+
+  <text x="325" y="28" font-size="15" font-weight="bold" fill="#0f172a" text-anchor="middle">Ako sa menia intervaly (+1 poltón smerom doprava)</text>
+
+  <rect x="20" y="85" width="110" height="50" rx="6" fill="#fef2f2" stroke="#fca5a5" stroke-width="1.5"/>
+  <text x="75" y="115" font-size="13" font-weight="bold" fill="#b91c1c" text-anchor="middle">ZMENŠENÝ</text>
+
+  <path d="M 140,100 L 210,65" fill="none" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="175" y="75" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">+1 pt.</text>
+  
+  <path d="M 140,120 L 210,155" fill="none" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="175" y="148" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">+1 pt.</text>
+
+
+  <rect x="220" y="40" width="110" height="40" rx="6" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1.5"/>
+  <text x="275" y="65" font-size="13" font-weight="bold" fill="#0369a1" text-anchor="middle">ČISTÝ</text>
+  <text x="275" y="100" font-size="11" font-weight="bold" fill="#64748b" text-anchor="middle">(1, 4, 5, 8)</text>
+
+  <rect x="220" y="140" width="110" height="40" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="275" y="165" font-size="13" font-weight="bold" fill="#475569" text-anchor="middle">MALÝ</text>
+  <text x="275" y="200" font-size="11" font-weight="bold" fill="#94a3b8" text-anchor="middle">(2, 3, 6, 7)</text>
+
+
+  <path d="M 340,60 L 490,60" fill="none" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="415" y="52" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">+1 pt.</text>
+
+  <path d="M 340,160 L 360,160" fill="none" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="350" y="152" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">+1 pt.</text>
+
+
+  <rect x="370" y="140" width="110" height="40" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="425" y="165" font-size="13" font-weight="bold" fill="#15803d" text-anchor="middle">VEĽKÝ</text>
+  <text x="425" y="200" font-size="11" font-weight="bold" fill="#94a3b8" text-anchor="middle">(2, 3, 6, 7)</text>
+
+  <path d="M 480,160 L 510,125" fill="none" stroke="#10b981" stroke-width="1.5" marker-end="url(#arr-green)"/>
+  <text x="505" y="150" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle">+1 pt.</text>
+
+
+  <rect x="520" y="85" width="110" height="50" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.5"/>
+  <text x="575" y="115" font-size="13" font-weight="bold" fill="#166534" text-anchor="middle">ZVÄČŠENÝ</text>
+
+</svg>

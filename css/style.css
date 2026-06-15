@@ -1,0 +1,226 @@
+  *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Segoe UI',sans-serif;background:#f8f9fb;color:#222;display:flex;height:100vh}
+
+    /* SIDEBAR */
+    .sidebar{
+      width:200px;
+      background:#fff;
+      box-shadow:2px 0 10px rgba(0,0,0,.08);
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .logo{
+      font-size:1.6rem;
+      font-weight:bold;
+      color:#e67e22;
+      margin-bottom:20px;
+    }
+
+    /* LAYOUT */
+    .songs-layout{
+    display:flex;
+    gap:20px;
+}
+
+#left{
+    width:25%;
+}
+
+#right{
+    flex:1;
+}
+
+#akord{
+    width:220px;
+     display: flex;
+ position: fixed;
+ right: 10px;
+  padding: 10px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.chord {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+}
+  #chordTitle{
+   font-size: 18px;
+   font-weight: bold;
+}
+    .menu-btn{
+      border:none;
+      background:none;
+      text-decoration: none; /* Odstráni podčiarknutie textu */
+      text-align:left;
+      padding:14px;
+      border-radius:12px;
+      cursor:pointer;
+      font-size:1rem;
+      transition:.2s;
+    }
+    .menu-btn:hover,
+    .menu-btn.active{
+      background:#fff3e8;
+      color:#e67e22;
+      font-weight:bold;
+    }
+
+    /* MAIN */
+    .main{
+      flex:1;
+      padding:30px;
+      overflow:auto;
+    }
+
+    .infoBox{
+    background:#eef5ff;
+    border-left:5px solid #1976d2;
+    padding:14px;
+    border-radius:12px;
+}
+
+#title{
+    font-size:20px;
+    font-weight:bold;
+    color:#1565c0;
+}
+
+#description{
+    margin-top:10px;
+    font-size:16px;
+    line-height:1.6;
+}
+.controls{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+select,
+.gs1-btn{
+    padding:12px 16px;
+    border-radius:12px;
+    border:1px solid #cfd8dc;
+    background:white;
+    font-size:16px;
+}
+.gs1-btn{
+    background:#1976d2;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+.gs1-btn:hover{
+    opacity:0.92;
+}
+
+select,
+.song-btn{
+    display:block;
+    padding:12px 16px;
+    /* width:100%; */
+    margin-bottom:4px;
+
+    background:white;
+    color:#333;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    text-align:left;
+    padding:10px;
+
+    cursor:pointer;
+}
+
+.song-btn:hover{
+    background:#f5f5f5;
+}
+
+.song-btn.active{
+    background:#fff3e8;
+    color:#e67e22;
+    font-weight:bold;
+}
+
+.bigFinger{
+    fill:white;
+    font-size:22px;
+    font-weight:bold;
+    text-anchor:middle;
+    dominant-baseline:middle;
+    pointer-events:none;
+}
+
+.smallNote{
+    fill:#111;
+    font-size:11px;
+    font-weight:bold;
+    text-anchor:middle;
+    dominant-baseline:middle;
+    pointer-events:none;
+}
+
+/* RHYTHM LINK */
+.rhythmLink {
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+    .hero{
+      background:#fff;
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      margin-bottom:30px;
+    }
+    .hero h1{font-size:2.4rem;margin-bottom:10px}
+    .hero p{color:#666}
+    
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+    .card{
+      background:#fff;
+      padding:25px;
+      border-radius:18px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      transition:.2s;
+      cursor:pointer;
+    }
+    .card:hover{transform:translateY(-4px)}
+    .card h3{color:#e67e22;margin-bottom:10px}
+    .card p{color:#666}
+
+    .content-box{
+      margin-top:0px;
+      background:#fff;
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 8px 20px rgba(0,0,0,.08);
+      min-height:800px;
+    }
+
+    .hlavny-ramec{
+      width: 100%; 
+      height: 800px; 
+      border: 1px solid #ccc;
+      border-radius:20px;
+    }
+    @media(max-width:900px){
+      body{flex-direction:column;height:auto}
+      .sidebar{width:100%;display:flex;flex-wrap:wrap}
+      .main{padding:15px}
+    }
