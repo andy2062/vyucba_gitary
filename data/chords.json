@@ -1,0 +1,448 @@
+[
+   {
+  "name": "C",
+  "notes": ["C","E","G"],
+  "formula": "1 - 3 - 5",
+  "variations": [
+    {
+      "positions": [-1,3,2,0,1,0],
+      "fingering": [0,3,2,0,1,0],
+      "fret": 1
+    },
+    {
+      "positions": [3,3,5,5,5,3],
+      "fingering": [1,1,2,3,4,1],
+      "fret": 3
+    },
+    {
+      "positions": [8,10,10,9,8,8],
+      "fingering": [1,3,4,2,1,1],
+      "fret": 8
+    }
+  ]
+},
+
+  {
+    "name": "C6",
+    "notes": ["C","E","G","A"],
+  "formula": "1 - 3 - 5 - 6",
+    "positions": [-1,0,2,2,1,3],
+    "fingering": [0,0,2,3,1,4]
+  },
+  {
+    "name": "Csus4",
+    "notes": ["C","F","G"],
+  "formula": "1 - 4 - 5",
+    "positions": [-1,3,3,0,1,1],
+    "fingering": [0,3,4,0,1,1]
+  },
+   {
+    "name": "C7",
+    "notes": ["C","E","G","B"],
+  "formula": "1 - 3 - 5 - 7b",
+    "positions": [0,3,2,3,1,0],
+    "fingering": [0,3,2,4,1,0]
+  },
+   {
+    "name": "Cadd9",
+    "positions": [-1,3,2,0,3,3],
+    "fingering": [0,2,1,0,3,4]
+  },
+   {
+    "name": "C7maj",
+    "positions": [-1,3,2,0,0,0],
+    "fingering": [0,3,2,0,0,0]
+  },
+  {
+    "name": "Cmi",
+    "positions": [-1,3,5,5,4,3],
+    "fingering": [0,1,3,4,2,1],
+     "barre": {
+    "fret": 3,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "C#mi",
+    "positions": [-1,4,6,6,5,4],
+    "fingering": [0,1,3,4,2,1],
+     "barre": {
+    "fret": 4,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "D",
+    "positions": [-1,-1,0,2,3,2],
+    "fingering": [0,0,0,1,3,2]
+  },
+  {
+    "name": "Dsus4",
+    "positions": [-1,-1,0,2,3,3],
+    "fingering": [0,0,0,1,3,4]
+  },
+   {
+    "name": "D7",
+    "positions": [-1,0,0,2,1,2],
+    "fingering": [0,0,0,2,1,3]
+  },
+  {
+    "name": "Dmi",
+    "positions": [-1,-1,0,2,3,1],
+    "fingering": [0,0,0,2,3,1]
+  },
+  {
+  "name": "E",
+  "variations": [
+    {
+      "positions": [0,2,2,1,0,0],
+    "fingering": [0,2,3,1,0,0]
+    },
+    {
+      "positions": [-1,-1,-1,4,5,4],
+      "fingering": [0,0,0,1,3,2],
+      "fret": 4
+    },
+    {
+      "positions": [7,7,9,9,9,7],
+      "fingering": [1,1,2,3,4,1],
+      "fret": 7
+    }
+  ]
+},
+  {
+    "name": "Esus4",
+    "positions": [0,2,2,2,0,0],
+    "fingering": [0,2,3,4,0,0]
+  },
+   {
+    "name": "Emi",
+    "positions": [0,2,2,0,0,0],
+    "fingering": [0,2,3,0,0,0]
+  },
+  {
+    "name": "Emi7",
+    "positions": [0,2,2,0,3,0],
+    "fingering": [0,2,3,0,4,0]
+  },
+  {
+    "name": "E7",
+    "positions": [0,2,0,1,0,0],
+    "fingering": [0,2,0,1,0,0]
+  },
+   {
+    "name": "F7maj",
+    "positions": [-1,0,3,2,1,0],
+    "fingering": [0,0,3,2,1,0]
+  },
+  {
+    "name": "Fadd9",
+    "positions": [-1,0,3,2,1,3],
+    "fingering": [0,0,3,2,1,4]
+  },
+
+{
+  "name": "F",
+  "positions": [1,3,3,2,1,1],
+  "fingering": [1,3,4,2,1,1],
+  "barre": {
+    "fret": 1,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+},
+{
+  "name": "F7",
+  "positions": [1,3,1,2,1,1],
+  "fingering": [1,3,1,2,1,1],
+  "barre": {
+    "fret": 1,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+},
+ {
+    "name": "Fmi",
+    "positions": [1,3,3,1,1,1],
+    "fingering": [1,3,4,1,1,1],
+     "barre": {
+    "fret": 1,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+    }
+  },
+  {
+    "name": "F#mi",
+    "positions": [2,4,4,2,2,2],
+    "fingering": [1,3,4,1,1,1],
+     "barre": {
+    "fret": 2,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "F#",
+    "positions": [2,4,4,3,2,2],
+    "fingering": [1,3,4,2,1,1],
+     "barre": {
+    "fret": 2,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "G",
+    "variations": [
+    {
+      "positions": [3,2,0,0,0,3],
+    "fingering": [2,1,0,0,0,3],
+      "fret": 1
+    },
+    {
+      "positions": [3,2,0,0,3,3],
+    "fingering": [2,1,0,0,3,4],
+      "fret": 1
+    },
+    {
+      "positions": [3,5,5,4,3,3],
+      "fingering": [1,3,4,2,1,1],
+      "fret": 3
+    },
+    {
+      "positions": [-1,-1,-1,7,8,7],
+      "fingering": [0,0,0,1,3,2],
+      "fret": 7
+    }
+  ]
+  },
+   {
+    "name": "G6",
+    "positions": [-1,-1,5,4,3,0],
+    "fingering": [0,0,3,2,1,0]
+  },
+   {
+    "name": "G7",
+    "positions": [3,2,0,0,0,1],
+    "fingering": [3,2,0,0,0,1]
+  },
+  {
+    "name": "Gmi",
+    "positions": [3,5,5,3,3,3],
+    "fingering": [1,3,4,1,1,1],
+     "barre": {
+    "fret": 3,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "Gmi7",
+    "positions": [3,5,3,3,3,3],
+    "fingering": [1,3,1,1,1,1],
+     "barre": {
+    "fret": 3,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "G+",
+    "positions": [-1,-1,5,4,4,3],
+    "fingering": [0,0,4,2,3,1]
+  },
+  {
+    "name": "Gdim",
+    "positions": [-1,-1,2,3,2,3],
+    "fingering": [0,0,1,3,2,4]
+   
+  },
+  {
+    "name": "G#mi",
+    "positions": [4,6,6,4,4,4],
+    "fingering": [1,3,4,1,1,1],
+     "barre": {
+    "fret": 4,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "G#",
+    "positions": [4,6,6,5,4,4],
+    "fingering": [1,3,4,2,1,1],
+     "barre": {
+    "fret": 4,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "G#dim",
+    "positions": [-1,-1,0,1,0,1],
+    "fingering": [0,0,0,1,0,2]
+   
+  },
+  
+   {
+    "name": "A",
+    "variations": [
+    {
+      "positions": [0,0,2,2,2,0],
+    "fingering": [0,0,1,2,3,0],
+      "fret": 1
+    },
+    {
+      "positions": [5,7,7,6,5,5],
+      "fingering": [1,3,4,2,1,1],
+      "fret": 5
+    },
+    {
+      "positions": [-1,-1,-1,9,10,9],
+      "fingering": [0,0,0,1,3,2],
+      "fret": 9
+    }
+  ]
+   },
+  {
+    "name": "A7maj",
+     "variations": [
+    {
+       "positions": [0,0,2,1,2,0],
+    "fingering": [0,0,2,1,3,0],
+      "fret": 1
+    },
+    {
+      "positions": [0,0,2,2,2,4],
+      "fingering": [0,0,1,1,1,4],
+      "fret": 2
+    },
+    {
+      "positions": [0,0,7,6,5,4],
+      "fingering": [0,0,4,3,2,1],
+      "fret": 4
+    }
+  ]   
+  },
+  {
+    "name": "Asus4",
+    "positions": [0,0,2,2,3,0],
+    "fingering": [0,0,1,2,3,0]
+  },
+  {
+    "name": "Ami",
+     "variations": [
+    {
+     "positions": [-1,0,2,2,1,0],
+    "fingering": [0,0,2,3,1,0],
+      "fret": 1
+    },
+    {
+      "positions": [5,7,7,5,5,5],
+      "fingering": [1,3,4,1,1,1],
+      "fret": 5
+    },
+    {
+      "positions": [-1,-1,-1,9,10,8],
+      "fingering": [0,0,0,2,3,1],
+      "fret": 8
+    }
+  ]   
+  },
+  {
+    "name": "Ami7",
+    "positions": [-1,0,2,2,1,3],
+    "fingering": [0,0,2,3,1,4]
+  },
+   {
+    "name": "A7",
+    "positions": [0,0,2,0,2,0],
+    "fingering": [0,0,1,0,2,0]
+  },
+   {
+    "name": "H7",
+    "positions": [-1,2,1,2,0,2],
+    "fingering": [0,2,1,3,0,4]
+  },
+  {
+    "name": "Hmi",
+    "positions": [-1,2,4,4,3,2],
+    "fingering": [0,1,3,4,2,1],
+     "barre": {
+    "fret": 2,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "Hsus4",
+    "positions": [7,7,9,9,7,7],
+    "fingering": [1,1,3,4,1,1],
+     "barre": {
+    "fret": 7,
+    "from": 0,
+    "to": 5,
+    "finger": 1
+  }
+  },
+  {
+    "name": "Hmi7",
+    "positions": [-1,2,4,2,3,2],
+    "fingering": [0,1,3,1,2,1],
+     "barre": {
+    "fret": 2,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+  },
+   {
+    "name": "B",
+    "positions": [-1,1,3,3,3,1],
+    "fingering": [0,1,2,3,4,1],
+      "barre": {
+    "fret": 1,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+  },
+   {
+    "name": "H",
+     "variations": [
+    {
+     "positions": [-1,2,4,4,4,2],
+    "fingering": [0,1,2,3,4,1],
+      "barre": {
+    "fret": 2,
+    "from": 1,
+    "to": 5,
+    "finger": 1
+  }
+    },
+    {
+       "positions": [7,9,9,8,7,7],
+    "fingering": [1,3,4,2,1,1],
+      "barre": {
+    "fret": 7,
+    "finger": 1
+  }
+    }  
+] 
+} 
+]
+  

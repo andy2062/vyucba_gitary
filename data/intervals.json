@@ -1,0 +1,178 @@
+[
+  {
+     "title":"C dur tercie",
+  "type":"intervalExercise",
+  "quality":"dur",
+  "group":"3",
+  "family": "major",
+  "description": "Tercie C dur",
+  "position": 1,
+   "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "C", "string": 5, "fret": 3, "finger": "2" },
+      { "note": "E", "string": 4, "fret": 2, "finger": "1" }
+    ],
+    [
+      { "note": "D", "string": 5, "fret": 5, "finger": "3" },
+      { "note": "F", "string": 4, "fret": 3, "finger": "1" }
+    ],
+    [
+      { "note": "E", "string": 5, "fret": 7, "finger": "3" },
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "F", "string": 5, "fret": 8, "finger": "3" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "2" }
+    ],
+   [
+      { "note": "G", "string": 4, "fret": 5, "finger": "2" },
+      { "note": "H", "string": 3, "fret": 4, "finger": "1" }
+    ],
+    [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "H", "string": 4, "fret": 9, "finger": "3" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "1" }
+    ],
+    [
+      { "note": "C", "string": 4, "fret": 10, "finger": "3" },
+      { "note": "E", "string": 3, "fret": 9, "finger": "2" }
+    ]
+    ]
+},
+  {
+  "type": "intervalExercise",
+  "title": "A dur",
+  "family": "major",
+   "quality":"dur",
+  "position": 1,
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A", "string": 6, "fret": 5, "finger": "2" },
+      { "note": "C#", "string": 5, "fret": 4, "finger": "1" }
+    ],
+    [
+      { "note": "H", "string": 6, "fret": 7, "finger": "3" },
+      { "note": "D", "string": 5, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "C#", "string": 6, "fret": 9, "finger": "3" },
+      { "note": "E", "string": 5, "fret": 7, "finger": "1" }
+    ],
+    [
+      { "note": "D", "string": 6, "fret": 10, "finger": "3" },
+      { "note": "F#", "string": 5, "fret": 9, "finger": "2" }
+    ],[
+      { "note": "E", "string": 5, "fret": 7, "finger": "2" },
+      { "note": "G#", "string": 4, "fret": 6, "finger": "1" }
+    ],
+    [
+      { "note": "F#", "string": 5, "fret": 9, "finger": "3" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "1" }
+    ],
+    [
+      { "note": "G#", "string": 5, "fret": 11, "finger": "3" },
+      { "note": "H", "string": 4, "fret": 9, "finger": "1" }
+    ],
+    [
+      { "note": "A", "string": 5, "fret": 12, "finger": "3" },
+      { "note": "C#", "string": 4, "fret": 11, "finger": "2" }
+    ]
+  ]
+},
+ {
+  "type": "intervalExercise",
+  "title": "G dur tercie",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "G", "string": 6, "fret": 3, "finger": "2" },
+      { "note": "H", "string": 5, "fret": 2, "finger": "1" }
+    ],
+    [
+      { "note": "A", "string": 6, "fret": 5, "finger": "3" },
+      { "note": "C", "string": 5, "fret": 3, "finger": "1" }
+    ],
+    [
+      { "note": "H", "string": 6, "fret": 7, "finger": "3" },
+      { "note": "D", "string": 5, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "C", "string": 6, "fret": 8, "finger": "3" },
+      { "note": "E", "string": 5, "fret": 7, "finger": "2" }
+    ],[
+      { "note": "D", "string": 5, "fret": 5, "finger": "2" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "1" }
+    ],
+    [
+      { "note": "E", "string": 5, "fret": 7, "finger": "3" },
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "F#", "string": 5, "fret": 9, "finger": "3" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "1" }
+    ],
+    [
+      { "note": "G", "string": 5, "fret": 10, "finger": "3" },
+      { "note": "H", "string": 4, "fret": 9, "finger": "2" }
+    ]
+  ]
+},
+ {
+  "type": "intervalExercise",
+  "title": "D dur tercie",
+  "family": "major",
+   "quality":"dur",
+    "description": "Tercie D dur",
+  "position": 1,
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "D", "string": 5, "fret": 5, "finger": "2" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "1" }
+    ],
+    [
+      { "note": "E", "string": 5, "fret": 7, "finger": "3" },
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "F#", "string": 5, "fret": 9, "finger": "3" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "1" }
+    ],
+    [
+      { "note": "G", "string": 5, "fret": 10, "finger": "3" },
+      { "note": "H", "string": 4, "fret": 9, "finger": "2" }
+    ],
+   [
+      { "note": "A", "string": 4, "fret": 7, "finger": "2" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "1" }
+    ],
+    [
+      { "note": "H", "string": 4, "fret": 10, "finger": "3" },
+      { "note": "D", "string": 3, "fret": 8, "finger": "1" }
+    ],
+    [
+      { "note": "C#", "string": 4, "fret": 11, "finger": "3" },
+      { "note": "E", "string": 3, "fret": 9, "finger": "1" }
+    ],
+    [
+      { "note": "D", "string": 4, "fret": 12, "finger": "3" },
+      { "note": "F#", "string": 3, "fret": 11, "finger": "2" }
+    ]
+    ]
+}
+]

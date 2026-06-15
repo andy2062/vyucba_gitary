@@ -1,0 +1,98 @@
+[
+  {
+    "name": "pop_4_4_1",
+    "label": "Pop 4/4_1",
+    "image": "./data/rytmy/rytmus441.svg",
+    "audio": "./data/rytmy/4_1.mp3"
+  },
+  {
+    "name": "pop_4_4_2",
+    "label": "Pop 4/4_2",
+    "image": "./data/rytmy/rytmus442.svg",
+    "audio": "./data/rytmy/4_2.mp3"
+  },
+   {
+    "name": "pop_4_4_3",
+    "label": "Pop 4/4_3",
+    "image": "./data/rytmy/rytmus443.svg",
+    "audio": "./data/rytmy/4_3.mp3"
+  },
+   {
+    "name": "pop_4_4_4",
+    "label": "Pop 4/4_4",
+    "image": "./data/rytmy/rytmus444.svg",
+    "audio": "./data/rytmy/4_4.mp3"
+  },
+   {
+    "name": "pop_4_4_5",
+    "label": "Pop 4/4_5",
+    "image": "./data/rytmy/rytmus445.svg",
+    "audio": "./data/rytmy/4_5.mp3"
+  },
+   {
+    "name": "pop_4_4_6",
+    "label": "Pop 4/4_6",
+    "image": "./data/rytmy/rytmus446.svg",
+    "audio": "./data/rytmy/4_6.mp3"
+  },
+   {
+    "name": "pop_4_4_7",
+    "label": "Pop 4/4_7",
+    "image": "./data/rytmy/rytmus447.svg",
+    "audio": "./data/rytmy/4_7.mp3"
+  },
+  {
+    "name": "pop_4_4_8",
+    "label": "Pop 4/4_8",
+    "image": "./data/rytmy/rytmus448.svg",
+    "audio": "./data/rytmy/4_8.mp3"
+  },
+  {
+    "name": "pop_4_4_9",
+    "label": "Pop 4/4_9",
+    "image": "./data/rytmy/rytmus449.svg",
+    "audio": "./data/rytmy/4_9.mp3"
+  },
+   {
+    "name": "pop_6_8",
+    "label": "Pop 6/8",
+    "image": "./data/rytmy/rytmus68.svg",
+    "audio": "./data/rytmy/68.mp3"
+  },
+   {
+    "name": "tango",
+    "label": "Tango",
+    "image": "./data/rytmy/tango.svg",
+    "audio": "./data/rytmy/tango.mp3"
+  }, 
+  {
+    "name": "rumba",
+    "label": "Rumba",
+    "image": "./data/rytmy/Rumba.svg",
+    "audio": "./data/rytmy/rumba.mp3"
+  }, 
+  {
+    "name": "wals",
+    "label": "Wals",
+    "image": "./data/rytmy/vals.svg",
+    "audio": "./data/rytmy/wals.mp3"
+  },
+  {
+    "name": "valcik",
+    "label": "Valčík 3/4",
+    "image": "./data/rytmy/valcik.svg",
+    "audio": "./data/rytmy/valcik.mp3"
+  },
+  {
+  "name": "Miesto, kde sa neumiera",
+  "label": "Miesto, kde sa neumiera",
+    "image": "./data/rytmy/smatan.png",
+    "audio": "./data/rytmy/wals.mp3"
+},
+  {
+    "name": "polka",
+    "label": "Polka 2/4",
+    "image": "./data/rytmy/polka.svg",
+    "audio": "./data/rytmy/polka.mp3"
+  }
+]

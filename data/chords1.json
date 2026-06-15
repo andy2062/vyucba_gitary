@@ -1,0 +1,357 @@
+[
+    {
+  "title": "E dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"E",
+
+    "description": "Barre podľa struny E akord E dur",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "3" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "4" },
+      { "note": "G#", "string": 3, "fret": 1, "finger": "2" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "type": "chord",
+     "group":"E",
+  "quality": "dur",
+    "title": "F dur",
+    "description": "Barre podľa struny E v I.poli: F dur",
+    "notes": [
+      { "note": "F", "string": 6, "fret": 1, "finger": "1" },
+      {"note": "C", "string": 5, "fret": 3, "finger": "3" },
+      {"note": "F", "string": 4, "fret": 3, "finger": "4" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 1,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"E",
+  "quality": "dur",
+    "title": "F# dur/Gb dur",
+    "description": "Barre podľa struny E v II.poli: F#/Gb dur",
+    "notes": [
+      { "note": "F#", "string": 6, "fret": 2, "finger": "1" },
+      {"note": "C#", "string": 5, "fret": 4, "finger": "3" },
+      {"note": "F#", "string": 4, "fret": 4, "finger": "4" },
+      { "note": "A#", "string": 3, "fret": 3, "finger": "2" },
+      {"note": "C#", "string": 2, "fret": 2, "finger": "1" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 2,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+    "title": "G dur",
+     "group":"E",
+  "quality": "dur",
+    "description": "Barre podľa struny E v III.poli: G dur",
+    "notes": [
+      { "note": "G", "string": 6, "fret": 3, "finger": "1" },
+      {"note": "D", "string": 5, "fret": 5, "finger": "3" },
+      {"note": "G", "string": 4, "fret": 5, "finger": "4" },
+      { "note": "H", "string": 3, "fret": 4, "finger": "2" },
+      {"note": "D", "string": 2, "fret": 3, "finger": "1" },
+      { "note": "G", "string": 1, "fret": 3, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 3,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+   {
+    "type": "chord",
+     "group":"E",
+  "quality": "dur",
+    "title": "G#/Ab dur",
+    "description": "Barre podľa struny E v IV.poli: G#/Ab dur",
+    "notes": [
+      { "note": "G#", "string": 6, "fret": 4, "finger": "1" },
+      {"note": "D#", "string": 5, "fret": 6, "finger": "3" },
+      {"note": "G#", "string": 4, "fret": 6, "finger": "4" },
+      { "note": "H#", "string": 3, "fret": 5, "finger": "2" },
+      {"note": "D#", "string": 2, "fret": 4, "finger": "1" },
+      { "note": "G#", "string": 1, "fret": 4, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 4,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"E",
+  "quality": "dur",
+    "title": "A dur",
+    "description": "Barre podľa struny E v V.poli: A dur",
+    "notes": [
+      { "note": "A", "string": 6, "fret": 5, "finger": "1" },
+      {"note": "E", "string": 5, "fret": 7, "finger": "3" },
+      {"note": "A", "string": 4, "fret": 7, "finger": "4" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      {"note": "E", "string": 2, "fret": 5, "finger": "1" },
+      { "note": "A", "string": 1, "fret": 5, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 5,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+   {
+    "type": "chord",
+     "group":"E",
+  "quality": "mol",
+    "title": "Emi",
+    "description": "Barre podľa struny E akord E mol",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "3" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "4" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "type": "chord",
+     "group":"E",
+  "quality": "mol",
+    "title": "Fmi",
+    "description": "Barre podľa struny E v I.poli: Fmi",
+    "notes": [
+      { "note": "F", "string": 6, "fret": 1, "finger": "1" },
+      {"note": "C", "string": 5, "fret": 3, "finger": "3" },
+      {"note": "F", "string": 4, "fret": 3, "finger": "4" },
+      { "note": "Ab", "string": 3, "fret": 1, "finger": "1" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 1,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"E",
+  "quality": "mol",
+    "title": "F#mi/Gbmi",
+    "description": "Barre podľa struny E v II.poli: F#mi/Gbmi",
+    "notes": [
+      { "note": "F#", "string": 6, "fret": 2, "finger": "1" },
+      {"note": "C#", "string": 5, "fret": 4, "finger": "3" },
+      {"note": "F#", "string": 4, "fret": 4, "finger": "4" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "1" },
+      {"note": "C#", "string": 2, "fret": 2, "finger": "1" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 2,
+      "fromString": 1,
+      "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "A dur",
+    "description": "Barre podľa struny A akord A dur",
+    "notes": [
+      { "note": "E", "string": 6, "fret": -1, "finger": "" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "3" },
+      {"note": "C#", "string": 2, "fret": 2, "finger": "4" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "A#/B dur",
+    "description": "Barre podľa struny A v I.poli: A#/B dur",
+    "notes": [
+      { "note": "F", "string": 6, "fret": -1, "finger": "" },
+      {"note": "B", "string": 5, "fret": 1, "finger": "1" },
+      {"note": "F", "string": 4, "fret": 3, "finger": "2" },
+      { "note": "B", "string": 3, "fret": 3, "finger": "3" },
+      {"note": "D", "string": 2, "fret": 3, "finger": "4" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 1,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "H dur",
+    "description": "Barre podľa struny A v II.poli: H dur",
+    "notes": [
+      { "note": "F#", "string": 6, "fret": -1, "finger": "" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "1" },
+      {"note": "F#", "string": 4, "fret": 4, "finger": "2" },
+      { "note": "H", "string": 3, "fret": 4, "finger": "3" },
+      {"note": "D#", "string": 2, "fret": 4, "finger": "4" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 2,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "C dur",
+    "description": "Barre podľa struny A v III.poli: C dur",
+    "notes": [
+      { "note": "G", "string": 6, "fret": -1, "finger": "" },
+      {"note": "C", "string": 5, "fret": 3, "finger": "1" },
+      {"note": "G", "string": 4, "fret": 5, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "3" },
+      {"note": "E", "string": 2, "fret": 5, "finger": "4" },
+      { "note": "G", "string": 1, "fret": 3, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 3,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "C#/Db dur",
+    "description": "Barre podľa struny A v IV.poli: C#/Db dur",
+    "notes": [
+      { "note": "G#", "string": 6, "fret": -1, "finger": "" },
+      {"note": "C#", "string": 5, "fret": 4, "finger": "1" },
+      {"note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "3" },
+      {"note": "E#", "string": 2, "fret": 6, "finger": "4" },
+      { "note": "G#", "string": 1, "fret": 4, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 4,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "D dur",
+    "description": "Barre podľa struny A v V.poli: D dur",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "D", "string": 5, "fret": 5, "finger": "1" },
+      {"note": "A", "string": 4, "fret": 7, "finger": "2" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      {"note": "F#", "string": 2, "fret": 7, "finger": "4" },
+      { "note": "A", "string": 1, "fret": 5, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 5,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "mol",
+    "title": "A mol",
+    "description": "Barre podľa struny A akord Ami",
+    "notes": [
+      { "note": "E", "string": 6, "fret": -1, "finger": "" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "3" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "mol",
+    "title": "A#/B mol",
+    "description": "Barre podľa struny A v I.poli: A#/Bmi",
+    "notes": [
+      { "note": "F", "string": 6, "fret": -1, "finger": "" },
+      {"note": "B", "string": 5, "fret": 1, "finger": "1" },
+      {"note": "F", "string": 4, "fret": 3, "finger": "3" },
+      { "note": "B", "string": 3, "fret": 3, "finger": "4" },
+      {"note": "Db", "string": 2, "fret": 2, "finger": "2" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 1,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "type": "chord",
+     "group":"A",
+  "quality": "mol",
+    "title": "H mol",
+    "description": "Barre podľa struny A v II.poli: Hmi",
+    "notes": [
+      { "note": "F#", "string": 6, "fret": -1, "finger": "" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "1" },
+      {"note": "F#", "string": 4, "fret": 4, "finger": "3" },
+      { "note": "H", "string": 3, "fret": 4, "finger": "4" },
+      {"note": "D", "string": 2, "fret": 3, "finger": "2" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 2,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  }
+]
