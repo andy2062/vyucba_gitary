@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intervaly a Akordy</title>
+<style>
+    :root {
+        --primary-color: #1e88e5;
+        --success-color: #10b981;
+        --accent-color: #ef4444;
+        --text-color: #1e293b;
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --border-color: #e2e8f0;
+        --table-header: #f1f5f9;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background: var(--bg-color);
+        padding: 20px;
+        margin: 0;
+    }
+
+    .gitarove-hmaty {
+    display: flex;
+    flex-wrap: wrap; /* Toto zabezpečí automatické zalomenie na nový riadok */
+    gap: 20px;       /* Medzera medzi akordmi */
+    justify-content: center;
+}
+.gitarove-hmaty-kontajner {
+    display: flex;
+    flex-wrap: wrap;       /* Toto kľúčové slovo zabezpečí prechod na nový riadok */
+    gap: 20px;             /* Medzera medzi hmatníkmi (vodorovne aj zvisle) */
+    justify-content: center; /* Zarovná hmatníky pekne na stred stránky */
+    padding: 5px;
+}
+
+.gitarove-hmaty-kontajner img {
+    width: 120px;          /* Fixná šírka jedného hmatníka */
+    height: auto;          /* Výška sa dopočíta sama podľa pomeru strán */
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+        color: #0f172a;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 8px;
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        color: #334155;
+        font-size: 1.2rem;
+        margin-top: 25px;
+    }
+
+    p {
+        margin-bottom: 1.2rem;
+        text-align: justify;
+    }
+
+    /* Definície intervalov v úvode */
+    .definition-box {
+        background: #f1f5f9;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        border-left: 4px solid var(--text-color);
+    }
+    .definition-box p { margin: 5px 0; text-align: left; }
+
+    /* Centrujúci kontajner pre staré GIF/skice hmatov */
+    .media-container {
+        text-align: left;
+        margin: 25px 0;
+        background: #fff;
+        padding: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+    }
+    .media-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Zoznamy pre primu, sekundu... */
+    .interval-list {
+        background: #fafafa;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 20px 0;
+        column-count: 2;
+        column-gap: 30px;
+    }
+    @media (max-width: 600px) { .interval-list { column-count: 1; } }
+    .interval-list div {
+        padding: 4px 0;
+        border-bottom: 1px dashed var(--border-color);
+        font-size: 0.95rem;
+    }
+    .interval-list b { color: var(--primary-color); }
+
+    /* Moderné tabuľky */
+    .table-container {
+        overflow-x: auto;
+        margin: 20px 0;
+        border-radius: 8px;
+        border: 1px solid var(--border-color);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--card-bg);
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px 8px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+    }
+
+    th {
+        background: var(--table-header);
+        color: #334155;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    /* Chromatická abeceda v akordoch (miniatúrne klávesy) */
+    .chord-grid-table {
+        max-width: 550px;
+        margin: 15px 0;
+    }
+    .chord-grid-table td.active-note {
+        background-color: #e0f2fe !important;
+        color: #0369a1;
+        font-weight: bold;
+        border: 2px solid #0284c7;
+    }
+    .chord-info-row {
+        background: #f8fafc;
+        font-style: italic;
+        color: #64748b;
+        font-size: 0.85rem;
+    }
+
+    .badge-chord {
+        display: inline-block;
+        background: #e2e8f0;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <section id="intervaly">
+        <h2>Intervaly</h2>
+        <p>
+            V predchádzajúcich kapitolách sme spomínali rôzne pojmy ako základný tón, tercia, kvarta, kvinta či septakord. Aby sme si tieto pojmy presne vysvetlili, musíme sa oboznámiť s intervalmi. Intervaly úzko súvisia s akordami, pretože akordy sú zložené z určitých intervalov. Ten, kto sa dokonale oboznámi s intervalmi, nebude mať neskôr žiadne problémy so zložením akýchkoľvek akordov.
+        </p>
+        
+        <p><i>Interval</i> je výšková vzdialenosť <u>dvoch tónov</u>.</p>
+
+        <div class="definition-box">
+            <p>• Intervaly delíme na <b>základné</b> a <b>odvodené</b>.</p>
+            <p>• Základné intervaly sú <b>veľké</b> a <b>čisté</b>. Nachádzajú sa v durovej stupnici</p>
+            <p>• Zväčšením <u>veľkého alebo čistého</u> intervalu vznikne interval <b>zväčšený</b>.</p>
+            <p>• Zmenšením <u>veľkého</u> intervalu vznikne interval <b>malý</b>.</p>
+            <p>• Zmenšením <u>malého alebo čistého</u> intervalu vznikne interval <b>zmenšený</b>.</p>
+        </div>
+
+        <div class="media-container">
+            <img src="images/intervaly.svg" alt="Prehľad intervalov">
+        </div>
+
+        <h3>Základné názvoslovie v stupnici C dur</h3>
+        <div class="table-container" style="max-width: 400px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>A</th><th>H</th><th>C¹</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td><td>2.</td><td>3.</td><td>4.</td><td>5.</td><td>6.</td><td>7.</td><td>8.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="interval-list">
+            <div><b>Prima</b> je vzdialenosť toho istého tónu: c - c</div>
+            <div><b>Sekunda</b> je vzdialenosť 1. a 2. tónu: c - d</div>
+            <div><b>Tercia</b> je vzdialenosť 1. a 3. tónu: c - e</div>
+            <div><b>Kvarta</b> je vzdialenosť 1. a 4. tónu: c - f</div>
+            <div><b>Kvinta</b> je vzdialenosť 1. a 5. tónu: c - g</div>
+            <div><b>Sexta</b> je vzdialenosť 1. a 6. tónu: c - a</div>
+            <div><b>Septima</b> je vzdialenosť 1. a 7. tónu: c - h</div>
+            <div><b>Oktáva</b> je vzdialenosť 1. a 8. tónu: c - c¹</div>
+        </div>
+
+        <h3>Veľkosť intervalov v durovej a prirodzenej molovej stupnici</h3>
+        <div class="table-container" style="max-width: 500px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stupeň</th>
+                        <th>Názov intervalu</th>
+                        <th>Durová stupnica</th>
+                        <th>Molová stupnica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1.</td><td><b>Prima</b></td><td>čistá</td><td>čistá</td></tr>
+                    <tr><td>2.</td><td><b>Sekunda</b></td><td>veľká</td><td>veľká</td></tr>
+                    <tr><td>3.</td><td><b>Tercia</b></td><td>veľká</td><td>malá</td></tr>
+                    <tr><td>4.</td><td><b>Kvarta</b></td><td>čistá</td><td>čistá</td></tr>
+                    <tr><td>5.</td><td><b>Kvinta</b></td><td>čistá</td><td>čistá</td></tr>
+                    <tr><td>6.</td><td><b>Sexta</b></td><td>veľká</td><td>malá</td></tr>
+                    <tr><td>7.</td><td><b>Septima</b></td><td>veľká</td><td>malá</td></tr>
+                    <tr><td>8.</td><td><b>Oktáva</b></td><td>čistá</td><td>čistá</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Tabuľka na určovanie intervalov medzi tónmi</h3>
+        <p style="font-size: 0.9rem; color: #64748b;">
+            <i>Skratky v hlavičke: Č = Čistá, ZV = Zväčšená, ZM = Zmenšená, M = Malá, V = Veľká</i>
+        </p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Tón</th>
+                        <th colspan="2" style="color:var(--accent-color)">Prima</th>
+                        <th colspan="4" style="color:var(--accent-color)">Sekunda</th>
+                        <th colspan="4" style="color:var(--accent-color)">Tercia</th>
+                        <th colspan="3" style="color:var(--accent-color)">Kvarta</th>
+                        <th colspan="3" style="color:var(--accent-color)">Kvinta</th>
+                        <th colspan="4" style="color:var(--accent-color)">Sexta</th>
+                        <th colspan="4" style="color:var(--accent-color)">Septima</th>
+                        <th colspan="2" style="color:var(--accent-color)">Oktáva</th>
+                    </tr>
+                    <tr>
+                        <th>Č</th><th>ZV</th><th>ZM</th><th>M</th><th>V</th><th>ZV</th><th>ZM</th><th>M</th><th>V</th><th>ZV</th><th>ZM</th><th>Č</th><th>ZV</th><th>ZM</th><th>Č</th><th>ZV</th><th>ZM</th><th>M</th><th>V</th><th>ZV</th><th>ZM</th><th>M</th><th>V</th><th>ZV</th><th>ZM</th><th>Č</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>C</th><td>C</td><td>C#</td><td>Dbb</td><td>Db</td><td>D</td><td>D#</td><td>Ebb</td><td>Eb</td><td>E</td><td>E#</td><td>Fb</td><td>F</td><td>F#</td><td>Gb</td><td>G</td><td>G#</td><td>Abb</td><td>Ab</td><td>A</td><td>A#</td><td>Hbb</td><td>Hb</td><td>H</td><td>H#</td><td>Cb</td><td>C</td>
+                    </tr>
+                    <tr>
+                        <th>D</th><td>D</td><td>D#</td><td>Ebb</td><td>Eb</td><td>E</td><td>E#</td><td>Fb</td><td>F</td><td>F#</td><td>F##</td><td>Gb</td><td>G</td><td>G#</td><td>Ab</td><td>A</td><td>A#</td><td>Hbb</td><td>Hb</td><td>H</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>C##</td><td>Db</td><td>D</td>
+                    </tr>
+                    <tr>
+                        <th>E</th><td>E</td><td>E#</td><td>Fb</td><td>F</td><td>F#</td><td>F##</td><td>Gb</td><td>G</td><td>G#</td><td>G##</td><td>Ab</td><td>A</td><td>A#</td><td>Hb</td><td>H</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>C##</td><td>Db</td><td>D</td><td>D#</td><td>D##</td><td>Eb</td><td>E</td>
+                    </tr>
+                    <tr>
+                        <th>F</th><td>F</td><td>F#</td><td>Gbb</td><td>Gb</td><td>G</td><td>G#</td><td>Abb</td><td>Ab</td><td>A</td><td>A#</td><td>Hbb</td><td>Hb</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>Dbb</td><td>Db</td><td>D</td><td>D#</td><td>Ebb</td><td>Eb</td><td>E</td><td>E#</td><td>Fb</td><td>F</td>
+                    </tr>
+                    <tr>
+                        <th>G</th><td>G</td><td>G#</td><td>Abb</td><td>Ab</td><td>A</td><td>A#</td><td>Hbb</td><td>Hb</td><td>H</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>Db</td><td>D</td><td>D#</td><td>Ebb</td><td>Eb</td><td>E</td><td>E#</td><td>Fb</td><td>F</td><td>F#</td><td>F##</td><td>Gb</td><td>G</td>
+                    </tr>
+                    <tr>
+                        <th>A</th><td>A</td><td>A#</td><td>Hbb</td><td>Hb</td><td>H</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>C##</td><td>Db</td><td>D</td><td>D#</td><td>Eb</td><td>E</td><td>E#</td><td>Fb</td><td>F</td><td>F#</td><td>F##</td><td>Gb</td><td>G</td><td>G#</td><td>G##</td><td>Ab</td><td>A</td>
+                    </tr>
+                    <tr>
+                        <th>H</th><td>H</td><td>H#</td><td>Cb</td><td>C</td><td>C#</td><td>C##</td><td>Db</td><td>D</td><td>D#</td><td>D##</td><td>Eb</td><td>E</td><td>E#</td><td>F</td><td>F#</td><td>F##</td><td>Gb</td><td>G</td><td>G#</td><td>G##</td><td>Ab</td><td>A</td><td>A#</td><td>A##</td><td>Hb</td><td>H</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 0.9rem; background: #fffde7; padding: 15px; border-radius: 6px; border: 1px solid #fef08a;">
+            * <b>Poznámka k tónovým vzdialenostiam:</b> Niektoré intervaly majú rovnakú sluchovú vzdialenosť (napr. zväčšená sekunda <i>c - dis</i> a malá tercia <i>c - es</i>). Hoci sa hrajú na rovnakom pražci gitary, teoreticky ide o iný interval podľa toho, o aký stupeň voči základnému tónu sa jedná.
+        </p>
+    </section>
+
+    <section id="akordy">
+        <h2>Akordy</h2>
+        <p>
+            Akord je súzvuk najmenej troch tónov. Podľa počtu tónov ich delíme na trojzvuky, štvorzvuky, päťzvuky atď. Základným stavebným prvkom, z ktorých sú akordy zložené, sú <b>tercie</b> stacked nad sebou.
+        </p>
+
+        <h3>Kvintakordy (Trojzvuky)</h3>
+        <p>Vzdialenosť medzi najnižším a najvyšším tónom je čistá alebo pozmenená kvinta. Poznáme štyri základné druhy:</p>
+
+        <h3>1. Durový kvintakord (tvrdý)</h3>
+        <p>Zloženie: veľká tercia (v.3) + malá tercia (m.3). Krajné tóny tvoria čistú kvintu (č.5).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Durový" src="images/dur.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td class="active-note">G</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="4">veľká tercia (v.3) - 2 celé tóny</td><td></td><td colspan="3">malá tercia (m.3) - 1.5 tónu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Durové akordy značíme veľkými písmenami (<span class="badge-chord">C</span>, <span class="badge-chord">D</span>, <span class="badge-chord">G</span>...).</p>
+
+        <h3>2. Zväčšený kvintakord</h3>
+        <p>Vznikne z durového zvýšením kvinty. Obsahuje dve veľké tercie nad sebou. Krajné tóny tvoria zväčšenú kvintu (zv.5).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Zväčšený" src="images/zv5.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td>G</td><td class="active-note">gis</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="4">veľká tercia (v.3)</td><td></td><td colspan="4">veľká tercia (v.3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: plus alebo 5plus (<span class="badge-chord">C+</span>, <span class="badge-chord">C5+</span>).</p>
+
+        <h3>3. Molový kvintakord (malý)</h3>
+        <p>Zloženie: malá tercia (m.3) + veľká tercia (v.3). Krajné tóny tvoria čistú kvintu (č.5).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Molový" src="images/mol.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td>fis</td><td class="active-note">G</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="3">malá tercia (m.3)</td><td></td><td colspan="4">veľká tercia (v.3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: malé písmeno alebo prípona mi (<span class="badge-chord">c</span>, <span class="badge-chord">Cmi</span>, <span class="badge-chord">Ami</span>).</p>
+
+        <h3>4. Zmenšený kvintakord</h3>
+        <p>Vznikne z molového znížením kvinty. Obsahuje dve malé tercie. Krajné tóny tvoria zmenšenú kvintu (zm.5).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Zmenšený" src="images/zmen5.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td class="active-note">ges</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="3">malá tercia (m.3)</td><td></td><td colspan="3">malá tercia (m.3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cmi5-</span> alebo <span class="badge-chord">Cdim</span>.</p>
+
+        <h3>5. Durový zmenšený kvintakord</h3>
+        <p>Vznikne z durového znížením kvinty (v.3 + zm.3). Patrí medzi alterované akordy.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Durovo zmenšený" src="images/durzm.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td class="active-note">ges</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="4">veľká tercia (v.3)</td><td></td><td colspan="2">zmenšená tercia (zm.3)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C5-</span>.</p>
+
+        <h3>6. Striedavý (prieťažný) kvintakord s pridanou kvartou (Sus4)</h3>
+        <p>V tomto akorde sa tercia nehrá – je nahradená čistou kvartou (č.4 + v.2).</p>
+        <div class="media-container" style="max-height: 100px;"><img alt="S kvartou" src="images/4.svg"></div>
+        
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td>E</td><td class="active-note">F</td><td>fis</td><td class="active-note">G</td>
+                    </tr>
+                    <tr class="chord-info-row">
+                        <td colspan="5">čistá kvarta (č.4)</td><td></td><td colspan="2">veľká sekunda (v.2)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C4</span> alebo <span class="badge-chord">Csus4</span>.</p>
+
+        <h3>Hmaty bežne používaných akordov</h3>
+    <div class="gitarove-hmaty-kontajner">
+    <img src="images/c.svg" alt="C">
+    <img src="images/g.svg" alt="G">
+    <img src="images/d.svg" alt="D">
+    <img src="images/a.svg" alt="A">
+    <img src="images/e.svg" alt="E">
+    <img src="images/ami.svg" alt="Ami">
+    <img src="images/emi.svg" alt="Emi">
+    <img src="images/c7.svg" alt="C7">
+    <img src="images/g7.svg" alt="G7">
+    <img src="images/d7.svg" alt="D7">
+    <img src="images/a7.svg" alt="A7">
+    <img src="images/e7.svg" alt="E7">
+    <img src="images/d4.svg" alt="D4">
+    <img src="images/asus4.svg" alt="A4">
+    <img src="images/e4.svg" alt="E4">
+    
+</div>
+
+        <h2>Barré akordy</h2>
+        <p>Hmaty s ukazovákom cez celé pole, ktoré umožňujú transponovať akordy po celom hmatníku.</p>
+        
+        <p style="color: var(--primary-color); font-weight: bold;">Barré podľa struny E:</p>
+        <div class="media-container">
+            <img src="images/barre_e.svg" alt="Barré hmaty od struny E">
+            <img src="images/ebar.svg" alt="Barré hmaty od struny E">
+        </div>
+        <p><i>Vysvetlenie:</i> Ak si odmyslíme barové držanie prvým prstom, hmaty vychádzajú z otvorených akordov <b>E, Emi, E7</b>. Basový tón leží na strune E. Tón, ktorý držíme 1. prstom na strune <b>E</b> dosadíme za <b>X</b> do toho hmatu, ktorý držíme.</p>
+
+        <p style="color: var(--primary-color); font-weight: bold;">Barré podľa struny A:</p>
+        <div class="media-container">
+            <img src="images/barre_a.svg" alt="Barré hmaty od struny A">
+            <img src="images/abar.svg" alt="Barré hmaty od struny A">
+        </div>
+        <p><i>Vysvetlenie:</i> Hmaty sú odvodené od otvorených akordov <b>A, Ami, A7</b>. Basový tón leží na strune A. Tón, torý držíme 1. prstom na strune <b>A</b> dosadíme za <b>X</b> do toho hmatu, ktorý držíme.</p>
+
+        <h2>Septakordy (Štvorzvuky)</h2>
+        <p>Skladajú sa zo štyroch tónov. K trojzvuku sa pridáva ďalšia tercia, čím vzniká interval septimy medzi základným tónom a posledným pridaným tónom.</p>
+
+        <h3>Dominantný septakord (Durovo-malý)</h3>
+        <p>Postavený na 5. stupni durovej stupnice (napr. v A dur je to akord E7 = E - Gis - H - D).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Dominantný" src="images/domin.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Durový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td>a</td><td class="active-note">B</td></tr>
+                    <tr><td colspan="11" style="background:#fef9c3; font-size:0.85rem;">Malá septima (m.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C7</span>, <span class="badge-chord">G7</span>...</p>
+
+        <h3>Durovo veľký septakord (Maj7)</h3>
+        <p>Postavený na 1. stupni durovej stupnice (napr. v G dur je to Gmaj7 = G - H - D - Fis).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Durovo veľký" src="images/maj7.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Durový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td>a</td><td>ais</td><td class="active-note">H</td></tr>
+                    <tr><td colspan="12" style="background:#fef9c3; font-size:0.85rem;">Veľká septima (v.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C7maj</span>, <span class="badge-chord">Cmaj7</span>.</p>
+
+        <h3>Molovo malý septakord (m7)</h3>
+        <p>Zloženie: molový akord + malá septima (C - Es - G - B).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Molovo malý" src="images/mi7.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Molový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td>a</td><td class="active-note">B</td></tr>
+                    <tr><td colspan="11" style="background:#fef9c3; font-size:0.85rem;">Malá septima (m.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cmi7</span>, <span class="badge-chord">cm7</span>.</p>
+
+        <h3>Molovo veľký septakord (mMaj7)</h3>
+        <p>Zloženie: molový akord + veľká septima (C - Es - G - H).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Molovo veľký" src="images/mi7maj.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Molový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td>a</td><td>ais</td><td class="active-note">H</td></tr>
+                    <tr><td colspan="12" style="background:#fef9c3; font-size:0.85rem;">Veľká septima (v.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cmi7maj</span>.</p>
+
+        <h3>Zväčšeno veľký septakord (Maj7/5+)</h3>
+        <p>Zloženie: zväčšený akord + veľká septima (napr. G7maj5+ = G - H - Dis - Fis, alebo pre názornosť od C: C - E - Gis - H).</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="Zväčšeno veľký" src="images/7maj5+.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="9" style="background:#d1fae5; font-weight:bold;">Zväčšený základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td>G</td><td class="active-note">gis</td><td>a</td><td>ais</td><td class="active-note">H</td></tr>
+                    <tr><td colspan="12" style="background:#fef9c3; font-size:0.85rem;">Veľká septima (v.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C7maj5+</span> alebo <span class="badge-chord">Cmaj7(#5)</span>.</p>
+
+         <!-- Zmenšeno malý septakord -->
+        <h3>Zmenšeno malý septakord (Polozmenšený)</h3>
+        <p>Zloženie: zmenšený kvintakord + malá septima voči základnému tónu.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="zmenseno maly" src="images/mi75b.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="7" style="background:#d1fae5; font-weight:bold;">Zmenšený základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td class="active-note">ges</td><td>G</td><td>gis</td><td>a</td><td class="active-note">B</td></tr>
+                    <tr><td colspan="11" style="background:#fef9c3; font-size:0.85rem;">Malá septima (m.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cmi7/5-</span> alebo <span class="badge-chord">Cø</span>.</p>
+
+        <!-- Zmenšeno zmenšený septakord -->
+        <h3>Zmenšeno zmenšený septakord (Plnozmenšený)</h3>
+        <p>Zloženie: tri malé tercie nad sebou. Každý z tónov akordu môže fungovať ako základný tón.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="zmenseno zmenseny" src="images/dim.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="7" style="background:#d1fae5; font-weight:bold;">Zmenšený základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td class="active-note">ges</td><td>G</td><td>gis</td><td class="active-note">Heses</td></tr>
+                    <tr><td colspan="10" style="background:#fef9c3; font-size:0.85rem;">Zmenšená septima (zm.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cdim</span> alebo <span class="badge-chord">C°</span>.</p>
+
+        <!-- Durový akord s pridanou sextou -->
+        <h3>Durový akord s pridanou sextou (Štvorzvuk)</h3>
+        <p>Zloženie: durový akord + veľká sexta. Tento akord je v podstate obratom molovo malého septakordu (Ami7 = A C E G), líšia sa iba basovým tónom.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="durový so sextou" src="images/dur6.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Durový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td class="active-note">E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td class="active-note">A</td></tr>
+                    <tr><td colspan="10" style="background:#fef9c3; font-size:0.85rem;">Veľká sexta (v.6) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C6</span>.</p>
+
+        <!-- Molový akord s pridanou sextou -->
+        <h3>Molový akord s pridanou sextou (Štvorzvuk)</h3>
+        <p>Zloženie: molový akord + veľká sexta.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="molový so sextou" src="images/mol6.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Molový základ</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td class="active-note">es</td><td>E</td><td>F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td class="active-note">A</td></tr>
+                    <tr><td colspan="10" style="background:#fef9c3; font-size:0.85rem;">Veľká sexta (v.6) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">Cmi6</span> alebo <span class="badge-chord">cm6</span>.</p>
+
+        <!-- Dominantný septakord s prieťažnou kvartou -->
+        <h3>Dominantný septakord s prieťažnou kvartou (Sus4/7)</h3>
+        <p>Zloženie: akord s prieťažnou kvartou (bez tercie) + malá septima.</p>
+        <div class="media-container" style="max-height: 180px;"><img alt="dominantny s kvartou" src="images/sus74.svg"></div>
+        <div class="table-container chord-grid-table">
+            <table>
+                <tbody>
+                    <tr><td colspan="8" style="background:#d1fae5; font-weight:bold;">Základ s prieťažnou kvartou</td></tr>
+                    <tr><td class="active-note">C</td><td>cis</td><td>D</td><td>dis</td><td>E</td><td class="active-note">F</td><td>fis</td><td class="active-note">G</td><td>gis</td><td>a</td><td class="active-note">B</td></tr>
+                    <tr><td colspan="11" style="background:#fef9c3; font-size:0.85rem;">Malá septima (m.7) voči C</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p>Značenie: <span class="badge-chord">C7/4</span> alebo <span class="badge-chord">C7sus4</span>.</p>
+    <h3>Prehľad a odvodenie bežne používaných akordov (od tónu C)</h3>
+     <div class="media-container" style="max-width: 980px;"><img alt="rodokmen" src="images/rodokmen.svg"></div>
+    </section>
+
+</div>
+
+</body>
+</html>

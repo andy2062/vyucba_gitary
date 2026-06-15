@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gitara PRO - Horizontálna</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  text-align: center;
+  padding: 20px;
+}
+
+#fretboard-container {
+  max-width: 100%;
+  overflow-x: auto; /* Pre menšie obrazovky pridá posuvník */
+  margin: 20px auto;
+}
+
+svg {
+  background: #f8fafc;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.string {
+  cursor: pointer;
+}
+.string:hover {
+  opacity: 0.8;
+}
+
+#info {
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.note-active {
+  fill: orange !important;
+  stroke: white;
+  stroke-width: 2;
+}
+
+.note-text {
+  pointer-events: none; /* Aby text neprekážal klikaniu na bodku */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>🎸 Tóny na hmatníku (Vodorovne)</h2>
+<p>Klikni na strunu alebo pražec. Najhrubšia struna E je dole.</p>
+<div id="info">Klikni na gitaru</div>
+
+<div id="fretboard-container">
+  <svg id="fretboard" width="840" height="240" viewBox="0 0 840 240" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="wood" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#3b2a1d"/>
+        <stop offset="50%" stop-color="#5a3e2b"/>
+        <stop offset="100%" stop-color="#3b2a1d"/>
+      </linearGradient>
+      <linearGradient id="shine" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.15)"/>
+        <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+      </linearGradient>
+    </defs>
+
+    <rect x="20" y="20" width="800" height="180" rx="12" fill="url(#wood)" />
+    <rect x="20" y="20" width="800" height="50" fill="url(#shine)" />
+
+    <g fill="#ddd" opacity="0.6">
+      <circle cx="200" cy="110" r="6"/> 
+      <circle cx="320" cy="110" r="6"/> 
+      <circle cx="440" cy="110" r="6"/> 
+      <circle cx="620" cy="110" r="6"/> 
+      <circle cx="740" cy="65" r="6"/>
+      <circle cx="740" cy="155" r="6"/>
+    </g>
+
+    <g id="frets"></g>
+    <g id="strings"></g>
+    <g id="notes"></g>
+  </svg>
+</div>
+
+<script>
+// 🎸 LADENIE: index 0 je najtenšia hore, index 5 je najhrubšia dole
+const tuning = ["E", "H", "G", "D", "A", "E"];
+
+// 🎵 Chromatická stupnica
+const notes = ["C", "C#/Db", "D", "D#/Eb", "E", "F", "F#/Gb", "G", "G#/Ab", "A", "A#/Hb", "H"];
+
+function drawGuitar() {
+  const frets = document.getElementById("frets");
+  const strings = document.getElementById("strings");
+  const notesLayer = document.getElementById("notes");
+
+  frets.innerHTML = "";
+  strings.innerHTML = "";
+  notesLayer.innerHTML = "";
+
+  // Rozmery pre horizontálne SVG
+  let startX = 50;          // Nultý pražec (začiatok zľava)
+  let fretSpacing = 60;     // Vzdialenosť medzi pražcami (šírka poľa)
+  let startY = 35;          // Prvá struna zhora (najtenšia E)
+  let stringSpacing = 30;   // Medzera medzi strunami
+  
+  // Hrúbky strún: od najtenšej (index 0 - hore) po najhrubšiu (index 5 - dole)
+  let thickness = [1.2, 1.8, 2.4, 3.0, 3.6, 4.5]; 
+
+  // 1. PRAŽCE (Vertikálne čiary)
+  for (let i = 0; i <= 12; i++) {
+    let x = startX + i * fretSpacing;
+    let line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line.setAttribute("x1", x);
+    line.setAttribute("y1", 20);
+    line.setAttribute("x2", x);
+    line.setAttribute("y2", 200);
+    
+    if (i === 0) {
+      line.setAttribute("stroke", "#ddd"); // Nultý pražec (Nut)
+      line.setAttribute("stroke-width", 6);
+    } else {
+      line.setAttribute("stroke", "#bbb"); // Klasický pražec
+      line.setAttribute("stroke-width", 2.5);
+    }
+    frets.appendChild(line);
+  }
+
+  // 2. STRUNY + TÓNY
+  for (let s = 0; s < 6; s++) {
+    let y = startY + s * stringSpacing;
+
+    // Názov struny vľavo pred nultým pražcom
+    let label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    label.setAttribute("x", startX - 25);
+    label.setAttribute("y", y + 5);
+    label.setAttribute("text-anchor", "middle");
+    label.setAttribute("fill", "#333");
+    label.setAttribute("font-size", "14");
+    label.setAttribute("font-weight", "bold");
+    // Ak je to index 5, je to hrubé E, ak index 0, tenké E. Pre lepšie rozlíšenie:
+    label.textContent = (s === 0) ? "e" : (s === 5) ? "E" : tuning[s];
+    strings.appendChild(label);
+
+    // Čierny tieň pod strunou pre 3D efekt
+    let shadowLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    shadowLine.setAttribute("x1", startX);
+    shadowLine.setAttribute("y1", y + 1);
+    shadowLine.setAttribute("x2", startX + (12 * fretSpacing));
+    shadowLine.setAttribute("y2", y + 1);
+    shadowLine.setAttribute("stroke", "black");
+    shadowLine.setAttribute("stroke-width", thickness[s]);
+    shadowLine.setAttribute("opacity", "0.4");
+    strings.appendChild(shadowLine);
+
+    // Svetlá kovová struna
+    let sLine = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    sLine.setAttribute("x1", startX);
+    sLine.setAttribute("y1", y);
+    sLine.setAttribute("x2", startX + (12 * fretSpacing));
+    sLine.setAttribute("y2", y);
+    sLine.setAttribute("stroke", "#e2e8f0");
+    sLine.setAttribute("stroke-width", thickness[s]);
+    sLine.style.cursor = "pointer";
+    sLine.onclick = () => showString(s);
+    strings.appendChild(sLine);
+
+    // Interaktívne polia (0. až 12. pražec)
+    for (let f = 0; f <= 12; f++) {
+      let noteX;
+      if (f === 0) {
+        noteX = startX - 15; // Kliknutie na prázdnu strunu vľavo
+      } else {
+        noteX = startX + (f - 1) * fretSpacing + (fretSpacing / 2); // Stred pražca
+      }
+
+      // Vytvorenie interaktívneho kontajneru pre bodku a voliteľný text
+      let g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+
+      let circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+      circle.setAttribute("id", `note-${s}-${f}`);
+      circle.setAttribute("cx", noteX);
+      circle.setAttribute("cy", y);
+      circle.setAttribute("r", 12);
+      circle.setAttribute("fill", "transparent");
+      circle.style.cursor = "pointer";
+      circle.onclick = () => showNote(s, f);
+
+      // Skrytý text vo vnútri bodky, ktorý sa ukáže po kliknutí
+      let text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      text.setAttribute("id", `text-${s}-${f}`);
+      text.setAttribute("x", noteX);
+      text.setAttribute("y", y + 4);
+      text.setAttribute("text-anchor", "middle");
+      text.setAttribute("fill", "white");
+      text.setAttribute("font-size", "11");
+      text.setAttribute("class", "note-text");
+      text.setAttribute("opacity", "0");
+      text.textContent = getNote(s, f).split('/')[0]; // Zobrazí napr. iba C# namiesto C#/Db kvôli miestu
+
+      g.appendChild(circle);
+      g.appendChild(text);
+      notesLayer.appendChild(g);
+    }
+  }
+}
+
+// 🎵 Výpočet tónu z upraveného poľa tuning
+function getNote(stringIndex, fret) {
+  let openNote = tuning[stringIndex];
+  let startIndex = notes.indexOf(openNote);
+  if (startIndex === -1) return "??";
+
+  let newIndex = (startIndex + fret) % 12;
+  return notes[newIndex];
+}
+
+function showString(i) {
+  let p = (i === 0) ? "tenká" : (i === 5) ? "hrubá" : "";
+  document.getElementById("info").innerHTML = `Struna: <b>${tuning[i]}</b> (${p} prázdna)`;
+}
+
+function showNote(s, f) {
+  let note = getNote(s, f);
+  let fretText = f === 0 ? "Prázdna struna" : f + ". pražec";
+
+  // 1. Reset predchádzajúcich aktívnych bodiek a textov
+  const activeNotes = document.querySelectorAll('.note-active');
+  activeNotes.forEach(n => {
+    n.classList.remove('note-active');
+    n.setAttribute("fill", "transparent");
+  });
+
+  const activeTexts = document.querySelectorAll('.note-text');
+  activeTexts.forEach(t => {
+    t.setAttribute("opacity", "0");
+  });
+
+  // 2. Aktivácia kliknutej bodky a zobrazenie textu priamo v nej
+  const clickedCircle = document.getElementById(`note-${s}-${f}`);
+  if (clickedCircle) {
+    clickedCircle.classList.add('note-active');
+  }
+
+  const clickedText = document.getElementById(`text-${s}-${f}`);
+  if (clickedText) {
+    clickedText.setAttribute("opacity", "1");
+  }
+
+  // Označenie hrúbky struny pre info výpis
+  let stringName = (s === 0) ? "e (tenká)" : (s === 5) ? "E (hrubá)" : tuning[s];
+
+  document.getElementById("info").innerHTML = `
+    <b>Struna:</b> ${stringName} - 
+    <b>Pozícia:</b> ${fretText}<br>
+    <span style="font-size: 1.3em; color: orange;"><b>Tón: ${note}</b></span>
+  `;
+}
+
+drawGuitar();
+</script>
+
+</body>
+</html>
