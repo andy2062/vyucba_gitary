@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Učebnica Gitary – Lekcia 1</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --accent: #e74c3c;
+            --accent-blue: #3498db;
+            --bg: #f8f9fa;
+            --card-bg: #ffffff;
+            --text: #333333;
+            --border: #e2e8f0;
+            --accent-light: #ecfdf5;
+            --bg-card: #ffffff;
+             --primary-light: #eef2ff;
+            --text-dark: #1f2937;
+            --text-muted: #4b5563;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+/* odtial nove style harmonizacia */
+         .music-lesson-container {
+            padding: 10px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .lesson-header {
+            background: linear-gradient(135deg, var(--primary), #6366f1);
+            color: white;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .lesson-header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+        }
+
+        .lesson-header p {
+            margin: 0.5rem 0 0 0;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .lesson-content {
+            padding: 2rem;
+        }
+
+         .definition-box {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+
+        .definition-box p {
+            margin: 0;
+            color: #374151;
+            font-size: 1.05rem;
+        }
+
+        /* Štýlovanie tabuľky pre harmonizáciu */
+        .table-container {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .harmony-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .harmony-table td {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+        }
+
+        .harmony-table tr:nth-child(1) td { color: #ef4444; background-color: #fef2f2; } /* 5. tón */
+        .harmony-table tr:nth-child(2) td { color: #f59e0b; background-color: #fffbeb; } /* 3. tón */
+        .harmony-table tr:nth-child(3) td { color: #3b82f6; background-color: #eff6ff; } /* 1. tón */
+
+ .chord-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .chord-card {
+            background: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .chord-num {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .chord-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .chord-tones {
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            margin-top: 0.25rem;
+            letter-spacing: 0.05em;
+        }
+
+         /* Príklady a Kadencia */
+        .info-block {
+            background-color: #f9fafb;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .cadence-box {
+            background-color: var(--accent-light);
+            border: 1px solid #a7f3d0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .cadence-box h3 {
+            margin: 0 0 0.5rem 0;
+            color: #065f46;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+         .badge {
+            background-color: #e2e8f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .badge-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        /* potial nove style - harmonizacia */
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Moderné sekcie (Karty) */
+        .card {
+            background: var(--card-bg);
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+            border: 1px solid var(--border);
+        }
+
+        h2 {
+            color: var(--text-dark);
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        /* Mnemotechnická pomôcka */
+        .mnemonic {
+            background: #fff5f5;
+            border-left: 5px solid var(--accent);
+            padding: 15px 20px;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            margin: 20px 0;
+        }
+
+        .mnemonic span {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+
+        /* Moderné Tabuľky / Grid */
+        .grid-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .grid-table th, .grid-table td {
+            padding: 12px 15px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+
+        .grid-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .grid-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        /* Flex rozloženie pre struny */
+        .strings-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 10px 0;
+        }
+
+        .string-group {
+            flex: 1;
+            min-width: 250px;
+            background: #f1f5f9;
+            padding: 5px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .string-badge {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        /* Upozornenia a Úlohy */
+        .task-box {
+            background: #edf2f7;
+            border: 1px dashed var(--primary);
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* Navigačné tlačidlá */
+        .menu-nav {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .btn-menu {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+            flex: 1;
+            text-align: center;
+        }
+
+        .btn-menu:hover {
+            background: #1a252f;
+        }
+
+        /* Piesne a Akordy */
+        .song-box {
+            background: #fff;
+            border: 1px solid var(--border);
+            padding: 25px;
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            background-color: #fafafa;
+            overflow-x: auto;
+            font-size: 1rem;
+        }
+
+        .song-title {
+            font-family: sans-serif;
+            font-size: 1.4rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .chords-line {
+            color: var(--accent);
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Responzívne obrázky */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .text-important {
+            color: var(--accent);
+            font-weight: bold;
+        }
+        .obrazkovy-blok {
+    display: flex;
+    justify-content: center; /* nebo použijte center, flex-start */
+    align-items: center;
+    gap: 15px; /* Mezera mezi obrázky */
+    flex-wrap: wrap; /* Zajišťuje zalamování obrázků na další řádek na mobilech */
+}
+
+.obrazkovy-blok img {
+    max-width: 100%; /* Obrázky nepřesáhnou šířku bloku */
+    height: auto; /* Nastavte pevnou šířku pro obrázky */
+    flex: 0; /* Obrázky se roztáhnou, aby vyplnily prostor */
+}
+
+#akord {
+  width: 200px;
+  display: flex;
+ position: fixed;
+ right: 10px;
+  padding: 10px;
+  top: 20px;
+  z-index: 1000;
+}
+#chordTitle{
+   font-size: 18px;
+   font-weight: bold;
+}
+/* CHORD TEXT */
+.chord {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9em;
+  position: relative;
+}
+
+#songTabs {
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  white-space: pre;
+  color: #222;
+}
+
+#songTabs pre {
+  background: #000;
+  color: #0f0;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+}
+.tabSvg {
+ background: transparent;
+ color: #1e293b;
+}
+#tab {
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+<div id="akord">
+    <svg viewBox="0 0 200 240">
+      <text id="chordTitle" x="100" y="20" text-anchor="middle"></text>
+      <g id="strings"></g>
+      <g id="frets"></g>
+      <g id="dots"></g>
+    </svg>
+    <div id="chordNav"></div>
+  </div>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Popis gitary</h2>
+        <p>Gitara sa skladá z tela (korpusu), krku a hlavice.</p>
+        
+        <p><strong>Telo</strong> vytvára vrchná ozvučná doska, ktorá je vyrobená zo smrekového, jedľového dreva (alebo cédru) a má podstatný vplyv na zvuk nástroja. Skladá sa z dvoch sesterských polovíc, ktoré sú zlepené. Na ozvučnej doske je vyrezaný ozvučný otvor, ktorého veľkosť, tvar a umiestnenie má tiež vplyv na zvuk nástroja. Okolo zvukového otvoru je ozdobná výstuha zvaná <strong>intarzia</strong>.</p>
+        
+        <p>Ozvučná doska je z vnútornej strany spevnená tzv. rebrami s počtom 5 - 7. Na ozvučnej doske je prilepená <strong>kobylka</strong>, ktorá prenáša chvenie strún na ozvučnú doske. Je vyrobená z tvrdého dreva a má vyrezanú drážku, do ktorej je vložený spodný pražec z umelého materiálu. Spodná ozvučná doska je vyrobená z javorového dreva alebo z exotického palisandra alebo mahagónu. Je zlepená z dvoch sesterských polovíc a spevnená priečnymi rebrami. Vrchná a spodná doska sú spojené po bokoch lubmi, ktoré sú vyrobené z toho istého dreva ako spodná doska.</p>
+        
+        <p><strong>Krk</strong> je vyrobený z tvrdého dreva. Skladá sa z hmatníka, na ktorom je zapustených 19 pražcov, ktoré rozdeľujú dĺžku struny na určitú vzdialenosť a sú rozmiestené do temperovaného ladenia po poltónoch. Na konci hmatníka sa nachádza malý pražec, cez ktorý sa vedú struny. Je vyrobený z umelej hmoty.</p>
+        
+        <p>Na <strong>hlavici</strong> je upevnená ladiaca mechanika na šesť strún.</p>
+
+        <h3>Struny na gitare</h3>
+        <p>Gitara má šesť strún: <strong>1E, 2H, 3G, 4D, 5A, 6E</strong>.</p>
+
+        <div class="mnemonic">
+            <strong>Mnemotechnická pomôcka:</strong><br>
+            <span>E</span>mil <span>H</span>odil <span>G</span>ranát <span>D</span>o <span>A</span>tómovej <span>E</span>lektrárne
+        </div>
+
+        <div class="strings-container">
+            <div class="string-group">
+                <h4>Tenké struny (melodické)</h4>
+                <p>Znejú vysoko:</p>
+                <div><span class="string-badge">E</span> (1. struna)</div>
+                <div><span class="string-badge">H</span> (2. struna)</div>
+                <div><span class="string-badge">G</span> (3. struna)</div>
+            </div>
+            <div class="string-group" style="border-left-color: var(--accent);">
+                <h4>Hrubé struny (basové)</h4>
+                <p>Znejú hlboko:</p>
+                <div><span class="string-badge">D</span> (4. struna)</div>
+                <div><span class="string-badge">A</span> (5. struna)</div>
+                <div><span class="string-badge">E</span> (6. struna)</div>
+            </div>
+        </div>
+
+        <div class="task-box">
+            Úloha: Naučiť sa mená strún naspamäť!
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Značenie prstov na rukách</h2>
+        <table class="grid-table">
+            <thead>
+                <tr>
+                    <th>Prst</th>
+                    <th>Ľavá ruka</th>
+                    <th>Pravá ruka</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Palec</strong></td>
+                    <td>-</td>
+                    <td><strong>P</strong> (pulgar)</td>
+                </tr>
+                <tr>
+                    <td><strong>Ukazovák</strong></td>
+                    <td>1</td>
+                    <td><strong>i</strong> (indice)</td>
+                </tr>
+                <tr>
+                    <td><strong>Prostredník</strong></td>
+                    <td>2</td>
+                    <td><strong>m</strong> (medio)</td>
+                </tr>
+                <tr>
+                    <td><strong>Prsteník</strong></td>
+                    <td>3</td>
+                    <td><strong>a</strong> (anular)</td>
+                </tr>
+                <tr>
+                    <td><strong>Malíček</strong></td>
+                    <td>4</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="menu-nav">
+            <a class="btn-menu" href="prava.html" target="dolny">Cvičenia pre pravú ruku</a>
+            <a class="btn-menu" href="lava.html" target="dolny">Cvičenia pre ľavú ruku</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Notácia a tóny na gitare</h2>
+        <p>V notácii sa gitarové tóny značia o <strong>oktávu vyššie</strong> ako v skutočnosti znejú.</p>
+        <p>Tóny na gitare v notácii sú rozdelené po pražcoch takto:</p>
+        
+        <img alt="Tóny na hmatníku gitary" src="images/hmatnik.svg">
+
+        <h2>Ladenie gitary</h2>
+        <p>Ako vidno z nákresu, niektoré tóny sa opakujú a sú výškovo rovnaké. Z toho vyplýva aj ladenie gitary. Naladíme si strunu E2 podľa ladičky, klavíra alebo nástroja, ktorý má pevné ladenie (akordeón...).</p>
+        
+        <ul>
+            <li><strong>Strunu H</strong> ladíme podľa struny E tak, že strunu H stlačíme v <strong>V. poli</strong> a tón by mal znieť unisono (rovnako vysoko) so strunou E.</li>
+            <li><strong>Strunu G</strong> ladíme podľa struny H tak, že strunu G stlačíme v <strong>IV. poli</strong> a porovnáme so strunou H.</li>
+            <li><strong>Strunu D</strong> ladíme podľa struny G, ak strunu D stlačíme v <strong>V. poli</strong>.</li>
+            <li><strong>Strunu A</strong> podľa struny D a <strong>strunu E</strong> podľa struny A, ktoré tiež stláčame v <strong>V. poli</strong>.</li>
+        </ul>
+
+        <p>Pre začiatočníkov a menej skúsených je najľahšie ladenie podľa <strong>elektronickej ladičky</strong>, kde ručička ukazuje, či je struna správne naladená.</p>
+    </div>
+
+    <div class="card">
+        <h2>Značenie rytmu</h2>
+        <p>Hlboké tóny (hrubé struny) v notovej osnove sa píšu dole, vysoké tóny (tenké struny) sa píšu hore.</p>
+        <p>Šípka hore naznačuje, že hráme od hlbokých tónov k vysokým (od hrubých strún k tenkým). Šípka dole naznačuje opačný smer hry.</p>
+        
+        <img alt="Smer hry - šípky" src="images/smerhry.png">
+
+        <h2>Prvé akordy (C dur, G7)</h2>
+        <p><strong>Akord C dur</strong> budeme držať tak, že na strunu H v prvom poli položíme prvý prst a na strunu D v druhom poli položíme druhý prst.</p>
+        <p><strong>Akord G7</strong> budeme držať tak, že na tenkú E strunu položíme prvý prst do prvého poľa. Tieto akordy nie sú úplné, a preto musíme dbať na to, aby nám nezneli basové struny A, E. Zabránime tomu tým, že na strunu A si oprieme palec.</p>
+        
+        <p class="text-important">Prsty dávame tesne pred pražec!</p>
+        <p>Akordy budeme zakresľovať do diagramu, v ktorom zvislé čiary znamenajú struny a vodorovné čiary sú pražce. Čísla v modrých krúžkoch sú prsty, ktorými máme stlačiť struny.</p>
+        
+        <div class="obrazkovy-blok"> 
+<img alt="Diagramy prvých akordov" src="images/hmat.svg" style="width:150px;">            
+        <img alt="Diagramy prvých akordov" src="images/c1.svg" style="width:150px;">
+        <img alt="Diagramy prvých akordov" src="images/g7_1.svg" style="width:150px;">
+        </div>
+        <h3>Postup pri nacvičovaní:</h3>
+        <p>Akordy si precvičujeme tak, že si akord chytíme, mierne ho povolíme a znova pritlačme. Celý akord musíme chytiť naraz – neukladáme prsty postupne. Keď si nacvičíme jednotlivé akordy, začneme ich medzi sebou striedať (C dur &lt;-&gt; G7).</p>
+    </div>
+
+    <div class="card">
+        <a name="valcik"></a>
+        <h2>Rytmus: Valčík (3/4 takt)</h2>
+        <p>Je to trojdobý takt (počítame pravidelne: prvá - druhá - tretia). Doby musia byť rovnako dlhé.</p>
+        <img alt="Rytmus Valčík" src="data/rytmy/valcik.svg">
+        <center> <p>Ukážka rytmu valčík na akorde C</p>
+        <audio controls="">
+    <source src="data/rytmy/valcik.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+        <p><span class="text-important">||: :||</span> Znamienko repetícia označuje časť skladby, ktorú máme opakovať.</p>
+
+        <div class="song-box">
+<span class="song-title">Dedinka v údolí</span>
+Rytmus: <a href="#valcik">Valčík (3/4)</a>
+
+<span class="chords-line">3/4/: C       / C           / C           / C           / G7        / G7        / C        / C          : /</span>
+1./: Dedinka v údolí, srdce ma zabolí, keď na teba spomínam : //
+
+<span class="chords-line">/ :  G7        / G7         / C           / C           / G7        / G7        / C        / G7         : /</span>
+/: Spomínam na teba stále, na tie prekrásne chvíle,
+
+<span class="chords-line">     C        / C          / C           / C           / G7        / G7        / C        / C          : /</span>
+ktoré sme strávili, lásku si sľúbili, dievčatko roztomilé :/
+
+2. /: Anička, dušička, zavri si očička, nech sa ti o mne sníva : /
+   /: Prečo je osud tak krutý, prečo som na svete sám,
+   osudom stíhaný láskou oklamaný verím, že život je klam :/
+        </div>
+
+        <br>
+        <div class="song-box">
+<span class="song-title">Trenčianske hodiny</span>
+Rytmus: <a href="#valcik">Pomalý valčík (Wals) (3/4)</a>
+<span class="chords-line">3/4 / : C / C / G7 / C : // : G7 / C / G7 / C / G7 / C : /</span>
+
+1. / : Trenčianske hodiny smutne bijú : /
+   / : Už ma s moju milú, už ma s moju milú rozlučujú : /
+
+2. / : Rozlučujú, ale nebojím sa : /
+   / : Príde tá hodina, príde tá hodina, ožením sa : /
+        </div>
+        <br>
+            <div class="song-box">
+<span class="song-title">V hlbokej doline</span>
+Rytmus: <a href="#valcik">Valčík (3/4)</a>
+<span class="chords-line">3/4 C // : C / C / C / C / G7 / C / C : //</span>
+<span class="chords-line">/ : C / C / G7 / G7 / G7 / G7 / G7 / C / C / C / C / C / C / G7 / C / C : /</span>
+
+1. / : V hlbokej doline srnka vodu pije: /
+    /: horár na ňu mieri, horár na ňu mieri,
+    horár na ňu mieri, že si ju zastrelí:/
+
+2. / : Nestrieľaj ma horár není som ja srnka: /
+   /: ale som ja ale, ale som ja ale,
+      ale som ja ale, zakliata panenka:/
+
+3. /: Zakliala ma mamka v nedeľu za rána :/
+   /: že som nechcela ísť, že som nechcela ísť,
+      že som nechcela ísť, za pána horára :/
+        </div>
+        <br>
+        <div class="song-box">
+<span class="song-title">Červený šátečku</span>
+Rytmus: <a href="#valcik">Valčík (3/4)</a>
+<span class="chords-line">3/4: /: C/G7/C/C/G7/G7/C/C ://</span>
+<span class="chords-line"></span>/ /: G7/C/G7/C/G7/C/G7/C ://</span>
+
+1. Červený šátečku kolem se toč, kolem se toč, kolem se toč
+    Můj milej se hněvá já nevím proč, já nevím proč, já nevím proč. Trálalala …
+
+2. Jen se mně má milá pěkne chovej, pěkne chovej, pěkne chovej,
+    Koupím ti šáteček zase novej, zase novej, zase novej. Trálalala …
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Ďalšie akordy a Kadencia</h2>
+        <p>Prechod od akordu <strong>C dur</strong> k akordu <strong>D7</strong> cvičíme tak, že zadržíme prvý prst na druhej strune a druhý a tretí prst preložíme na tretiu a prvú strunu.</p>
+        <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/g.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/c.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/d7.svg" style="width:150px;">
+        </div>
+        <div class="song-box">
+<span class="song-title">A od Prešova</span>
+Rytmus: <a href="#valcik">Valčík (3/4)</a>
+<span class="chords-line">3/4: /3/4 : / : G / G / G / G / G / G / G / D7 / D7 : //</span>
+<span class="chords-line"></span>// : C / C / G / G / G/ D7 / D7 / G / G : //</span>
+
+1. / : A od Prešova, a od Prešova, a od Prešova v tym poľu : /
+     / : neše še Janík serdečko mojo, neše še Janík na koňu : /
+
+2. / : A za ním idze, a za ním idze, a za ním idze ocec mac : /
+    / : vrac še Janíčku serdečko mojo, vrac še Janíčku, vrac še vrac : /
+
+3. / : A ja še veru, a ja še veru, a ja še veru nevracim : /
+    / : radšej svoj život, serdečko mojo, radšej svoj život utracim : /
+        </div>
+        <br>
+        <h3>Čo je to stupnica, tónina a kadencia?</h3>
+        <ul>
+            <li><strong>Stupnica:</strong> Rad tónov usporiadaných podľa jasných hudobných pravidiel.</li>
+            <li><strong>Tónina:</strong> Súhrn tónov rozlične rozostavaných v skladbe. Hovoríme, že skladba je v určitej tónine (napr. C dur).</li>
+            <li><strong>Kadencia:</strong> Sled troch akordov, ktoré najlepšie charakterizujú tóninu. Sú to <strong>Tónika (I. stupeň)</strong>, <strong>Subdominanta (IV. stupeň)</strong> a <strong>Dominanta (V. stupeň)</strong>.</li>
+        </ul>
+
+        <table class="grid-table">
+            <thead>
+                <tr>
+                    <th>Tónika (I.)</th>
+                    <th>Subdominanta (IV.)</th>
+                    <th>Dominanta (V.7)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>C</td>
+                    <td>(F)</td>
+                    <td>G7</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>C</td>
+                    <td>D7</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>G</td>
+                    <td>A7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+   <div class="music-lesson-container">
+    <header class="lesson-header">
+        <h1>Harmonizácia stupnice</h1>
+        <p>Základy tvorby akordov a sprievodu</p>
+    </header>
+
+    <div class="lesson-content">
+        <div class="definition-box">
+            <p><strong>Akord</strong> je súzvuk najmenej troch tónov. <strong>Kvintakord</strong> sa skladá z 1., 3. a 5. tónu stupnice.</p>
+        </div>
+
+        <h2>Tvorba akordov nad tónmi stupnice</h2>
+        <p>Ak si nad každý tón stupnice postavíme 1., 3. a 5. tón, vzniknú nám akordy tejto tóniny (tzv. harmonizácia):</p>
+        
+        <div class="table-container">
+            <table class="harmony-table">
+                <tbody>
+                    <tr><td>G</td><td>A</td><td>H</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td></tr>
+                    <tr><td>E</td><td>F</td><td>G</td><td>A</td><td>H</td><td>C</td><td>D</td><td>E</td></tr>
+                    <tr><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td><td>H</td><td>C</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Vzniknuté akordy v tónine C dur</h2>
+        <div class="chord-grid">
+            <div class="chord-card">
+                <span class="chord-num">I. stupeň</span>
+                <div class="chord-name">C</div>
+                <div class="chord-tones">C – E – G</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">ii. stupeň</span>
+                <div class="chord-name">Dmi</div>
+                <div class="chord-tones">D – F – A</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">iii. stupeň</span>
+                <div class="chord-name">Emi</div>
+                <div class="chord-tones">E – G – H</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">IV. stupeň</span>
+                <div class="chord-name">F</div>
+                <div class="chord-tones">F – A – C</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">V. stupeň</span>
+                <div class="chord-name">G</div>
+                <div class="chord-tones">G – H – D</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">vi. stupeň</span>
+                <div class="chord-name">Ami</div>
+                <div class="chord-tones">A – C – E</div>
+            </div>
+            <div class="chord-card">
+                <span class="chord-num">vii. stupeň</span>
+                <div class="chord-name">Hmi5-</div>
+                <div class="chord-tones">H – D – F</div>
+            </div>
+        </div>
+
+        <h2>Ako harmonizovať jednotlivé tóny?</h2>
+        <p>Každý tón stupnice sa dá harmonizovať akordom, ktorý daný tón obsahuje. Pozri sa na príklady:</p>
+        
+        <div class="info-block">
+            <ul>
+                <li>Tón <span class="badge">C</span> môžeme harmonizovať akordmi: <strong>C, F, Ami</strong> <em>(lebo každý z nich obsahuje tón C)</em>.</li>
+                <li>Tón <span class="badge">D</span> môžeme harmonizovať akordmi: <strong>Dmi, G, Hmi5-</strong>.</li>
+            </ul>
+        </div>
+
+        <div class="cadence-box">
+            <h3>💡 Hlavné pravidlo (Kadencia)</h3>
+            <p>Akordy kadencie <strong>I. (C)</strong>, <strong>IV. (F)</strong> a <strong>V. (G)</strong> obsahujú dohromady všetky tóny stupnice. Preto sú úplne <strong>postačujúce na základnú harmonizáciu</strong> akejkoľvek piesne v tejto tónine.</p>
+        </div>
+    </div>
+</div>
+
+
+    <div class="card">
+        <a name="polka"></a>
+        <h2>Rytmus: Polka (2/4 takt)</h2>
+        <p>Dvojdobý takt, v jednom takte hráme štyri osminové noty. Počítame: "pr-vá-dru-há".</p>
+        <img alt="Rytmus Polka" src="data/rytmy/polka.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/polka.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+        <br>
+        <div class="song-box">
+<span class="song-title">Sedemdesiat sukieň mala</span>
+Rytmus: <a href="#polka">Polka (2/4)</a>
+
+<span class="chords-line">2/4 : / : G / G / D7 / G : /</span>
+<span class="chords-line">/ G / G / C / G / G / G / D7 / G : /</span>
+
+1. Sedemdesiat sukieň mala a predsa sa nevydala
+   / : A ja nemám iba, iba jednu pýtajú ma až za Viedňu : /
+
+   2. Sedemtisíc zlatých mala a predsa sa nevydala
+/ : a ja nemám ani prsteň zlatý dostal sa mi bajúzatý : /
+
+
+        </div>
+<br>
+
+         <div class="song-box">
+<span class="song-title">Tam pod Tatrami</span>
+Rytmus: <a href="#polka">Polka (2/4)</a>
+
+<span class="chords-line">2/4 : / : G / G / G / G / G / G / G / D7 / D7 : /</span>
+<span class="chords-line">/ : C / C / C / G / G / D7 / D7 / G / G : /</span>
+
+1. / : Tam pod Tatrami v slovenskej zemi strhol sa tam boj preveliký : /
+    / : tam bojovali samí Slováci mamky nad nimi zaplakali : /
+
+2. / : Slovenská mamka, jak ste ma ťažko, jak ste ma ťažko vychovali : /
+    / : teraz, keď robiť mám o vás sa starať na vojnu si ma povolali : /
+
+3. / : Anička moja, jak sme sa verne, jak sme sa verne milovali : /
+    / : tam pod Tatrami v slovenskej zemi tvoj miláčik je pochovaný : /
+        </div>
+
+        <div class="card">
+ <a name="tango"></a>
+     <h2>Rytmus: Tango (4/4 takt)</h2>
+        <p>Počítame pravidelne "prvá - druhá - tretia - štvr-tá".</p>
+        <img alt="Rytmus Tango" src="data/rytmy/tango.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/tango.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+</div>
+        <br>
+
+        <!--začiatok  -->
+        <div class="skola-song-container" data-song-title="Učiteľka tanca">
+  <button class="button button1" onclick="embedSongIntoPage('Učiteľka tanca', this)">Zobraziť pieseň Učiteľka tanca</button>
+  <div class="song-embed-area" style="display: none; margin-top: 15px;">
+    <div class="card">
+      <div class="song-box">
+        <span class="song-title">Učiteľka tanca</span>
+        <div class="rhythmBox"></div><div id="youtubeBox"></div>
+  <!-- sem sa vloží SVG tab -->
+  <div id="songTabs"></div><br> <div class="songText"></div>  </div>
+    </div>
+  </div>
+</div>
+
+        <div class="card">
+    <div class="song-box">
+        <span class="song-title">Učiteľka tanca (P. Hammel)</span>
+        Rytmus: <a href="#tango">Tango</a>
+
+<span class="chords-line">4/4 : / : D / A7 / A7 / D : /</span>
+
+<span class="chords-line">R: / D7 / G / G / D / D / A7 / A7 / DG / D /</span>
+
+<span class="chords-line">   D                         A7</span>
+1. Otcov oblek biele manžety, vreckové som dostal od tety.
+<span class="chords-line">                             D</span>
+   Učiteľka tanca je môj sen, pred ňou pod nohami strácam zem.
+
+<span class="chords-line">   D                         A7</span>
+R: Učiteľka tanca je môj sen, s ňou sa celkom ináč krúti zem
+<span class="chords-line">                             D</span>
+   má ľahký krok a má štíhly driek, smutné oči farby fialiek.
+
+<span class="chords-line">   D                              A7</span>
+2. Učiteľka tanca ma naučí, ako držat dámy v náručí
+<span class="chords-line">                             D</span>
+   nám postačí len málo slov, keď sa v rytme tanga vznášam s ňou.
+
+<span class="chords-line">   D                            A7</span>
+R: Lokálom už tango tiché znie, tango to je lásky vyznanie
+<span class="chords-line">                                  D</span>
+   bude zo mňa tanga tajný kráľ, kráľ, ktorý sa predtým tanca bál.
+
+<span class="chords-line">   D                         A7</span>
+R: Učiteľka tanca je môj sen, s ňou sa celkom ináč krúti zem
+<span class="chords-line">                               D</span>
+   opája nás vôňou CHANNEL päť, len pre nás dvoch môže hudba znieť.
+    </div>
+
+    <p class="text-important">💡 V predposlednom takte refrénu sú v jednom takte dva akordy (DG). Každý akord zahráme na dve doby.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Deti z Pirea</span>
+        Rytmus: <a href="#tango">Tango</a>
+
+<span class="chords-line">4/4 : /: D / A7 / A7 / D : // : D / D / D / A7 / A7 / G / G / D :/</span>
+
+<span class="chords-line">   D</span>
+1. Každého jitra z toho přístavu vyplují bárky a lodě do moří,
+<span class="chords-line">                                                   A7</span>
+   a slunce kulaté jak míč s každým úsvitem v dáli se z hlubin vynoří.
+<span class="chords-line">                                                  D</span>
+   Jen děti z Pirea se po břehu loudají moře jim nohy omývá.
+<span class="chords-line">   G                        D            A7             D</span>
+   Ty modré nedozírné dálky je lákají víc nežli země šedivá.
+
+<span class="chords-line">   D                                                    A7</span>
+Refr: Co moře zpívá, pod křídly kormoránu o tom se zdává k ránu všem dětem z Pirea.
+<span class="chords-line">                                                                    D</span>
+      Však každý mívá své jedno velké přání sní o něm za svítání jak děti z Pirea.
+
+<span class="chords-line">   D</span>
+2. Každého večera se k přístavu od moře bárky a lodě vracejí
+<span class="chords-line">                                                 A7</span>
+   ty čluny připlouvají s nákladem lib starých lásek a nových nadějí.
+<span class="chords-line">                                                 D</span>
+   Jen děti z Pirea však nejsou teď na břehu dávno už museli jít spát
+<span class="chords-line">   G                       D               A7               D</span>
+   a budou do ranního úsvitu snít o tom všem o čem snili tolikrát.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Kadencia A dur</h2>
+    <table class="grid-table" style="max-width: 500px; margin: 20px auto;">
+        <thead>
+            <tr>
+                <th>I. dur</th>
+                <th>IV. dur</th>
+                <th>V. dur7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>A</strong></td>
+                <td><strong>D</strong></td>
+                <td><strong>E7</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+     <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/a.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/e7.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    
+   <a name="sjedna"></a>
+   <h2>Rytmus 4/4 – 1 Prvý</h2>
+    <p>Pre lepšie zapamätanie si rytmu sa ho môžeme naučiť <strong>tafetefovať</strong>, čo robia aj džezoví hráči pri zložitých rytmických figúrach. Dlhú notu spievame dlhou hláskou, krátku spievame krátkou hláskou. Na šípku hore spievame „ta“, na šípku dole spievame „fe“. Slabiky v slovách rozdeľujeme pravidelne rovnakou rýchlosťou, ako počítame štvrťové doby (prvá - dru - há - tretia - štvr - tá). Rytmus najprv vytlieskame.</p>
+     
+        <img alt="Grafický zápis rytmu 4/4 číslo 1" src="data/rytmy/rytmus441.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/4_1.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+        
+</div>
+
+<div class="card">
+    <h2>Cvičenie na súhru ľavej a pravej ruky</h2>
+    <img alt="Notový zápis cvičenia na súhru" src="images/suhra_ruk.svg">
+    
+    <p>Chytíme si ľubovoľný akord. Na čiernu šípku akord držíme, na modré šípky akord mierne povolíme, ale prsty sa ešte dotýkajú strún. Postupne, keď si na to zvykneme, dvíhame prsty vyššie nad struny.</p>
+    <p>V druhom príklade držíme akord na dve čierne šípky a na modrú šípku akord pustíme. Prsty, aj keď zdvihneme nad struny, musia akord držať vo vzduchu, nesmú zmeniť postavenie. Neskôr medzi sebou striedame dva akordy. Na modré šípky ukladáme vo vzduchu nasledujúci akord, na čiernu šípku všetky prsty položíme na hmatník. Rytmus pravej ruky musí byť pravidelný, pri výmene akordov sa nesmie pravá ruka zastavovať. <span class="text-important">Cvičíme čo najpomalšie ale pravidelne!</span></p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Chodím po Broadwayi</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4 : / : A / A / A / E7 / A / D / AE7 / A : /</span>
+
+<span class="chords-line">   A</span>
+1. /: Chodím po Broadwayi chodím sem a tam, :/
+<span class="chords-line">   A                   D           A        E7          A</span>
+   Chodím po Broadwayi, po Broadwayi, po Broadwayi chodím sem a tam.
+
+<span class="chords-line">   A</span>
+R: Singi jau, jau, jupi, jupi jau, Singi jau, jau, jupi, jupi jau,
+<span class="chords-line">   A                  D                    A         E7         A</span>
+   Singi jau, jau, jupi, jau, jau, jupi, Singi jau, jau, jupi, jupi jau.
+
+2. /: Prácu nedostanem čiernu kožu mám :/
+   prácu nedostanem, nedostanem, pretože ja čiernu kožu mám.
+
+3. /: Moje čierne deti majú stále hlad :/
+   moje čierne deti, čierne deti, moje deti majú stále hlad.
+
+4. /: A ja pevne verím, že raz prídu dni :/
+   a ja pevne verím, pevne verím, že raz bude černoch slobodný.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Rozšírená kadencia</h2>
+    <p>Keby sme harmonizovali skladby iba pomocou hlavných kvintakordov, boli by skladby harmonicky jednotvárne. Preto používame akordy aj na iných stupňoch stupnice. Ďalší akord, o ktorý rozšírime kadenciu, je položený na <u>II. stupni</u> stupnice. Tento akord je najčastejšie <u>molový.</u> V kadencii G dur je to akord A mol (Ami – z angličtiny minor = malý, pretože medzi prvým a tretím tónom je malá tercia /niekedy sa molový akord píše malým písmenom/).</p>
+    <p>Z akordu C k akordu Ami prejdeme tak, že prvý a druhý prst nedvíhame zo strún a tretí prst presunieme na tretiu strunu do druhého poľa. Pri prechode z akordu Ami do D7 prvý prst ostáva na druhej strune a presúvame iba druhý a tretí prst.</p>
+
+   <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/g.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/c.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/ami.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/d7.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Kamarát (Maduar)</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4 : / : G / G / C / C / Ami / Ami / D / D : /</span>
+
+<span class="chords-line">Refr: / : G / C / Ami / D : /</span>
+
+<span class="chords-line">   G                       C</span>
+1. Prečo si tak veľmi krásna, prečo si tak mámivá
+<span class="chords-line">   Ami                     D</span>
+   prečo si tak veľmi zvláštna, prečo si tak šantivá
+<span class="chords-line">   G                       C</span>
+   prečo ja mám takú smolu, prečo som tak zbláznený
+<span class="chords-line">   Ami                     D</span>
+   prečo sme tak málo spolu, a od seba vzdialení
+
+<span class="chords-line">         G                C                 Ami               D</span>
+REFR: Asi preto, že som taký blázon, asi preto, že ťa mám tak rád,
+<span class="chords-line">         G                   C                Ami          D</span>
+      asi preto, že pri tebe stál som, a teraz kľačím iba ako kamarát
+<span class="chords-line">                    G     C        Ami  D</span>
+      ako kamarát, hou ako kamarát
+
+2. Prečo hádam z tvojich očí, prečo ja ťa mám tak rád
+   prečo myseľ k tebe bočí, prečo som len kamarát
+   prečo ma tak veľmi trápiš, prečo ja ťa mám tak rád
+   prečo moje šťastie tratíš, prečo som len kamarát
+
+REFR.
+    </div>
+</div>
+
+<div class="card">
+    <p>Ďalší akord, o ktorý môžeme rozšíriť kadenciu, je na <u>VI. stupni</u> stupnice a tiež je najčastejšie <u>molový.</u> V kadencii G dur je to akord Emi.</p>
+
+    <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/emi.svg" style="width:150px;">
+        </div>
+
+    <p>Pri prechode z akordu G do akordu Emi prvý prst ostane na strune a druhý prst preložíme na štvrtú strunu do druhého poľa. Od Emi k C prejdeme tak, že druhý prst ostane na strune a prvý a tretí prst preložíme na struny, ktoré majú držať.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Vymyslená (Elán)</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4 : / : G / D / C / G : / 4x</span>
+
+<span class="chords-line">Refr: / : Emi / C / D / G : / 4x</span>
+<span class="chords-line">      / CD / G / CD / G / G</span>
+<span class="chords-line">      / : Emi / C / D / G : /</span>
+
+<span class="chords-line">   G               D          C            G</span>
+1. Čakám ju pred domom, prší mi za golier,
+<span class="chords-line">   G            D          C         G</span>
+   odkiaľ sa poznáme, nikomu nepoviem.
+<span class="chords-line">   G            D         C         G</span>
+   Klasicky hanblivá smeje sa očami.
+<span class="chords-line">   G             D          C          G</span>
+   Má sinku na lakti a tašku od mamy.
+
+<span class="chords-line">         Emi            C           D           G</span>
+Refr: Chcem s ňou ísť vláčikom na výlet do Modry.
+<span class="chords-line">         Emi         C          D         G</span>
+      Najprv sa poškriepiť potom sa udobriť.
+<span class="chords-line">         Emi          C              D         G</span>
+      Mať svoje tajomstvá zamknúť ich na kľúčik.
+<span class="chords-line">         Emi          C            D         G</span>
+      Držať sa za ruky nechcieť sa rozlúčiť.
+<span class="chords-line">         Emi          C            D         G</span>
+      Vymýšľať priateľom bláznivé mená.
+<span class="chords-line">         C         D        G</span>
+      Škoda, že je, škoda, že je iba vymyslená.
+<span class="chords-line">         C         D        G</span>
+      Škoda, že je, škoda, že je iba vymyslená.
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Dievča z Tokia (Noga & Skrúcaný)</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4: G / : G / G / Emi / Emi / Ami / Ami / G // 1. D7 : // 2. G /</span>
+
+<span class="chords-line">R : C / G / D / Emi / C / G / EmiC / D /</span>
+<span class="chords-line">    C / C / G / G / D / D / Emi / Emi / C / C / G / G / EmiC / Ami / D / D /</span>
+
+<span class="chords-line">   G</span>
+1. Na trati Yokohama Tokio, v kamere zasekol sa film
+<span class="chords-line">   Emi</span>
+   zostala si tam iba ty Yoko pri videu noci presedím
+<span class="chords-line">   Ami</span>
+   A potom ráno cvičím karate a obliekam si kimono
+<span class="chords-line">   G                           D7</span>
+   jem suché jaki a pijem saké, len ty si strašne ďaleko
+
+<span class="chords-line">         C            G            D            Emi</span>
+Refr: Haraši mi z teba Yoko, ani nevieš Yoko ako
+<span class="chords-line">         C               G            Emi  C       D</span>
+      Kvôli tebe chcem byť samuraj, príď a moje sny mi nebúraj
+<span class="chords-line">      óóó</span>
+
+2. Lenže ty radšej chodíš na Fudži a ikebanu viazať vieš
+   kvetu čerešne vravíš sakuri, hikari denne cestuješ
+   škoda Yoko, že si tak ďaleko, od lásky šikmé oči mám
+   vždy keď ich zavriem vypnem video, do Tokia k tebe odlietam
+
+Refr: Haraši mi z teba Yoko, ani nevieš Yoko ako
+      Paličky pre teba doma mám, zdá sa však, že zostanem tu sám
+    </div>
+
+    <p>V tejto skladbe sú nové značky, ktoré voláme <strong>prima volta a seconda volta</strong> Prvýkrát hráme po opakovanie pod striešku 1. Pri druhom opakovaní prima voltu preskočíme a hráme priamo striešku 2. – seconda voltu.</p>
+
+    <img alt="Ukážka značenia prima a seconda volta" src="images/volty.svg">
+</div>
+
+<div class="card">
+    <a name="sdva"></a>
+ <h2>Rytmus 4/4 – 2 Druhý</h2>
+    <p>V tomto rytme máme nový prvok, ktorý nazývame <strong>synkopa</strong>. Synkopa je prenesenie prízvuku z ťažkej doby na ľahkú. Je to tretia nota v takte, pod ktorou je čierna šípka. Tento prízvuk by mal byť na tretej dobe, ale je prenesený na druhú a pol doby. Dôležité je znova si vytlieskať tento rytmus (prvá - dru - há - tre - tia - štvr - tá).</p>    
+        <img alt="Grafický zápis rytmu 4/4 číslo 2" src="data/rytmy/rytmus442.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/4_2.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Marína (R. Kazík)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : G / G / G / G / G / G / D7 / D7 / D7 / D7 / D7 / D7 / D7 / D7 / G / G : /</span>
+
+<span class="chords-line">R: / : G / G / D7 / D7 / D7 / D7 / G / G : /</span>
+<span class="chords-line">   / : G / D7 / D7 / G / G / D7 / D7 / G : /</span>
+
+<span class="chords-line">   G                                                D7</span>
+1. Kto smutný je tak naleje si vína, no pre mňa lásky vínom je Marína
+<span class="chords-line">                                                        G</span>
+   mne nepáči sa z kina, z telky iná, ja opíjam sa vždy jej nádherou
+
+2. Keď v tanci stvára so mnou divé sóla a tvári sa jak manekýna z móla
+   no teší ma, že ostatní len márne chcú zapáliť v nej lásky ohňostroj
+
+Refr: Marína, Marína, Marína vždy spáliš ma kúzlom čo máš
+      Marína, Marína, Marína, keď stále sa s láskou len hráš
+      [: Dobrá ako víla, pre mne si Marína, no niekedy však prísne mi vravíš no,no,no :]
+
+3. Každý z vás o šťastí iba sníva, za mojím šťastím Marína sa skrýva
+   veď kto ju pozná pochopil už dávno, že život pre ňu je len zábavou
+
+Refr.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Kadencia E dur</h2>
+    <table class="grid-table" style="max-width: 500px; margin: 20px auto;">
+        <thead>
+            <tr>
+                <th>I. dur</th>
+                <th>IV. dur</th>
+                <th>V. dur7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>E</strong></td>
+                <td><strong>A</strong></td>
+                <td><strong>H7</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/a.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/E.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/h7.svg" style="width:150px;">
+        </div>
+
+    <p>Akord E dur sa drží tak, ako akord Ami, ale o jednu strunu vyššie (od štvrtej struny). Akord A dur držíme s 2., 3., 4. prstom. Prechod od akordu E k akordu A je taký, že 2. a 3. prst presunieme na štvrtú a tretiu strunu a priložíme 4. prst.</p>
+    <p>Pri prechode od E k H7 zadržíme 2. prst na piatej strune, 1. prst presunieme na štvrtú strunu, tretí na tretiu strunu a štvrtý položíme na prvú strunu. Prsty 2., 3., 4. sú v tom istom poli. Pri prechode od akordu A k akordu H7 zadržíme tretí prst na tretej strune a ostatné prsty preložíme na príslušné struny.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Júlia (K. Konárik)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : E / E / E / E / A / A / E / E / E / E : /</span>
+
+<span class="chords-line">R: / : E / E / H7 / H7 / H7 / H7 / E / E : /</span>
+<span class="chords-line">   / : H7 / E / H7 / E : /</span>
+
+<span class="chords-line">   E</span>
+1. Pyšná bábika, prelud čo z rúk mi stále uniká,
+<span class="chords-line">   A                             E</span>
+   chvíľu dieťa chvíľu dospelá si ty Júlia.
+<span class="chords-line">   E</span>
+   Dievča z obrázku vidím, že stvorená si pre lásku,
+<span class="chords-line">   A                               E</span>
+   čo si ty už dávno vedela dnes viem i ja.
+
+<span class="chords-line">         E</span>
+Refr: Júlia si slnko v sieti, Júlia si čarovná,
+<span class="chords-line">         A                              E</span>
+      snáď len dúha v očiach detí, krásou sa ti vyrovná.
+<span class="chords-line">            H7                                   E</span>
+      /: Kruh mojich lások je uzavretý, tam dávno vládneš už jedine ty. :/
+
+2. Malá koketa, šťastie je vratké ako ruleta,
+   chvíľu dieťa, chvíľu dospelá si ty Júlia.
+   Dievča z plagátu vidím ťa záhadnú i usmiatu,
+   čo si ty už dávno vedela dnes viem i ja.
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Plavovláska (O. Weiter)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : D / D / D / D / G / G / G / G / A7 / A7 / D / D : /</span>
+
+<span class="chords-line">R: / : A7 / D / A7 / D : /</span>
+
+<span class="chords-line">   D</span>
+1. Pri jednej plavovláske, čo mužov nemá v láske,
+<span class="chords-line">   G                     A7           D</span>
+   som zhorel na otázke o šťastí.
+<span class="chords-line">   D</span>
+   Vraj láska je vždy klamná a starosť prenáramná,
+<span class="chords-line">   G                         A7                     D</span>
+   že nevydá sa za mňa, že som zlý, óóó tá plavovláska.
+
+<span class="chords-line">         A7                    D</span>
+Refr: Že ona je stvorená bez lásky žiť,
+<span class="chords-line">         A7                       D</span>
+      že jej nežné ramená nesmie nik pohladiť,
+<span class="chords-line">         A7                       D</span>
+      že dnes má zlé tušenie, že má zlý deň,
+<span class="chords-line">         A7                       D</span>
+      že mám oči zasnené a v očiach čierny sen.
+
+2. Chcel som ju vziať do sveta, tá kráska ma odmieta a zrak sa jej trblieta ohňom zlým.
+   Vraj príliš mám smelé sny, vraj príliš som na slečny
+   a vraj len vtedy bezpečný, keď spím óóó tá mužská cháska.
+
+Refr.
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Tisíc mil (Waldemar Matuška)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / G / Emi / Ami / C / Ami / D7 / D7 / D7 /</span>
+
+<span class="chords-line">R: / G / Emi / Ami / C / Ami / D7 / G / G : /</span>
+
+<span class="chords-line">   G               Emi         Ami           C</span>
+1. V nohách mám už tisíc mil, stopy déšť a vítr smyl
+<span class="chords-line">         Ami          D7                       G</span>
+   a můj kůň i já jsme cestou znavení.
+
+<span class="chords-line">             G               Emi         Ami           C</span>
+Refr1: Těch tisíc mil, těch tisíc mil má jeden směr a jeden cíl,
+<span class="chords-line">              Ami          D7               G</span>
+       bílej dům, to malý bílý stavení.
+
+2. Je tam stráň a příkrej sráz, modrá tůň a bobří hráz,
+   táta s mámou, který věřej dětskejm snům.
+
+Refr2: Těch tisíc mil, těch tisíc mil, má jeden směr a jeden cíl,
+       jeden cíl, ten starej, známej, bílej dům.
+
+3. V nohách mám už tisíc mil, teď mi zbývá jen pár chvil,
+   cestu znám a tá se tam k nám nemění.
+
+Refr1.
+
+4. Kousek dál a já to vím, uvidím už stoupat dým,
+   šikmej štít nad střechy ční k nebesům.
+
+Refr2.
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Elena (O. Weiter)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / D / D / D / D / D / D / D / D / : G / G / D / D / A / A / D / D : /</span>
+
+<span class="chords-line">R: / : A / A / D / D : / / : G / G / D / D / G / G / D / D : /</span>
+
+<span class="chords-line">   D</span>
+1. Letným ránom kráčal som na pláž, známym smerom tam, kde deku máš
+<span class="chords-line">      G                        D                 A                       D</span>
+   [: pozerám sa hľadám oči, krásne oči tie, snáď ma srdce až k nim zavedie :]
+
+<span class="chords-line">         A                D            A                D</span>
+Refr: Elena ty si život môj, Elena chcem byť iba tvoj
+<span class="chords-line">         G                  D           A                 D</span>
+      [: Elena lásku mi vráť, Elena veď ma maj rád :]
+
+2. Prišiel večer zaspal slnka žiar, z pláže sme šli ako šťastný pár
+   [: Srdce plesá ľúbime sa je to amor sám, čo nás vedie do spoločných rán :]
+
+Refr.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Molová tónina – kadencia a mol</h2>
+    
+    <table class="grid-table" style="max-width: 500px; margin: 20px auto;">
+        <thead>
+            <tr>
+                <th>I. mi (mol)</th>
+                <th>IV. mi (mol)</th>
+                <th>V. dur7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Ami</strong></td>
+                <td><strong>Dmi</strong></td>
+                <td><strong>E7</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>V molovej tónine sú na prvom a štvrtom stupni molové akordy, na piatom stupni je durový septakord.</p>
+    <p>Molové akordy sa označujú značkou <strong>mi</strong> (napr. Ami), niekedy sa v značkách píšu malými písmenami, alebo skratkou „A_“.</p>
+
+<div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/dmi.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/ami.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/e7.svg" style="width:150px;">
+        </div>
+    <p>Akord Dmi môžeme tiež držať s 1., 2., 3. prstom. Pri prechode z Dmi do E7 je lepšie držať štvrtý prst na druhej strune, ktorý ostáva ležať a prenášame len 1., 2. a 3. prst. Akord E7 má tu iný tvar, ale môžeme používať aj predošlý tvar, ak nám tento ešte robí problémy.</p>
+    
+    <p class="theory-box">ℹ️ <em>V durovej tónine boli na vedľajších stupňoch molové akordy – v molovej tónine sú na vedľajších stupňoch najčastejšie durové akordy. V tónine a mol je na III. stupni akord C dur.</em></p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">A aký ty parobok</span>
+        Rytmus: <a href="#polka"><b>Polka</b></a>
+
+<span class="chords-line">2/4: / : Ami / Ami / C / C / Dmi / Dmi / E7 / E7 : /</span>
+<span class="chords-line">     / Ami / Ami / Dmi / Dmi / E7 / E7 / Ami / Ami : /</span>
+
+<span class="chords-line">   Ami                        C</span>
+1. /: A aký ty parobok, taká i ja dzivka :/
+<span class="chords-line">   Dmi                        E7         Ami</span>
+   /: podzme še poľubic do hušeho chlivka :/
+
+2. /: A jak sme še ľubeli, tak huši gagali :/
+   /: bodaj tote huši šicke pozdychali :/
+
+3. /: Šicke pozdychali, lem jedna ostala :/
+   /: i totu moja mac včera zarezala :/
+    </div>
+</div>
+
+<div class="card">
+    <h2>Kadencia e mol</h2>
+    <table class="grid-table" style="max-width: 500px; margin: 20px auto;">
+        <thead>
+            <tr>
+                <th>I. mi</th>
+                <th>IV. mi</th>
+                <th>V. dur7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Emi</strong></td>
+                <td><strong>Ami</strong></td>
+                <td><strong>H7</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>Akord Emi držíme druhým a tretím prstom – je to preto, že niekedy sa môže akord Emi zmeniť na akord E7, ktorý je mimotonálnou dominantou k akordu Ami.</p>
+
+   <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/ami.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/emi.svg" style="width:150px;">
+<img alt="Diagramy prvých akordov" src="images/h7.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Keď ja na Toryse</span>
+        Rytmus: <a href="#valcik"><b>Valčík</b></a>
+
+<span class="chords-line">3/4: / : Emi / Emi / Emi / Ami / H7 / H7 : /</span>
+<span class="chords-line">     / : G / D7 / G / H7 / H7 / Emi / Emi : /</span>
+
+<span class="chords-line">   Emi                           Ami      H7</span>
+1. /: Keď ja na Toryše nožky umyvala : /
+<span class="chords-line">   G         D7     G      H7             Emi</span>
+   /: popod mojo nožky rybka preplyvala : /
+
+2. /: Plivaj, rybko plivaj popod bystru vodu : /
+   /: kebym plivac znala plivala bym s tebu : /
+
+3. /: Keď ja na Toryše nožky umyvala : /
+   /: ponad mojo nožky žabka preskakala : /
+
+4. /: Skakaj žabko, skakaj, ponad bystrú vodu : /
+   /: kebym skakac znala skakala bym s tebu : /
+    </div>
+
+    <p class="theory-box">ℹ️ V tejto piesni, ktorá je v tónine e mol, sa objavila tiež časť kadencie G dur (G, D7). Obe stupnice majú rovnaké predznamenanie (1 krížik).</p>
+</div>
+
+<div class="card">
+    <h2>Miešanie tónin</h2>
+    <p>Akordy v skladbe nemusia patriť len do danej kadencie. Každý akord si môžeme predstaviť ako samostatný akord a tak môžeme prejsť do inej tóniny (napr. Ami je prvý stupeň v tónine a mol, druhý stupeň v tónine G dur, tretí stupeň v tónine F dur, šiesty stupeň v tónine C dur).</p>
+    <p>Niektoré skladby sú komponované tak, že jedna časť môže byť v molovej tónine – <strong>sloha</strong>, a druhá časť v durovej tónine – <strong>refrén</strong>.</p>
+    <p>Najplynulejší prechod z molovej tóniny do durovej je vtedy, ak majú obe stupnice rovnaké predznamenanie. Sú to rovnobežné – <strong>paralelné stupnice</strong> (e mol - G dur). Často sa stretávame aj s prechodom z molovej tóniny do <strong>rovnomennej durovej</strong> (a mol - A dur).</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Má drahá dej mi víc (Olympic)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : Emi / Emi / Emi / G / Emi / Emi / D / H7 / Emi / Emi / A / Ami / Emi / H7 / Emi / 1. Emi : // 2. D7 /</span>
+
+<span class="chords-line">R: / G / G / H7 / H7 / Emi / C / G / D7 / G / G / H7 / H7 / Emi / C / G / H7 / H7 /</span>
+
+<span class="chords-line">   Emi                                     G</span>
+1. Vymyslel jsem spoustu nápadů, aúú, co podporujou hloupou náladu, aúú,
+<span class="chords-line">   Emi               D             H7            Emi             A     Ami   Emi  H7   Emi</span>
+   hodit klíče do kanálu, sjet po zadku holou skálu, v noci chodit strašit do hradů, aúú.
+   
+   Dám si svoje housle pod bradu, aúú, v bílé plachtě chodím pozadu, aúú,
+   úplně melancholicky, s citem pro věc jako vždycky, vyrábím tu hradní záhadu, aúú.
+
+<span class="chords-line">         G                    H7                   Emi          C         G     D7    G</span>
+Refr: Má drahá dej mi víc, má drahá dej mi víc, má drahá dej mi víc své lásky, aúú.
+<span class="chords-line">         G                    H7                   Emi          C         G     H7    Emi</span>
+      Já nechci skoro nic, já nechci skoro nic, já chci jen pohladit tvé vlásky, aúú.
+
+2. Poslední z těch divnejch nápadů, aúú, mi dokonale zvednul náladu, aúú,
+   natrhám ti sedmikrásky, tebe celou s tvými vlásky, zamknu si na sedm západů, aúú.
+    </div>
+
+    <p class="text-important">💡 Táto skladba je napísaná v tónine e mol, ale v refréne sa prechádza do paralelnej tóniny G dur.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Bedna od whisky</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: Ami / C / Ami / E / Ami / C / Ami E / 1. Ami / 2. A / A</span>
+
+<span class="chords-line">R: A / D / E / A / A / D / E / A / A / D / E / A / A / G / E / A / A / Ami</span>
+
+<span class="chords-line">   Ami          C          Ami         E      Ami         C         Ami   E    Ami</span>
+1. Dneska už mi fóry ňák nejdou přes pysky, stojím s dlouhou kravatou na bedně od whisky.
+<span class="chords-line">   Ami            C            Ami         E     Ami         C          Ami    E     Ami</span>
+   Stojím s dlouhým obojkem, jak stájovej pinč, tu kravatu co nosím, mi navlík soudce lynč.
+
+<span class="chords-line">         A             D          E          A</span>
+Refr: Tak kopni do tý bedny, ať panstvo nečeká,
+<span class="chords-line">              A             D         E          A</span>
+      jsou dlouhý schody do nebe a štreka daleká.
+<span class="chords-line">          A             D         E           A</span>
+      Do nebeskýho baru, já sucho v krku mám,
+<span class="chords-line">              A             G          E          A</span>
+      tak kopni do tý bedny, ať na cestu se dám.
+
+2. Mít tak všechny bedny od whisky vypitý, postavil bych malej dům na louce ukrytý.
+   Postavil bych malej dům a z okna koukal ven a chlastal bych tam s Billem a chlastal by tam Ben.
+
+3. Kdyby si se hochu jen pořád nechtěl rvát, nemusel jsi dneska na týhle bedně stát.
+   Moh si někde v suchu tu svojí whisky pít, nemusel jsi dneska na krku laso mít.
+
+4. Až kopneš do tý bedny, jak se to dělává, do krku mi vostane jen dírka mrňavá.
+   Jenom dírka mrňavá a k smrti jenom krok, mám to smutnej konec a whisky ani lok.
+    </div>
+
+    <p class="text-important">💡 V tejto skladbe je sloha v molovej tónine (a mol), ale refrén prechádza do rovnomennej durovej tóniny A dur.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Na Kráľovej holi</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4: Emi / Emi / H7 / H7 / Emi / Emi / G / G / D7 / D7 / G / G E7 /</span>
+<span class="chords-line">     / : Ami / Ami / Emi / Emi / Emi / Emi / H7 / H7 / Emi / Emi : /</span>
+
+<span class="chords-line">   Emi                     H7          Emi</span>
+1. Na Kráľovej holi stojí strom zelený,
+<span class="chords-line">   G                       D7          G     E7</span>
+   na Kráľovej holi stojí strom zelený,
+<span class="chords-line">   Ami                  Emi</span>
+   /: vrch má naklonený, vrch má naklonený,
+<span class="chords-line">                        H7          Emi</span>
+   vrch má naklonený do slovenskej zemi. :/
+
+2. Odkážte, odpíšte tej mojej materi,
+   odkážte, odpíšte tej mojej materi,
+   /: že mi svadba stojí, že mi svadba stojí,
+   že mi svadba stojí na Kráľovej holi. :/
+
+3. Odkážte, odpíšte mojim kamarátom,
+   odkážte, odpíšte mojim kamarátom,
+   /: že už viac nepôjdem, že už viac nepôjdem,
+   že už viac nepôjdem na fraj za dievčaťom. :/
+
+4. Na nebi hviezdičky sú moje družičky,
+   na nebi hviezdičky sú moje družičky,
+   /: a guľa z kanóna, a guľa z kanóna,
+   a guľa z kanóna to je žena moja. :/
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Macejko</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4: Emi / Emi / Emi / H7 / H7 / H7 / Emi H7 / Emi / E / E / E / E</span>
+
+<span class="chords-line">R: E / E / E / A / Ami / H7 / Ami H7 / E /</span>
+
+<span class="chords-line">   Emi                                       H7                               Emi  H7   Emi</span>
+1. Išol Macek do Mauacek šošovičku muacic, zabudou si cepy doma, museu sa on vracic. Héééj
+
+<span class="chords-line">         E</span>
+Refr: Macejko, Macejko, ko ko ko ko,
+<span class="chords-line">                     A</span>
+      zahraj mi na cenko, ko ko ko ko
+<span class="chords-line">             Ami          H7</span>
+      na tú cenku strunu, nu nu nu nu,
+<span class="chords-line">          Ami   H7      E</span>
+      hej dzunu, dzunu, dzunu, nu nu nu nu
+      
+2. Milá moja, duša moja, kdes mi daua cepy,
+   tam ti visia na hambálku, vem si ich ty slepý.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Mimotonalne dominanty</h2>
+    <p>Sú to dominantné septakordy, ktoré nepatria do danej tóniny, ale sú „vypožičané“ z inej tóniny. Napríklad ak je v tónine G dur sled akordov:</p>
+    
+    <p class="chords-line" style="font-size: 1.2rem; text-align: center;"><strong>G — A7 — D7 — G</strong></p>
+    
+    <p>Akord <strong>A7</strong> nepatrí do tejto kadencie, ale vzhľadom k nasledujúcemu akordu D je jeho dominantou (vychádza z kadencie D dur: D - G - A7). Mimotonalných dominánt môže byť v skladbe zaradených aj viac za sebou:</p>
+    
+    <p class="chords-line" style="font-size: 1.2rem; text-align: center;"><strong>G — E7 — A7 — D7 — G7 — C7 — F — D7 — G</strong></p>
+    
+    <p>Každý z týchto septimových akordov funguje ako dominanta k nasledujúcemu akordu (s výnimkou prechodu na F).</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Buráky</span>
+        Rytmus: <a href="#sjedna"><b>Prvý</b></a>
+
+<span class="chords-line">4/4: / G / G / C / G / G / G / A7 / D7 / G / G / C / G / G / G / D7 / G /</span>
+
+<span class="chords-line">R: / G / G / C / G / G / G / A7 / D7 / G / G / C / G / G / G / D7 / G /</span>
+
+<span class="chords-line">   G                            C            G</span>
+1. Když Sever válčí s Jihem a zem jde do války,
+<span class="chords-line">                             A7           D7</span>
+   na polích místo bavlny teď rostou bodláky.
+<span class="chords-line">   G                          C           G</span>
+   Ve stínu u silnice vidím z jihu vojáky,
+<span class="chords-line">                              D7          G</span>
+   jak válejí se v trávě a louskaj buráky.
+
+<span class="chords-line">         G                     C            G</span>
+Refr: /: Hej hou, hej hou, nač chodit do války,
+<span class="chords-line">                                  D7          G</span>
+      je lepší doma sedět a louskat buráky. :/
+
+2. Plukovník je v sedle volá Yankeeové jdou, mužstvo stále křičí, že dál už nemohou.
+   Plukovník se otočí a koukne do dálky, jak jeho slavná armáda teď louská buráky.
+
+3. Až tahle válka skončí a my zas budem žít, své milenky a ženy, zas půjdem políbit.
+   Pak zeptaj se tě: "Hrdino, cos dělal za války?" Já flákal jsem se s kvérem a louskal buráky.
+    </div>
+</div>
+
+<div class="card">
+    <h3>Akord G7 (hmat na všetkých strunách)</h3>
+   <div class="obrazkovy-blok">
+<img alt="Diagramy prvých akordov" src="images/g7.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Nalej mi vína, Malvína (O. Weiter)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / G / G / G / Ami / D / D / D / G / G / G / G7 / C / C / G / A7 / D / D /</span>
+
+<span class="chords-line">R: / G / G / G / D / D / D / D / G / G / G / G7 / C / : C / G / D / G : /</span>
+
+<span class="chords-line">   G                                         Ami</span>
+1. V lampáši z nôt zapáli knôt, keď struny začnú tíško húsť.
+<span class="chords-line">   D                                             G</span>
+   Prináša džbán a šepne vám načo tá vráska vôkol úst.
+<span class="chords-line">   G                        G7              C</span>
+   Spod čiernych rias obzrie si vás a máte chuť hrať prím.
+<span class="chords-line">             G               A7           D</span>
+   Ak práve úsmev hladí jej tvár spieva aj samotár...
+
+<span class="chords-line">         G                                           D</span>
+Refr: Nalej mi vína Malvína nech mám nápev veselý,
+<span class="chords-line">                                                     G</span>
+      nalej mi vína Malvína nech nás nič viac nedelí. Hej!
+<span class="chords-line">      G                     G7                    C</span>
+      Nalej mi vína Malvína nech spád má každý tón, čo mám rád.
+<span class="chords-line">            C             G             D             G</span>
+      [: Nalievaj stále veď máš plný džbán muziky, ktorú rád hrám. :]
+
+2. V lampáši z nôt zapáli knôt a rozjarí aj prázdny kút.
+   Je ako mág zo starých ság, dýchne a musíš rozkvitnúť.
+   Spod čiernych rias obzrie si vás a máte chuť hrať prím.
+   Kto pri jej víne prežil pár chvíľ spieva zo všetkých síl...
+    </div>
+
+    <p class="theory-box">ℹ️ V piesni <em>Nalej mi vína Malvína</em> je akord <strong>G7</strong> mimotonalnou dominantou smerujúcou k akordu C dur a akord <strong>A7</strong> je mimotonalnou dominantou k D7 (ktorá následne vedie do G dur).</p>
+</div>
+
+<div class="card">
+        <a name="sestosem"></a>
+    <h2>Rytmus v 6/8 takte</h2>
+    <p>Počítacou jednotkou je tu osminová nota. Jedna osminová nota znie na jednu dobu (v takte počítame do šesť).</p>
+         <img alt="Grafický zápis rytmu v 6/8 takte" src="data/rytmy/rytmus68.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/68.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Múr našich lások (M. Žbirka)</span>
+        Rytmus: <a href="#sestosem"><b>6/8</b></a>
+
+<span class="chords-line">6/8: D / D / Emi / Emi / A / A / D / 1. A : // 2. D /</span>
+
+<span class="chords-line">R: Emi / G / D / D / Emi / G / A / A</span>
+
+<span class="chords-line">   D                       Emi</span>
+1. Na konci ulice stál múr našich lások
+<span class="chords-line">   A                             D        1. A  (2. D)</span>
+   múr detí postrácaných, čo nechcel nik.
+<span class="chords-line">   D                       Emi</span>
+   Na konci ulice stál múr našich lások
+<span class="chords-line">   A                           D</span>
+   len on nás počúval rád, čistých a zlých.
+   
+   Na konci ulice stál múr našich lások
+   čakal som večer pred ním s hádankou kam.
+   Na konci ulice stál múr našich lások
+   zmoknuté plagáty kín, zostal som sám.
+
+<span class="chords-line">         Emi         G              D</span>
+Refr: Múr detí stratených, každé z nich učil rásť,
+<span class="chords-line">         Emi         G              A</span>
+      múr detí stratených, čo musia seba nájsť.
+
+2. Na konci ulice stál múr našich lások, poznal on túlavých psov, dievčenský žiaľ.
+   Na konci ulice stál múr našich lások, na ňom som sedel raz s tou, čo rád som mal.
+   Na konci ulice stál múr našich lások, múr detí postrácaných, kto by ich chcel.
+   Na konci ulice stál múr našich lások, značil si kto kedy s kým, popri ňom išiel.
+    </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Bláznova ukolébavka (P. Novák)</span>
+        Rytmus: <a href="#sestosem"><b>6/8</b></a>
+
+<span class="chords-line">6/8: / G / D / C / G / G / D / C / G / D / C / D / CD / G / D / C / A /</span>
+
+<span class="chords-line">R: / G / C / G / C / G / C / G / G /</span>
+
+<span class="chords-line">   G         D             C          G</span>
+1. Máš má ovečko dávno spát i píseň ptáků končí.
+<span class="chords-line">   G           D             C          G</span>
+   Kvůli nám přestal vítr vát, jen můra zírá zvenčí.
+<span class="chords-line">   D          C         D          C    D</span>
+   Já znám její zášť, tak vyhledej skrýš,
+<span class="chords-line">   G          D          C          A</span>
+   zas má bílej plášť a v okně je mříž.
+
+<span class="chords-line">         G         C           G          C</span>
+Refr: Máš má ovečko dávno spát a můžeš hřát, ty mně můžeš hřát.
+<span class="chords-line">              G          C                G</span>
+      Vždyť přijdou se ptát, zítra zas přijdou se ptát,
+<span class="chords-line">                             G</span>
+      jestli ty v mých představách už mizíš.
+
+2. Máš má ovečko dávno spát, dnes máme půlnoc temnou,
+   ráno budou nám bláznům lát, že ráda snídáš se mnou.
+   proč měl bych jim lhát, že jsem tady sám, když tebe mám rád, když tebe tu mám.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Striedavý tón</h2>
+    <p>Je taký tón, ktorý vystrieda akordický tón na ľahkej dobe. Najčastejším striedavým tónom býva <strong>kvarta</strong> – štvrtý tón od základného tónu.</p>
+    <p>Akord D dur má tóny $d - fis - a$. Striedavý tón vystrieda terciu (teda tón $fis$) a vzniknutý akord <strong>D s kvartou (D4 / Dsus4)</strong> bude obsahovať tóny $d - g - a$.</p>
+
+    
+    <div class="obrazkovy-blok">
+<img alt="Diagram akordu D4 so striedavým tónom" src="images/d4.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Kdo má tě rád (L. Vondráčková)</span>
+        Rytmus: <a href="#sestosem"><b>6/8</b></a>
+
+<span class="chords-line">6/8: / DD4 / D / DD4 / D / G / G / G / G / A / A // 1. DD4 / D : // 2. D / D7 /</span>
+
+<span class="chords-line">R: / : G / A / D / H7 / Emi / A / 1. D / D7 : // 2. DD4 / D /</span>
+
+<span class="chords-line">   D         D4          D    D4          D</span>
+1. Jen ten kdo má tě rád, ten nemá proč ti lhát
+<span class="chords-line">   G                                      A</span>
+   a všechno smí ti říct, jen ten kdo má tě rád
+<span class="chords-line">              D</span>
+   se díva a říka, to dá se zvládnout.
+
+2. Jen s tím kdo má tě rád, s tím můžeš počítat
+   a průšvih nehrozí, když ten kdo má tě rád
+   tě hlída a říka to dá se zvládnout.
+
+<span class="chords-line">         G           A           D           H7</span>
+Refr: Všechno si můžeš vzít, všechno si můžeš přát,
+<span class="chords-line">                  Emi         A              D      D7</span>
+      když světem půjdeš s tím, kdo tě má rád.
+<span class="chords-line">         G           A           D           H7</span>
+      Všechno ti půjde líp, všechno ti půjde snáz,
+<span class="chords-line">                  Emi         A              D</span>
+      když světem půjdeš s tím, kdo tě má rád.
+
+3. A jednou já to vím se zázrak může stát, jak ve snů bláhový, pak ten kdo má tě rád
+   tě líba a říka to dá se zvládnout.
+   Pak slunce pálí víc a hvězdy září dál, všem snům pak můžeš říct, dnes ten, kdo má mě rás
+   mi zpíva a říka to dá se zvládnout.
+    </div>
+</div>
+
+<div class="card">
+    <h2>Akord na VII. stupni</h2>
+    <p>Na VII. stupni používame najčastejšie <strong>zmenšený akord</strong>. Tento akord môže zastupovať dominantu a vtedy smeruje priamo k tónike (alebo sa zaraďuje tesne pred dominantu). Značí sa príponou <strong>dim</strong> (z anglického <em>diminished</em> = zmenšený).</p>
+    <p>Tento konkrétny hmat predstavuje viacero akordov naraz, pretože v zmenšenom septakorde (ktorý je symetrický) môže byť každý tón považovaný za základný. Podľa kontextu tak rovnakým hmatom hráme akordy <strong>C#dim, Gdim, Edim, Bdim</strong> alebo <strong>Dbdim</strong>.</p>
+    
+    <div class="obrazkovy-blok">
+<img alt="Diagram akordu C#dim" src="images/cisdim.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Stánky (Nedvědi)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : D / G / D / C#dim / D / A7 / D / D : /</span>
+
+<span class="chords-line">R: / G / A7 / D / C#dim / D / A7 / D / D /</span>
+
+<span class="chords-line">   D             G           D          C#dim</span>
+1. U stánků na levnou krásu postávaj a smějou se času,
+<span class="chords-line">   D           A7          D</span>
+   s cigaretou a holkou, co nemá kam jít.
+<span class="chords-line">   D               G             D             C#dim</span>
+   Skleniček pár a pár tahů z trávy, uteče den, jak večerní zprávy,
+<span class="chords-line">   D           A7           D</span>
+   neuměj žít a bouřej se a neposlouchaj.
+
+<span class="chords-line">         G           A7          D          C#dim</span>
+Refr: Jen zahlídli svět, maj na duši vrásky, tak málo je, málo je lásky,
+<span class="chords-line">         D         A7          D</span>
+      ztracená víra hrozny z vinic neposbírá.
+
+2. U stánku na levnou krásu postávaj a ze slov a hlasů poznávám,
+   jak málo jsme jim stačili dát.
+    </div>
+</div>
+
+<div class="card">
+    <h3>Akord D#dim</h3>
+        <div class="obrazkovy-blok">
+<img alt="Diagram akordu D#dim" src="images/disdim.svg" style="width:150px;">
+        </div>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Tichá noc (F. X. Gruber)</span>
+        Rytmus: <a href="#valcik"><b>Valčík (3/4)</b></a>
+
+<span class="chords-line">3/4: / G / G / G / G / D7 / D7 / G / G /</span>
+<span class="chords-line">     / C / C / G / G / C / C / G / G /</span>
+<span class="chords-line">     / D7 / D#dim / Emi / A7 / G / D7 / G / G /</span>
+
+<span class="chords-line">   G</span>
+1. Tichá noc, svätá noc, všetko spí, všetko sní.
+<span class="chords-line">   C                   G           C                   G</span>
+   Sám len svätý bdie dôverný pár, stráži dieťatko nebeský dar.
+<span class="chords-line">   D7        D#dim    Emi     A7   G        D7       G</span>
+   Sladký Ježiško spí, sní, nebesky ticho spí, sní.
+
+2. Tichá noc, svätá noc, anjeli, zleteli,
+   najprv pastierom podali zvesť, ktorá svetom dnes dáva sa niesť
+   Kristus Spasiteľ je tu, tešiteľ sveta je tu.
+
+3. Tichá noc, svätá noc, nežná tvár, lásky žiar
+   božsky rozsieva v jasličkách tam, bije záchranná hodina nám
+   v tvojom zrodení Boh Syn, Ježiško, Láska, Boh, Syn.
+
+4. Tichá noc, svätá noc, Spásy liek prijal svet,
+   otvorila sa nebies už sieň, milosť zahnala ta hriechov tieň,
+   Takú Ježiško moc máš, Sláva Ti, Ježiš, Kráľ náš!
+
+5. Tichá noc, svätá noc, v dnešnú noc večná moc
+   Lásky Otca sa vyliala v svet, vrelo prijal nás v objatie dnes
+   božský Spasiteľ, brat náš, vďaka ti božský brat náš!
+    </div>
+
+    <p class="text-important">💡 <strong>Tip pre hmat:</strong> V treťom riadku akordov prvý akord D7 chytíme 2., 3. a 4. prstom. Priložením 1. prstu na štvrtú strunu plynule dostaneme požadovaný akord D#dim.</p>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Jožin z Bažin (I. Mládek)</span>
+        Rytmus: <a href="#sdva"><b>Druhý</b></a>
+
+<span class="chords-line">4/4: / : Emi / Emi / H7 / Emi : / D7 / G / D7 / G H7 / Emi / Emi / H7 / Emi D7 /</span>
+<span class="chords-line">     /: G / G / G Gdim / D7 / D7 / D7 / D7 / G :/ C / G / D7 / G / C / G / D7 / G H7 /</span>
+
+<span class="chords-line">   Emi                        H7          Emi</span>
+1. Jedu takhle tábořit Škodou sto na Oravu.
+<span class="chords-line">                              H7           Emi</span>
+   Spěchám, proto riskuju, projíždím přes Moravu.
+<span class="chords-line">   D7             G        D7              G   H7</span>
+   Řádí tam to strašidlo, vystupuje z bažin,
+   Emi                        H7          Emi   D7
+   žere hlavně Pražáky, jmenuje se Jožin.
+
+<span class="chords-line">         G</span>
+Refr: Jožin z bažin močálem se plíží,
+<span class="chords-line">         D7</span>
+      Jožin z bažin k vesnici se blíží.
+<span class="chords-line">         D7</span>
+      Jožin z bažin už si zuby brousí,
+<span class="chords-line">         G</span>
+      Jožin z bažin kouše, saje, rdousí.
+<span class="chords-line">         C               G</span>
+      Na Jožina z bažin, koho by to napadlo,
+<span class="chords-line">         D7                  G</span>
+      platí jen a pouze práškovací letadlo.
+
+2. Projížděl jsem dědinou cestou na Vizovice.
+   Přivítal mě předseda, řek mi u slivovice:
+   "Živého či mrtvého Jožina, kdo přivede, tomu já dám za ženu dceru a půl JZD."
+
+3. Říkám: "Dej mi, předsedo, letadlo a prášek, Jožina ti přivedu, nevidím v tom háček."
+   Předseda mi vyhověl, ráno jsem se vznesl, na Jožina z letadla prášek pěkně klesl.
+
+Refr: Jožin z bažin už je celý bílý, Jožin z bažin z močálu ven pílí.
+      Jožin z bažin dostal se na kámen, Jožin z bažin, tady je s ním amen.
+      Jožina jsem dohnal, už ho držím, johoho, každá kačka dobrá, prodám já ho do ZOO.
+    </div>
+</div>
+
+<div class="card">
+        <a name="streti"></a>
+    <h2>Rytmus v 4/4 - 3 Tretí</h2>
+           <img alt="Grafický zápis rytmu v 4/4 takte 3" src="data/rytmy/rytmus443.svg">
+    <center>
+        <audio controls="">
+    <source src="data/rytmy/4_3.mp3" type="audio/mpeg">
+Tvoj prehliadač nepodporuje audio element.
+</audio>
+</center>
+</div>
+
+<div class="card">
+    <div class="song-box">
+        <span class="song-title">Som v tom (Team)</span>
+        Rytmus: <a href="#streti"><b>Tretí</b></a>
+
+<span class="chords-line">4://: D / G / D / G / D / G / D / G ://</span>
+<span class="chords-line">/ C / G / D / D / C / G / DC / C /</span>
+<span class="chords-line">R: //: D /D /C /C /C /G /1. D /D :// 2.DC /C /</span>
+
+1.Viem, som v tom, už sa z kopca kotúľam.
+Viem, som v tom, končí zvodca Don Juan.
+Miesto krátkej story ohňostroj. Som z nej celkom chorý kamoš môj.
+
+Refrén:
+Náš vzťah sa vyvíja, smerom k láske mením svoj kurz.
+Už ma má, tak to vidím ja, Je to ťažké poradiť skús.
+
+2. Ona je kus, čo s ňou? Je to ťažké, kamarát.
+Som jej prvý muž, nevravím každej: Mám ťa rád.
+Zrazu mám strach, či mi zavolá, krásny zádumčivý hlavolam.
+
+Refrén:
+Náš vzťah sa vyvíja, smerom k láske mením svoj kurz.
+Už ma má, tak to vidím ja, Je to ťažké poradiť skús.
+    </div>
+</div>
+
+        <!--            koniec        -->
+    </div>
+
+</div>
+<script src="./js/novy_chord1.js"></script>
+<script src="./js/player3.js"></script>
+<script src="./js/render_skola.js"></script>
+
+</body>
+</html>

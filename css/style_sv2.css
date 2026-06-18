@@ -96,6 +96,19 @@ button:hover {
   font-size: 0.9em;
   position: relative;
 }
+#transpose{
+      width:200px;
+ text-align: center;
+   position: fixed;
+ right: 10px;
+  top: 260px;
+  z-index: 1000;
+   margin-bottom: 0px;
+    padding: 0px;
+    background: #f1f5f9;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
 #akord {
   width: 200px;
   display: flex;
@@ -145,6 +158,8 @@ svg {
 /* SMALL BUTTON */
 .button1 {
   width: 50px;
+    display: inline-block;
+    text-align: center;
 }
 
 /* RHYTHM LINK */

@@ -12,7 +12,7 @@
 <body>
  
 <div id="left">
-    
+<h2 id="title">Vyber pieseň</h2>    
 <h3>Kategórie</h3>
 <select id="categories"></select>
 
@@ -25,16 +25,17 @@
 </div>
 
 <div id="right">
-   <div style="margin-bottom:10px;">
-    Transpose
+   <div id="transpose" style="margin-bottom:10px;">
+    
     <span>
       <button class="button button1" onclick="changeTranspose(-1)">−</button> 
       <button class="button button1" onclick="changeTranspose(1)">+</button> 
       <button class="button button1" onclick="toggleNotation()">♯ / ♭</button>
     </span>
+      <br>Transpose
   </div>
 
-  <h2 id="title">Vyber pieseň</h2>
+  
 
   <div id="rhythmBox"></div>
   <div id="songChords"></div><br>
@@ -55,7 +56,7 @@
     <div id="chordNav"></div>
   </div>
 <script src="./js/novy_chord1.js"></script>
-<script src="./js/player3.js"></script>
+<script src="./js/player.js"></script>
 
 </body>
 </html>

@@ -35,8 +35,8 @@ function showRhythm(name) {
 
   rhythmBox.innerHTML = `
     <div style="margin-top:10px;">
-      <b>${r.label}</b>
-      <img src="${r.image}" style="height:100%; max-height:150px; border-radius:10px;">
+      <b>${r.label}</b><br><br>
+      <img src="${r.image}" style="height:100%; max-height:150px; border-radius:10px;"><br><br>
 
       <audio controls src="${r.audio}"></audio>
     </div>
@@ -45,11 +45,7 @@ function showRhythm(name) {
 
 // 🎵 KATEGÓRIE
 function renderCategories() {
-    
-  const elem = document.getElementById("categories"); // alebo ako sa volá to tvoje ID
-  if (!elem) return; // POISTKA: Ak div neexistuje, funkcia okamžite skončí a nevyhodí chybu
-  
-  // ... tvoj pôvodný kód, ktorý robí elem.innerHTML = ...
+  const select = document.getElementById("categories");
   select.innerHTML = "";
 
   let allCategories = [];
@@ -90,11 +86,7 @@ function renderCategories() {
 
 // 🎤 AUTORI
 function renderAuthors() {
-  
-  const elem = document.getElementById("authors"); // uprav podľa tvojho ID
-  if (!elem) return; // POISTKA
-  
-  // ... tvoj pôvodný kód
+  const select = document.getElementById("authors");
   select.innerHTML = "";
 
   let allAuthors = [];
@@ -144,11 +136,7 @@ function setupSearch() {
 
 // 🎵 ZOZNAM PIESNÍ
 function renderSongs() {
-  
-  const elem = document.getElementById("songList"); // tvoje ID zo zoznamu
-  if (!elem) return; // POISTKA
-  
-  // ... tvoj pôvodný kód
+  const list = document.getElementById("songList");
   list.innerHTML = "";
 
   let filtered = songs.filter(song => {
@@ -192,7 +180,7 @@ function renderSongs() {
    ============================ */
 
 const NOTES_PER_LINE = 18;
-const STRING_NAMES = ["e", "h", "g", "d", "a", "e"]; // 1 → 6
+const STRING_NAMES = ["e", "H", "G", "D", "A", "E"]; // 1 → 6
 
 // Kreslí jeden riadok strún
 function drawTabLine(svg, lineOffset, totalWidth) {
