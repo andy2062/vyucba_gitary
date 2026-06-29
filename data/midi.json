@@ -1,0 +1,47 @@
+{
+  "name":"C dur",
+  "time":"4/4",
+  "tempo":90,
+  "keySignature":"C",
+
+  "measures":[
+
+    [
+
+      {
+        "pitch":"C4",
+        "duration":"q",
+
+        "theory":{
+          "note":"C",
+          "degree":1
+        },
+
+        "guitar":{
+          "string":5,
+          "fret":3,
+          "finger":3
+        }
+      },
+
+      {
+        "pitch":"D4",
+        "duration":"q",
+
+        "theory":{
+          "note":"D",
+          "degree":2
+        },
+
+        "guitar":{
+          "string":4,
+          "fret":0,
+          "finger":0
+        }
+      }
+
+    ]
+
+  ]
+
+}

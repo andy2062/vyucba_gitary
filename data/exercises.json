@@ -1,10 +1,224 @@
 [
+   {
+    "type": "exercise",
+    "title": "1,2 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,2. Prvý prst ostane položený dvíhame iba 2. prst. Snažíme sa, čo najpresnejšie synchronizovať (zohrať) obe ruky, aby v momente, keď stlačí prst ľavej ruky strunu, zahrala pravá ruka úder, aby medzi tónmi nevznikala veľká pauza.",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+                  { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"}      
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "1,3 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,3. Prvý prst ostane položený dvíhame iba 3. prst.",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"}      
+    ]
+  },
+   {
+    "type": "exercise",
+    "title": "1,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,4. Prvý prst ostane položený dvíhame iba 4. prst.",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"}      
+    ]
+  },
+    {
+    "type": "exercise",
+    "title": "2,3 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 2,3. Druhý prst ostane položený dvíhame iba 3. prst.",
+    "notes": [
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"}
+    ]
+  },
+   {
+    "type": "exercise",
+    "title": "2,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 2,4. Druhý prst ostane položený dvíhame iba 4. prst.",
+    "notes": [
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"}
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "3,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 3,4. Tretí prst ostane položený dvíhame iba 4. prst.",
+    "notes": [
+            { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4"}
+    ]
+  },
+   {
+    "type": "exercise",
+    "title": "1,2,3 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,2,3. ",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"}
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "1,2,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,2,4. ",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"}
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "1,3,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 1,3,4. ",
+    "notes": [
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"}
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "2,3,4 na jednej strune",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na jednej strune G 2,3,4. ",
+    "notes": [
+            { "note": "c#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "4" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"}
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "2,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,1. Prvý prst môže ostať položený striedame iba 2. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+     
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "3,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,1. Prvý prst môže ostať položený striedame iba 3. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+     
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "4,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1. Prvý prst môže ostať položený striedame iba 4. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+     
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "3,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,2. Druhý prst môže ostať položený striedame iba 3. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
+     
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "4,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,2. Druhý prst môže ostať položený striedame iba 4. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
+     
+    ]
+  },
+  {
+    "type": "exercise",
+    "title": "4,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,3. Tretí prst môže ostať položený striedame iba 4. prst na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" }
+     
+    ]
+  },
   {
     "type": "exercise",
     "title": "1,2 na dvoch strunách",
      "playMode": "single",
     "position": 5,
-    "description": "Striedanie prstov na dvoch strunách 1,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "description": "Striedanie prstov na dvoch strunách 1,2. Tu musíme striedať oba prsty na strunách G,D. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
     "notes": [
       { "note": "C", "string": 3, "fret": 5, "finger": "1"},
       { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
@@ -83,90 +297,7 @@
      
     ]
   },
-  {
-    "type": "exercise",
-    "title": "2,1 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 2,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
-      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
-     
-    ]
-  },
-  {
-    "type": "exercise",
-    "title": "3,1 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 3,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "D", "string": 3, "fret": 7, "finger": "3"},
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
-      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
-     
-    ]
-  },
-  {
-    "type": "exercise",
-    "title": "4,1 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 4,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
-      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
-      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
-     
-    ]
-  },
-  {
-    "type": "exercise",
-    "title": "3,2 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 3,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "D", "string": 3, "fret": 7, "finger": "3"},
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
-      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
-     
-    ]
-  },
-  {
-    "type": "exercise",
-    "title": "4,2 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 4,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
-      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
-     
-    ]
-  },
-  {
-    "type": "exercise",
-    "title": "4,3 na dvoch strunách",
-     "playMode": "single",
-    "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 4,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
-    "notes": [
-      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
-      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
-      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
-      { "note": "D", "string": 3, "fret": 7, "finger": "3" }
-     
-    ]
-  },
+  
   {
     "type": "exercise",
     "title": "2,1,2,1 na dvoch strunách",
@@ -217,7 +348,7 @@
     "title": "3,2,3,2 na dvoch strunách",
      "playMode": "single",
     "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 3,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "description": "Striedanie prstov na dvoch strunách G-D 3,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
     "notes": [
       { "note": "D", "string": 3, "fret": 7, "finger": "3"},
       { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
@@ -232,7 +363,7 @@
     "title": "4,2,4,2 na dvoch strunách",
      "playMode": "single",
     "position": 5,
-    "description": "Striedanie prstov na dvoch strunách G-D 4,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "description": "Striedanie prstov na dvoch strunách G-D 4,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
     "notes": [
       { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
       { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
@@ -241,5 +372,146 @@
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
       { "note": "C#", "string": 3, "fret": 6, "finger": "2" }     
     ]
-  }
+  },
+  {
+    "type": "exercise",
+    "title": "4,3,4,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }     
+    ]
+  },
+  {
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 1,2",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,2. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
+    ]
+  ]
+},
+{
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 1,3",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" }
+    ]
+  ]
+},
+{
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 1,4",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na d4och strunách G-D 1,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ],
+    [
+      { "note": "G", "string": 4, "fret": 5, "finger": "1" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
+    ]
+  ]
+},
+{
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 2,3",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 2,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
+    ],
+    [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" }
+    ]
+  ]
+},
+{
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 2,4",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 2,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
+    ],
+    [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
+    ]
+  ]
+},
+{
+  "type": "intervalExercise",
+  "title": "Súčasné striedanie prstov 3,4",
+  "family": "major",
+   "quality":"dur",
+    "position": 1,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 3,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+  "group":"3",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" }
+    ],
+    [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
+    ]
+  ]
+}
   ]

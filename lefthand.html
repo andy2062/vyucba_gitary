@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cvičenia ľavej ruky</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --surface-color: #ffffff;
+            --surface-hover: #f1f3f5;
+            --accent-green: #2b8a3e;
+            --accent-blue: #1c7ed6;
+            --accent-purple: #9c36b5;
+            --accent-orange: #e67e22;
+            --text-main: #212529;
+            --text-muted: #495057;
+            --border-color: #dee2e6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+            .detail-panel {
+                position: sticky;
+                bottom: 20px;
+                max-height: 60vh;
+            }
+        }
+
+        header {
+            grid-column: 1 / -1;
+            padding: 20px 0;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            border-bottom: 2px solid var(--border-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #1a1a1a;
+        }
+
+        .sections-list {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .section {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+            overflow: hidden;
+        }
+
+        .section h2 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Farebné kategórie */
+        .section-green h2 { color: var(--accent-green); }
+        .section-blue h2 { color: var(--accent-blue); }
+        .section-purple h2 { color: var(--accent-purple); }
+        .section-orange h2 { color: var(--accent-orange); }
+
+        .exercises-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .exercise {
+            background: #fdfdfd;
+            border: 1px solid #e9ecef;
+            padding: 14px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            color: var(--text-main);
+            transition: all 0.2s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .exercise:hover {
+            background: var(--surface-hover);
+            border-color: #ced4da;
+            transform: translateX(4px);
+        }
+
+        .exercise::after {
+            content: '→';
+            opacity: 0.4;
+            transition: opacity 0.2s ease;
+        }
+
+        .exercise:hover::after {
+            opacity: 1;
+        }
+
+        /* Aktívny stav podla sekcie */
+        .section-green .exercise.active { border-color: var(--accent-green); background: rgba(43, 138, 62, 0.08); color: var(--accent-green); font-weight: 600; }
+        .section-blue .exercise.active { border-color: var(--accent-blue); background: rgba(28, 126, 214, 0.08); color: var(--accent-blue); font-weight: 600; }
+        .section-purple .exercise.active { border-color: var(--accent-purple); background: rgba(156, 54, 181, 0.08); color: var(--accent-purple); font-weight: 600; }
+        .section-orange .exercise.active { border-color: var(--accent-orange); background: rgba(230, 126, 34, 0.08); color: var(--accent-orange); font-weight: 600; }
+
+        /* Pravý panel s detailom */
+        .detail-panel {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            height: calc(100vh - 120px);
+            position: sticky;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        }
+
+        .detail-placeholder {
+            margin: auto;
+            text-align: center;
+            color: #868e96;
+            font-size: 1.1rem;
+        }
+
+        .detail-content {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .detail-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+            color: #1a1a1a;
+        }
+
+        .instruction-text {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            white-space: pre-line;
+            margin-bottom: 25px;
+            overflow-y: auto;
+            flex-grow: 1;
+            padding-right: 5px;
+        }
+
+        /* Štýl pre gitarové taby a vzorce (Svetlý monospace s tmavým písmom) */
+        .tab-output {
+            background: #f1f3f5;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            padding: 16px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 1.1rem;
+            font-weight: bold;
+            white-space: pre;
+            overflow-x: auto;
+            color: #212529;
+            line-height: 1.4;
+        }
+
+        /* Custom Scrollbar pre svetlý režim */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #dee2e6;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ced4da;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <header>
+        <span>🎸</span> Cvičenia – ľavá ruka
+    </header>
+
+    <div class="sections-list">
+        
+        <div class="section section-green">
+            <h2>Prípravné prstové cvičenia</h2>
+            <div class="exercises-grid">
+                <div class="exercise" onclick="showExercise(this, 'Dvíhanie')">Dvíhanie položených prstov</div>
+                <div class="exercise" onclick="showExercise(this, 'Jedna')">Stláčanie struny prstami</div>
+                <div class="exercise" onclick="showExercise(this, 'Dve struny1')">Striedanie dvoch strún 1</div>
+                <div class="exercise" onclick="showExercise(this, 'Dve struny2')">Striedanie dvoch strún 2</div>
+                <div class="exercise" onclick="showExercise(this, 'Dve struny3')">Striedanie dvoch strún 3</div>
+                <div class="exercise" onclick="showExercise(this, 'Dve struny4')">Striedanie dvoch strún 4</div>
+                <div class="exercise" onclick="showExercise(this, 'Súčasne1')">Súčasné striedanie dvoch strún</div>
+                <div class="exercise" onclick="showExercise(this, 'Súčasne fix')">Súčasné striedanie dvoch strún s pripútanými prstami</div>
+                <div class="exercise" onclick="showExercise(this, 'Nezavislosť')">Cvičenie nezávislosti prstov (Spider - Pavúk)</div>
+            </div>
+        </div>
+        
+        <div class="section section-green">
+            <h2>Rozcvička</h2>
+            <div class="exercises-grid">
+                <div class="exercise" onclick="showExercise(this, '1-2-3-4')">1-2-3-4 (základ)</div>
+                <div class="exercise" onclick="showExercise(this, '1-3-2-4')">1-3-2-4 (náročnejšie)</div>
+            </div>
+        </div>
+
+        <div class="section section-blue">
+            <h2>Chromatika</h2>
+            <div class="exercises-grid">
+                <div class="exercise" onclick="showExercise(this, 'chromatic')">Chromatika hore/dole</div>
+            </div>
+        </div>
+
+        <div class="section section-purple">
+            <h2>Preskoky</h2>
+            <div class="exercises-grid">
+                <div class="exercise" onclick="showExercise(this, 'skip')">Preskoky prstov</div>
+            </div>
+        </div>
+
+        <div class="section section-orange">
+            <h2>Sila prstov</h2>
+            <div class="exercises-grid">
+                <div class="exercise" onclick="showExercise(this, 'strength')">Držanie tónov</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="detail-panel">
+        <div id="placeholder" class="detail-placeholder">
+            <p>Vyber si cvičenie zo zoznamu pre zobrazenie detailov a inštrukcií.</p>
+        </div>
+        <div id="detailContent" class="detail-content">
+            <h3 id="exerciseTitle">Názov cvičenia</h3>
+            <div id="exerciseInstructions" class="instruction-text"></div>
+            <div id="exerciseTab" class="tab-output"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+// (Objekt exercises a funkcia showExercise zostávajú bez zmeny, ako v predošlom funkčnom kóde)
+const exercises = {
+    "Dvíhanie": {
+        desc: `Položíme prsty ľavej ruky v VII. poli na tretiu (G) strunu do každého poľa jeden prst. Prsty dávame tesne pred pražec! Strunu jemne stláčame a uvoľňujeme.\n\nPotom cvičíme osamostatnenie prstov takto:`,
+        tab: `Dvíhanie jedného prsta:\n1., 2., a 3. prst necháme ležať, dvíhame 4. prst a kladieme ho späť.\n2., 3., a 4. prst ostanú ležať, dvíhame a ukladáme 1. prst\n1., 3., a 4. prst ostanú ležať, dvíhame a ukladáme 2. prst\n1., 2., a 4. prst ostanú ležať, dvíhame a ukladáme 3. prst\n\nDvíhanie dvoch prstov:\n3., a 4. prst ostane ležať, dvíhame 1. a 2. prst\n1., a 2. prst ostane ležať, dvíhame 3. a 4. prst\n1., a 4. prst ostane ležať, dvíhame 2. a 3. prst\n\nDvíhanie troch prstov:\n1.ostane ležať, dvíhame 2., 3., a 4. prst\n4.ostane ležať dvíhame 1., 2., a 3. prst`
+    },
+    "Jedna": {
+        desc: `Pri týchto cvičeniach zo začiatku hráme čo najpomalšie a snažíme sa, aby každý tón znel čo najdlhšie. Ide tu hlavne o súhru ľavej a pravej ruky tzn. aby pravá ruka brnkla strunu v okamihu, keď ľavá ruka stlačí strunu.\n\nSúhra rúk pri hre s prázdnou strunou.\nStlačenie: Pravá a ľavá ruka je pripravená nad strunou, nesmie sa jej dotýkať a v momente, keď ľavá ruka pritlačí strunu pravá ruka brnkne strunu.\nOdťah: Pravá ruka je pripravená nad strunou ľavá ruka drží znejúci tón a v momente, keď ľavá ruka sa odtiahne pravá ruka brnkne strunu.\n\nČísla znamenajú:\n0=prázdna struna, 1=ukazovák, 2=prostredník, 3=prsteník, 4=malíček`,
+        tab: `Cvičenia s prázdnou strunou:\n0..1..0..1\n0..2..0..2\n0..3..0..3\n0..4..0..4\n\nCvičenia dvojíc prstov na jednej strune:\n1..2..1..2 | 1..3..1..3 | 1..4..1..4\n2..3..2..3 | 2..4..2..4 | 3..4..3..4\n\nCvičenia trojíc prstov na jednej strune:\n1..2..3..1..2..3 | 1..3..2..1..3..2\n1..2..4..1..2..4 | 1..4..2..1..4..2\n\nCvičenia štvoríc prstov na jednej strune:\n1..2..3..4..1..2..3..4 | 1..2..4..3..1..2..4..3`
+    },
+    "Dve struny1": {
+        desc: `Nasledujúce cvičenia cvičiť na rôznych dvojiciach strún aj vzdialenejších od seba napr.: H D, H A`,
+        tab: `Prvý prst je vždy položený, strieda sa druhý:\nG--2-1---1--2-1---1-\nD------2--------2---\n\nStriedá sa tretí prst:\nG--3-1---1--3-1---1-\nD------3--------3---\n\nStriedá sa štvrtý prst:\nG--4-1---1--4-1---1-\nD------4--------4---`
+    },
+    "Dve struny2": {
+        desc: `Cvičenia zamerané na presnosť striedania rôznych konfigurácií prstov na strunách G a D.`,
+        tab: `G--1--------1-------\nD----2-1-2----2-1-2-\n\nG--1--------1-------\nD----3-1-3----3-1-3-\n\nG--1--------1-------\nD----4-1-4----4-1-4-`
+    },
+    "Dve struny3": {
+        desc: `Striedanie dvojíc prstov na dvoch strunách vrátane zložitejších variantov pre pokročilú koordináciu.`,
+        tab: `G--2-1-------1--2-1-------1-\nD------2-1-2--------2-1-2---\n\nZložitejšie varianty:\nG--1-2-----4-3-----1-2-----4-3-----\nD------3-2-----1-2-----3-2-----1-2-`
+    },
+    "Dve struny4": {
+        desc: `Striedanie celých trojíc prstov na dvoch strunách kontinuálne za sebou.`,
+        tab: `G--3-2-1-----------1-2-3-2-1-----------1-\nD--------3-2-1-2-3-----------3-2-1-2-3---\n\nG--4-2-1-----------1-2-4-2-1-----------1-\nD--------4-2-1-2-4-----------4-2-1-2-4---`
+    },
+    "Súčasne1": {
+        desc: `Dva prsty súčasne vymeníme na dvoch strunách. Za dvojicu strún neskôr vyberáme aj vzdialenejšie struny. Výmena musí vychádzať iba z prstov, nemalo by sa meniť postavenie zápästia.`,
+        tab: `G--1--2--1--2-\nD--2--1--2--1-\n\nG--1--3--1--3-\nD--3--1--3--1-`
+    },
+    "Súčasne fix": {
+        desc: `Zadržiavanie (fixácia) vybraných prstov zatiaľ čo iné prsty aktívne hrajú a striedajú struny. Skvelé na nezávislosť šliach.`,
+        tab: `Tretí a štvrtý prst sú položené na strune G (3)(4):\nH---------1--2--1--2-\nG-(3)(4)-------------\nD---------2--1--2--1-\n\nPrvý a štvrtý prst je zadržaný (1)(4):\nH---------2--3--2--3-\nG-(1)(4)-------------\nD---------3--2--3--2-`
+    },
+    "Nezavislosť": {
+        desc: `Cvičenie nezávislosti prstov (tzv. Spider - Pavúk). Po prvom uložení prstov prekladáme vždy iba jeden prst na ďalšie struny - ostatné držíme striktne položené na mieste.`,
+        tab: `E---------------------3-4-\nH-----------------1-2-----\nG-------------3-4---------\nD---------1-2-------------\nA-----3-4-----------------\nE-1-2---------------------\n\nE-1-2---------------------\nH-----3-4-----------------\nG---------1-2-------------\nD-------------3-4---------\nA-----------------1-2-----\nE---------------------3-4-`
+    },
+    "1-2-3-4": {
+        desc: `Základná chromatická rozcvička pre postupné kladenie prstov.`,
+        tab: `E|----------------|\nH|----------------|\nG|----------------|\nD|----------------|\nA|----------------|\nE|--1-2-3-4-------|`
+    },
+    "1-3-2-4": {
+        desc: `Rozcvička so striedavým preskakovaním polí pre náročnejšiu motoriku.`,
+        tab: `E|----------------|\nH|----------------|\nG|----------------|\nD|----------------|\nA|----------------|\nE|--1-3-2-4-------|`
+    },
+    "chromatic": {
+        desc: `Prechádzanie celého hmatníka cez všetky struny rovnomerne.`,
+        tab: `E|--1-2-3-4--|\nH|--1-2-3-4--|\nG|--1-2-3-4--|\nD|--1-2-3-4--|`
+    },
+    "skip": {
+        desc: `Cvičenie zamerané na presné preskoky medzi strunami a polohami.`,
+        tab: `E|--1---3---2---4--|\nH|------------------|\nG|------------------|`
+    },
+    "strength": {
+        desc: `Izometrické držanie tónov pre vybudovanie sily v končekoch prstov.`,
+        tab: `E|--1---1---1---1--|\nH|--2---2---2---2--|\nG|--3---3---3---3--|`
+    }
+};
+
+function showExercise(el, type) {
+    document.querySelectorAll(".exercise").forEach(e => {
+        e.classList.remove("active");
+    });
+
+    el.classList.add("active");
+
+    document.getElementById("placeholder").style.display = "none";
+    const content = document.getElementById("detailContent");
+    content.style.display = "flex";
+
+    document.getElementById("exerciseTitle").innerText = el.childNodes[0].textContent.trim();
+    document.getElementById("exerciseInstructions").innerText = exercises[type].desc;
+    document.getElementById("exerciseTab").innerText = exercises[type].tab;
+}
+</script>
+
+</body>
+</html>
