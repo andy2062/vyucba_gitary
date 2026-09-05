@@ -1,5 +1,6 @@
 [
     {
+      "id": "chordemajor",
   "title": "E dur",
   "type":"chord",
   "quality":"dur",
@@ -16,9 +17,10 @@
     ]   
   },
   {
+    "id": "chordfmajor",
     "type": "chord",
      "group":"E",
-  "quality": "dur",
+  "quality": "major",
     "title": "F dur",
     "description": "Barre podľa struny E v I.poli: F dur",
     "notes": [
@@ -37,9 +39,10 @@
     }
   },
   {
+    "id": "chordf#major",
     "type": "chord",
      "group":"E",
-  "quality": "dur",
+  "quality": "major",
     "title": "F# dur/Gb dur",
     "description": "Barre podľa struny E v II.poli: F#/Gb dur",
     "notes": [
@@ -58,10 +61,11 @@
     }
   },
   {
+    "id": "chordgmajor",
     "type": "chord",
     "title": "G dur",
      "group":"E",
-  "quality": "dur",
+  "quality": "major",
     "description": "Barre podľa struny E v III.poli: G dur",
     "notes": [
       { "note": "G", "string": 6, "fret": 3, "finger": "1" },
@@ -79,9 +83,10 @@
     }
   },
    {
+    "id": "chordg#major",
     "type": "chord",
      "group":"E",
-  "quality": "dur",
+  "quality": "major",
     "title": "G#/Ab dur",
     "description": "Barre podľa struny E v IV.poli: G#/Ab dur",
     "notes": [
@@ -100,9 +105,10 @@
     }
   },
   {
+    "id": "chordamajor5",
     "type": "chord",
      "group":"E",
-  "quality": "dur",
+  "quality": "major",
     "title": "A dur",
     "description": "Barre podľa struny E v V.poli: A dur",
     "notes": [
@@ -121,9 +127,10 @@
     }
   },
    {
+    "id": "chordeminor",
     "type": "chord",
      "group":"E",
-  "quality": "mol",
+  "quality": "minor",
     "title": "Emi",
     "description": "Barre podľa struny E akord E mol",
     "notes": [
@@ -136,9 +143,10 @@
     ]   
   },
   {
+    "id": "chordfminor",
     "type": "chord",
      "group":"E",
-  "quality": "mol",
+  "quality": "minor",
     "title": "Fmi",
     "description": "Barre podľa struny E v I.poli: Fmi",
     "notes": [
@@ -157,9 +165,10 @@
     }
   },
   {
+    "id": "chordf#minor",
     "type": "chord",
      "group":"E",
-  "quality": "mol",
+  "quality": "minor",
     "title": "F#mi/Gbmi",
     "description": "Barre podľa struny E v II.poli: F#mi/Gbmi",
     "notes": [
@@ -178,9 +187,10 @@
     }
   },
   {
+    "id": "chordamajor1",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "A dur",
     "description": "Barre podľa struny A akord A dur",
     "notes": [
@@ -193,9 +203,10 @@
     ]   
   },
   {
+    "id": "chorda#major",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "A#/B dur",
     "description": "Barre podľa struny A v I.poli: A#/B dur",
     "notes": [
@@ -214,9 +225,10 @@
     }
   },
   {
+    "id": "chordhmajor",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "H dur",
     "description": "Barre podľa struny A v II.poli: H dur",
     "notes": [
@@ -235,9 +247,10 @@
     }
   },
   {
+    "id": "chordcmajor3",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "C dur",
     "description": "Barre podľa struny A v III.poli: C dur",
     "notes": [
@@ -256,9 +269,10 @@
     }
   },
   {
+    "id": "chordc#major",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "C#/Db dur",
     "description": "Barre podľa struny A v IV.poli: C#/Db dur",
     "notes": [
@@ -277,9 +291,10 @@
     }
   },
   {
+    "id": "chorddmajor5",
     "type": "chord",
      "group":"A",
-  "quality": "dur",
+  "quality": "major",
     "title": "D dur",
     "description": "Barre podľa struny A v V.poli: D dur",
     "notes": [
@@ -298,9 +313,10 @@
     }
   },
   {
+    "id": "chordaminor",
     "type": "chord",
      "group":"A",
-  "quality": "mol",
+  "quality": "minor",
     "title": "A mol",
     "description": "Barre podľa struny A akord Ami",
     "notes": [
@@ -313,9 +329,10 @@
     ]   
   },
   {
+    "id": "chorda#minor",
     "type": "chord",
      "group":"A",
-  "quality": "mol",
+  "quality": "minor",
     "title": "A#/B mol",
     "description": "Barre podľa struny A v I.poli: A#/Bmi",
     "notes": [
@@ -334,9 +351,10 @@
     }
   },
   {
+    "id": "chordhminor",
     "type": "chord",
      "group":"A",
-  "quality": "mol",
+  "quality": "minor",
     "title": "H mol",
     "description": "Barre podľa struny A v II.poli: Hmi",
     "notes": [

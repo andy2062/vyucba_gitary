@@ -255,8 +255,7 @@ function drawBar(svg, x, lineOffset) {
 
 // Hlavná funkcia – zalamovanie, akordy, taktové čiary
 function renderTabFromJSON(tabArray) {
-    console.log("TAB INPUT:", tabArray);
-
+    
     const svg = document.getElementById("tab");
     svg.innerHTML = "";
 

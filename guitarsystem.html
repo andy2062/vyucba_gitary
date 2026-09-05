@@ -6,6 +6,7 @@
 
 <title>Guitar Learning System</title>
 <link rel="stylesheet" href="css/style_gs.css">
+
 </head>
 <body>
 
@@ -19,27 +20,22 @@
 
             <select id="categorySelect"></select>
 
-            <select id="exerciseSelect"></select>
+            <select id="itemSelect"></select>
 
-            <select id="shapeSelect">
-    <option value="">Všetky tvary akordov</option>
-    <option value="E">Tvar E</option>
-    <option value="A">Tvar A</option>
-</select>
+            <div id="groupFilter">
+    <select id="groupSelect"></select>
+</div>
 
-<select id="qualitySelect">
-    <option value="">Všetky druhy akordov</option>
-    <option value="major">Dur</option>
-    <option value="minor">Mol</option>
-</select>
+<div id="qualityFilter">
+    <select id="qualitySelect"></select>
+</div>
 
-            <button onclick="prevItem()">&#9664;</button>
+        <button id="previousButton">&#9664;</button>
 
-            <button onclick="nextItem()">&#9654;</button>
-
-            <button onclick="toggleAutoplay()">
-                Play - Stop
-            </button>
+        <button id="nextButton">&#9654;</button>          
+        <button id="autoplayButton">
+    Play - Stop
+</button>
 
         </div>
 
@@ -56,34 +52,79 @@
         <div class="speedBox">
 
             Rýchlosť:
-            <span id="speedValue">900 ms</span>
+            <span id="speedValue">80 BPM</span>
 
             <br><br>
 
             <input
-                type="range"
-                min="400"
-                max="2000"
-                step="100"
-                value="900"
-                id="speedSlider"
+                 id="speedSlider"
+            type="range"
+            min="40"
+             max="440"
+             value="80">
             >
 
         </div>
 
     </div>
 
+    <div id="renderPanel">
+
     <div id="fretboardWrap">
 
         <svg id="fretboard"
              viewBox="0 0 1200 420">
         </svg>
+    
+    </div>
+
+    <div id="notationWrap">
+
+        <div id="notation"></div>
 
     </div>
 
+    <div id="tabWrap">
+
+        <div id="tab"></div>
+
+    </div>
+<!--
+    <div data-render="exercise" data-item="cvic12"></div>
+
+<div id="lesson"></div>
+-->
 </div>
 
-<script src="./js/app.js"></script>
+</div>
+
+<!-- Core -->
+
+   <script src="https://unpkg.com/vexflow@4.2.3/build/cjs/vexflow.js"></script>
+  
+ 
+<script src="js/bootstrap/Manifest.js"></script>
+<script src="js/bootstrap/Loader.js"></script>
+
+<script>
+
+(async () => {
+
+    await Loader.loadModules(Manifest);
+
+    const app = await App.start();
+
+    await app.lessonLoader.open(
+
+        "lesson01",
+
+        document.getElementById("lesson")
+
+    );
+
+})();
+
+</script>
 
 </body>
 </html>

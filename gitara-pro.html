@@ -238,8 +238,8 @@ function showNote(s, f) {
   let fretText = f === 0 ? "Prázdna struna" : f + ". pražec";
 
   // 1. Reset predchádzajúcich aktívnych bodiek a textov
-  const activeNotes = document.querySelectorAll('.note-active');
-  activeNotes.forEach(n => {
+  const highlight = document.querySelectorAll('.note-active');
+  highlight.forEach(n => {
     n.classList.remove('note-active');
     n.setAttribute("fill", "transparent");
   });

@@ -1,0 +1,1368 @@
+{
+ "exercises": [
+  {
+      "id": "exercise01",
+      "title": "Cvičenie prvého prsta s prázdnou strunou",
+      "desc": "Dvíhanie a ukladanie prvého prsta na jednej strune.",
+      "tip": "Drž palec za krkom približne v strede, neohýbaj zápästie.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 0, 5],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["0", "1"],
+      "durations": [0.25, 0.25]
+    },
+    {
+      "id": "exercise02",
+      "title": "Cvičenie druhého prsta s prázdnou strunou",
+      "desc": "Dvíhanie a ukladanie druhého prsta na jednej strune.",
+      "tip": "Drž palec za krkom približne v strede, neohýbaj zápästie.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 0, 6],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["0", "2"]
+    },
+    {
+      "id": "exercise03",
+      "title": "Cvičenie tretieho prsta s prázdnou strunou",
+      "desc": "Dvíhanie a ukladanie tretieho prsta na jednej strune.",
+      "tip": "Drž palec za krkom približne v strede, neohýbaj zápästie.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 0, 7],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["0", "3"]
+    },
+    {
+      "id": "exercise04",
+      "title": "Cvičenie štvrtého prsta s prázdnou strunou",
+      "desc": "Dvíhanie a ukladanie štvrtého prsta na jednej strune.",
+      "tip": "Drž palec za krkom približne v strede, neohýbaj zápästie.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 0, 8],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["0", "4"]
+    },
+    {
+      "id": "exercise12",
+      "title": "Cvičenie prvého a druhého prsta",
+      "desc": "Striedanie prvého a druhého prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba druhý prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 5, 6],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["1", "2"]
+    },
+    {
+      "id": "exercise13",
+     "title": "Cvičenie prvého a tretieho prsta",
+      "desc": "Striedanie prvého a tretieho prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba tretí prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 5, 7],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["1", "3"]
+    },
+    {
+      "id": "exercise14",
+      "title": "Cvičenie prvého a štvrtého prsta",
+      "desc": "Striedanie prvého a štvrtého prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba štvrtý prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 5, 8],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["1", "4"]
+    },
+    {
+      "id": "exercise23",
+      "title": "Cvičenie druhého a tretieho prsta",
+      "desc": "Striedanie druhého a tretieho prsta na jednej strune.",
+      "tip": "Druhý prst necháme ležať na strune dvíhame a ukladáme iba tretí prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 6, 7],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["2", "3"]
+    },
+    {
+      "id": "exercise24",
+      "title": "Cvičenie druhého a štvrtého prsta",
+      "desc": "Striedanie druhého a štvrtého prsta na jednej strune.",
+      "tip": "Druhý prst necháme ležať na strune dvíhame a ukladáme iba štvrtý prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 6, 8],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["2", "4"]
+    },
+    {
+     "id": "exercise34",
+      "title": "Cvičenie tretieho a štvrtého prsta",
+      "desc": "Striedanie tretieho a štvrtého prsta na jednej strune.",
+      "tip": "Tretí prst necháme ležať na strune dvíhame a ukladáme iba štvrtý prst.",
+         "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 7, 8],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["3", "4"]
+    },
+    {
+     "id": "2exercise12",
+      "title": "Cvičenie prstov 1, 2  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 1. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 1. prst, potom presunieme 2. prst na štvrtú D strunu a zahráme tón na štvrtej strune (prvý prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 2. prst a zahráme tón, ktorý už drží 1. prst a nakoniec priložíme 2. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 6, 5, 6],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "1", "2"]
+    },
+     {
+     "id": "2exercise13",
+      "title": "Cvičenie prstov 1, 3  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 1. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 1. prst, potom presunieme 3. prst na štvrtú D strunu a zahráme tón na štvrtej strune (prvý prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 3. prst a zahráme tón, ktorý už drží 1. prst a nakoniec priložíme 3. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 7, 5, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "1", "3"]
+    },
+     {
+     "id": "2exercise14",
+      "title": "Cvičenie prstov 1, 4  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 1. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 1. prst, potom presunieme 4. prst na štvrtú D strunu a zahráme tón na štvrtej strune (prvý prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 4. prst a zahráme tón, ktorý už drží 1. prst a nakoniec priložíme 4. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 8, 5, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "8", "1", "8"]
+    },
+     {
+     "id": "2exercise23",
+      "title": "Cvičenie prstov 2, 3  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom presunieme 3. prst na štvrtú D strunu a zahráme tón na štvrtej strune (druhý prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 3. prst a zahráme tón, ktorý už drží 2. prst a nakoniec priložíme 3. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 7, 6, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "3", "2", "3"]
+    },
+    {
+     "id": "2exercise24",
+      "title": "Cvičenie prstov 2, 4  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom presunieme 4. prst na štvrtú D strunu a zahráme tón na štvrtej strune (druhý prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 4. prst a zahráme tón, ktorý už drží 2. prst a nakoniec priložíme 4. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 8, 6, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "4", "2", "4"]
+    },
+    {
+     "id": "2exercise34",
+      "title": "Cvičenie prstov 3, 4  na dvoch strunách",
+      "desc": "Presúvanie obidvoch prstov z jednej struny na druhú.",
+      "tip": "Položíme 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom presunieme 4. prst na štvrtú D strunu a zahráme tón na štvrtej strune (tretí prst sa zdvihne v okamihu, keď zahráme štvrtú strunu a pripraví na na štvrtej strune) potom zdvihneme 4. prst a zahráme tón, ktorý už drží 3. prst a nakoniec priložíme 4. na štvrtej strune a zahráme. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, -1, -1, -1],
+          [-1, 8, 7, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "4", "3", "4"]
+    },
+
+
+     {
+     "id": "exercise123",
+      "title": "Cvičenie prvého, druhého a tretieho prsta",
+      "desc": "Striedanie prvého, druhého a tretieho prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba druhý a tretí prst.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 6, 7, 6],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "2"]
+    },
+     {
+     "id": "exercise124",
+      "title": "Cvičenie prvého, druhého a štvrtého prsta",
+      "desc": "Striedanie prvého, druhého a štvrtého prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba druhý a štvrtý prst.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 6, 8, 6],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "4", "2"]
+    },
+     {
+     "id": "exercise134",
+      "title": "Cvičenie prvého, tretieho a štvrtého prsta",
+      "desc": "Striedanie prvého, tretieho a štvrtého prsta na jednej strune.",
+      "tip": "Prvý prst necháme ležať na strune dvíhame a ukladáme iba tretí a štvrtý prst.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 7, 8, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "4", "3"]
+    },
+     {
+     "id": "exercise234",
+      "title": "Cvičenie druhého, tretieho a štvrtého prsta",
+      "desc": "Striedanie druhého, tretieho a štvrtého prsta na jednej strune.",
+      "tip": "Druhý prst necháme ležať na strune dvíhame a ukladáme iba tretí a štvrtý prst.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, 7, 8, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "3", "4", "3"]
+    },
+     {
+     "id": "exercise1234",
+      "title": "Cvičenie prvého, druhého, tretieho a štvrtého prsta",
+      "desc": "Ukladanie prvého, druhého, tretieho a štvrtého prsta na jednej strune.",
+      "tip": "Všetky prsty postupne ukladáme na strunu.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 6, 7, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "4"]
+    },
+    {
+     "id": "exercise4321",
+      "title": "Cvičenie prvého, druhého, tretieho a štvrtého prsta",
+      "desc": "Odoberanie prstov na jednej strune.",
+      "tip": "Všetky prsty najprv pripravíme na strunu a postupne ich odoberáme.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 7, 6, 5],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "2", "1"]
+    },
+    {
+     "id": "exercise1243",
+      "title": "Cvičenie štyroch prstov",
+      "desc": "Ukladanie prvého, druhého, štvrtého a tretieho prsta na jednej strune.",
+      "tip": "Ukladáme postupne prvý, druhý, štvrtý s tretím spolu a potom štvrý odoberieme.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 6, 8, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "4", "3"]
+    },
+    {
+     "id": "exercise1324",
+      "title": "Cvičenie štyroch prstov",
+      "desc": "Ukladanie prvého, tretieho, druhého a štvrtého prsta na jednej strune.",
+      "tip": "Ukladáme postupne prvý, tretí s druhým spolu, tretí odoberieme a uložíme štrvtý s tretím spolu.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 7, 6, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "2", "4"]
+    },
+    {
+     "id": "exercise1423",
+      "title": "Cvičenie štyroch prstov",
+      "desc": "Ukladanie prvého, tretieho, druhého a štvrtého prsta na jednej strune.",
+      "tip": "Ukladáme postupne prvý, tretí s druhým spolu, tretí odoberieme a uložíme štrvtý s tretím spolu.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 8, 6, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "4", "2", "3"]
+    },
+    {
+     "id": "exercise1342",
+      "title": "Cvičenie štyroch prstov",
+      "desc": "Ukladanie prvého, tretieho, štvrtého a druhéhoprsta na jednej strune.",
+      "tip": "Ukladáme postupne prvý, tretí s druhým spolu, štvrtý a potom oberieme štvrtý a tretí.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, 7, 8, 6],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "4", "2"]
+    },
+
+    {
+     "id": "2exercise21",
+      "title": "Cvičenie prstov 1,2 na dvoch strunách",
+      "desc": "Presúvanie 2. prsta z jednej struny na druhú.",
+      "tip": "Položíme 1. a 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom dvihneme 2. prst, zahráme tón, ktorý drží 1. prst a 2. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 2. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, 5, -1, 5],
+          [-1, -1, 6, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "1", "2", "1"]
+    },
+    {
+     "id": "2exercise31",
+      "title": "Cvičenie prstov 1,3 na dvoch strunách",
+      "desc": "Presúvanie 3. prsta z jednej struny na druhú.",
+      "tip": "Položíme 1. a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 1. prst a 3. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 3. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, 5, -1, 5],
+          [-1, -1, 7, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "1", "3", "1"]
+    },
+    {
+     "id": "2exercise41",
+      "title": "Cvičenie prstov 1,4 na dvoch strunách",
+      "desc": "Presúvanie 4. prsta z jednej struny na druhú.",
+      "tip": "Položíme 1. a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 1. prst a 4. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 5, -1, 5],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "1", "4", "1"]
+    },
+    {
+     "id": "2exercise32",
+      "title": "Cvičenie prstov 2, 3  na dvoch strunách",
+      "desc": "Presúvanie 3. prsta z jednej struny na druhú.",
+      "tip": "Položíme 2. a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 2. prst a 3. prst presunieme na štvrtú D strunu (druhý prst ostane na G strune) - zahráme tón, ktorý drží 3. prst na štvrtej D strune a potom tón, ktorý drží 2. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, 6, -1, 6],
+          [-1, -1, 7, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "3", "2"]
+    },
+    {
+     "id": "2exercise42",
+      "title": "Cvičenie prstov 2,4 na dvoch strunách",
+      "desc": "Presúvanie 4. prsta z jednej struny na druhú.",
+      "tip": "Položíme 4. a 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 2. prst a 4. prst presunieme na štvrtú D strunu (druhý prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 2. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 6, -1, 6],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "4", "2"]
+    },
+    {
+     "id": "2exercise43",
+      "title": "Cvičenie prstov 3,4 na dvoch strunách",
+      "desc": "Presúvanie 4. prsta z jednej struny na druhú.",
+      "tip": "Položíme 4. a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 3. prst a 4. prst presunieme na štvrtú D strunu (tretí prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 3. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 7, -1, 7],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "4", "3"]
+    },
+     {
+     "id": "2exercise321",
+      "title": "Cvičenie prstov 1,2,3 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách.",
+      "tip": "Položíme 1., a 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom dvihneme 2. prst, zahráme tón, ktorý drží 1. prst a 3. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 3. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, 5, -1, 5],
+          [-1, -1, 7, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "1", "3", "1"]
+    },
+     {
+     "id": "2exercise421",
+      "title": "Cvičenie prstov 1,2,4 na dvoch strunách",
+      "desc": "Cvičeni troch prstov na dvoch strunách",
+      "tip": "Položíme 1., a 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom dvihneme 2. prst, zahráme tón, ktorý drží 1. prst a 4. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, 5, -1, 5],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "1", "4", "1"]
+    },
+    {
+     "id": "2exercise431",
+      "title": "Cvičenie prstov 1,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1., a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 1. prst a 4. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, 5, -1, 5],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "1", "4", "1"]
+    },
+    {
+     "id": "2exercise432",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2., a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 2. prst a 4. prst presunieme na štvrtú D strunu (druhý prst ostane na G strune) - zahráme tón, ktorý drží 4. prst na štvrtej D strune a potom tón, ktorý drží 2. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, 6, -1, 6],
+          [-1, -1, 8, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "4", "2"]
+    },
+    {
+     "id": "2exercise312",
+      "title": "Cvičenie prstov 1,2,3 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1., a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 1. prst a 2. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 2. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 7, 5, -1, 5],
+          [-1, -1, 6, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "1", "2", "1"]
+    },
+    {
+     "id": "2exercise412",
+      "title": "Cvičenie prstov 1,2,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1., a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 1. prst a 2. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 2. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 5, -1, 5],
+          [-1, -1, 6, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "1", "2", "1"]
+    },
+     {
+     "id": "2exercise413",
+      "title": "Cvičenie prstov 1,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1., a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 1. prst a 3. prst presunieme na štvrtú D strunu (prvý prst ostane na G strune) - zahráme tón, ktorý drží 3. prst na štvrtej D strune a potom tón, ktorý drží 1. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 5, -1, 5],
+          [-1, -1, 7, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "1", "3", "1"]
+    },
+    {
+     "id": "2exercise423",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2., a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 2. prst a 3. prst presunieme na štvrtú D strunu (druhý prst ostane na G strune) - zahráme tón, ktorý drží 3. prst na štvrtej D strune a potom tón, ktorý drží 2. prst na tretej G strune. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 8, 6, -1, 6],
+          [-1, -1, 7, -1],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "3", "2"]
+    },
+    {
+     "id": "3exercise132",
+      "title": "Cvičenie prstov 1,2,3 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1. prst na tretiu G strunu. Zahráme tón, ktorý drží 1. prst, potom stlačíme 2. a 3. prstom štvrtú strunu, zahráme tón, ktorý drží 3. prst, zdvihneme 3. prst ostane na štvrtej strune 2. prst zahráme tón a potom priložíme 3. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 7,  6, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "2", "3"]
+    },
+     {
+     "id": "3exercise142",
+      "title": "Cvičenie prstov 1,2,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1. prst na tretiu G strunu. Zahráme tón, ktorý drží 1. prst, potom stlačíme 2. a 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, zdvihneme 4. prst ostane na štvrtej strune 2. prst zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 8,  6, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "4", "2", "4"]
+    },
+     {
+     "id": "3exercise143",
+      "title": "Cvičenie prstov 1,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 1. prst na tretiu G strunu. Zahráme tón, ktorý drží 1. prst, potom stlačíme 3. a 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, zdvihneme 4. prst ostane na štvrtej strune 3. prst zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 5, -1, -1, -1],
+          [-1, 8,  7, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["1", "4", "3", "4"]
+    },
+    {
+     "id": "3exercise243",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2. prst na tretiu G strunu. Zahráme tón, ktorý drží 2. prst, potom stlačíme 3. a 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, zdvihneme 4. prst ostane na štvrtej strune 3. prst zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 8,  7, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "4", "3", "4"]
+    },
+    {
+     "id": "3exercise231",
+      "title": "Cvičenie prstov 1,2,3 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2. prst na tretiu G strunu. Zahráme tón, ktorý drží 2. prst, potom stlačíme 3. prstom štvrtú strunu, zahráme tón, ktorý drží 3. prst, stlačíme 1. prst na štvrtej strune zahráme tón a potom priložíme 3. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 7,  5, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "3", "1", "3"]
+    },
+     {
+     "id": "3exercise241",
+      "title": "Cvičenie prstov 1,2,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2. prst na tretiu G strunu. Zahráme tón, ktorý drží 2. prst, potom stlačíme 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, stlačíme 1. prst na štvrtej strune zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 8,  5, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "4", "1", "4"]
+    },
+    {
+     "id": "3exercise243",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 2. prst na tretiu G strunu. Zahráme tón, ktorý drží 2. prst, potom stlačíme 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, stlačíme 3. prst na štvrtej strune zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [ 6, -1, -1, -1],
+          [-1, 8,  7, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["2", "4", "3", "4"]
+    },
+    {
+     "id": "3exercise341",
+      "title": "Cvičenie prstov 1,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 3. prst na tretiu G strunu. Zahráme tón, ktorý drží 3. prst, potom stlačíme 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, stlačíme 1. prst na štvrtej strune zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [7, -1, -1, -1],
+          [-1, 8,  5, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "4", "1", "4"]
+    },
+    {
+     "id": "3exercise342",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 3. prst na tretiu G strunu. Zahráme tón, ktorý drží 3. prst, potom stlačíme 4. prstom štvrtú strunu, zahráme tón, ktorý drží 4. prst, stlačíme 2. prst na štvrtej strune zahráme tón a potom priložíme 4. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [7, -1, -1, -1],
+          [-1, 8, 6, 8],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["3", "4", "2", "4"]
+    },
+    {
+     "id": "3exercise421",
+      "title": "Cvičenie prstov 1,2,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 4. prst na tretiu G strunu. Zahráme tón, ktorý drží 4. prst, potom stlačíme 2. prstom štvrtú strunu, zahráme tón, ktorý drží 2. prst, stlačíme 1. prst na štvrtej strune zahráme tón a potom priložíme 2. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [8, -1, -1, -1],
+          [-1, 6, 5, 6],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "1", "2"]
+    },
+    {
+     "id": "3exercise431",
+      "title": "Cvičenie prstov 1,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 4. prst na tretiu G strunu. Zahráme tón, ktorý drží 4. prst, potom stlačíme 3. prstom štvrtú strunu, zahráme tón, ktorý drží3. prst, stlačíme 1. prst na štvrtej strune zahráme tón a potom priložíme 3. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [8, -1, -1, -1],
+          [-1, 7, 5, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "1", "3"]
+    },
+    {
+     "id": "3exercise432",
+      "title": "Cvičenie prstov 2,3,4 na dvoch strunách",
+      "desc": "Cvičenie troch prstov na dvoch strunách",
+      "tip": "Položíme 4. prst na tretiu G strunu. Zahráme tón, ktorý drží 4. prst, potom stlačíme 3. prstom štvrtú strunu, zahráme tón, ktorý drží 3. prst, stlačíme 2. prst na štvrtej strune zahráme tón a potom priložíme 3. prst a znova zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1],
+          [-1, -1, -1, -1],
+          [8, -1, -1, -1],
+          [-1, 7, 6, 7],
+          [-1, -1, -1, -1],
+          [-1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "2", "3"]
+    },
+    
+    {
+     "id": "4exercise2121",
+      "title": "Cvičenie prstov 1,2 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 1. a 2. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 2. prst, potom dvihneme 2. prst, zahráme tón, ktorý drží 1. prst a 2. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 2. prst na štvrtej D strune a presunieme 1. prst na štvrtú strunu, odoberieme 2. prst a zahráme tón, ktorý drží 1. prst, znova stlačíme 2. prstom štvrtú strunu a zahráme tón, potom 1. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 6, 5, -1, -1, -1, 5],
+          [-1, -1, 6, 5, 6, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["2", "1", "2", "1", "2", "1"]
+    },
+    {
+     "id": "4exercise3131",
+      "title": "Cvičenie prstov 1,3 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 1. a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 1. prst a 3. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 3. prst na štvrtej D strune a presunieme 1. prst na štvrtú strunu, odoberieme 3. prst a zahráme tón, ktorý drží 1. prst, znova stlačíme 3. prstom štvrtú strunu a zahráme tón, potom 1. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 7, 5, -1, -1, -1, 5],
+          [-1, -1, 7, 5, 7, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["3", "1", "3", "1", "3", "1"]
+    },
+    {
+     "id": "4exercise4141",
+      "title": "Cvičenie prstov 1,4 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 1. a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 1. prst a 4. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 4. prst na štvrtej D strune a presunieme 1. prst na štvrtú strunu, odoberieme 4. prst a zahráme tón, ktorý drží 1. prst, znova stlačíme 4. prstom štvrtú strunu a zahráme tón, potom 1. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 5, -1, -1, -1, 5],
+          [-1, -1, 8, 5, 8, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "1", "4", "1", "4", "1"]
+    },
+    {
+     "id": "4exercise3232",
+      "title": "Cvičenie prstov 2,3 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 2. a 3. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 3. prst, potom dvihneme 3. prst, zahráme tón, ktorý drží 2. prst a 3. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 3. prst na štvrtej D strune a presunieme 2. prst na štvrtú strunu, odoberieme 3. prst a zahráme tón, ktorý drží 2. prst, znova stlačíme 3. prstom štvrtú strunu a zahráme tón, potom 2. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 7, 6, -1, -1, -1, 6],
+          [-1, -1, 7, 6, 7, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "3", "2", "3", "2"]
+    },
+    {
+     "id": "4exercise4242",
+      "title": "Cvičenie prstov 2,4 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 2. a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 2. prst a 4. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 4. prst na štvrtej D strune a presunieme 2. prst na štvrtú strunu, odoberieme 4. prst a zahráme tón, ktorý drží 2. prst, znova stlačíme 4. prstom štvrtú strunu a zahráme tón, potom 2. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 6, -1, -1, -1, 6],
+          [-1, -1, 8, 6, 8, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "4", "2", "4", "2"]
+    },
+    {
+     "id": "4exercise4343",
+      "title": "Cvičenie prstov 3,4 na dvoch strunách",
+      "desc": "Presúvanie prstov cez dve struny.",
+      "tip": "Položíme 3. a 4. prst na tretiu G strunu. Najprv zahráme tón, ktorý drží 4. prst, potom dvihneme 4. prst, zahráme tón, ktorý drží 3. prst a 4. prst presunieme na štvrtú D strunu, zahráme tón, ktorý drží 4. prst na štvrtej D strune a presunieme 3. prst na štvrtú strunu, odoberieme 4. prst a zahráme tón, ktorý drží 3. prst, znova stlačíme 4. prstom štvrtú strunu a zahráme tón, potom 3. prstom stlačíme tretiu strunu a zahráme tón. Cvičenie sa potom dokola opakuje.",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 7, -1, -1, -1, 7],
+          [-1, -1, 8, 7, 8, -1],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "4", "3", "4", "3"]
+    },
+     {
+     "id": "trioly123",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 6, 7, -1, -1, -1],
+          [-1, -1, -1, 5, 6, 7],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "1", "2", "3"]
+    },
+     {
+     "id": "trioly124",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 6, 8, -1, -1, -1],
+          [-1, -1, -1, 5, 6, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "4", "1", "2", "4"]
+    },
+    {
+     "id": "trioly134",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 7, 8, -1, -1, -1],
+          [-1, -1, -1, 5, 7, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "3", "4", "1", "3", "4"]
+    },
+       {
+     "id": "trioly234",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 6, 7, 8, -1, -1, -1],
+          [-1, -1, -1, 6, 7, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["2", "3", "4", "2", "3", "4"]
+    },
+       {
+     "id": "trioly124134",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 6, 8, -1, -1, -1],
+          [-1, -1, -1, 5, 7, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "4", "1", "3", "4"]
+    },
+    {
+     "id": "trioly123124",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 6, 7, -1, -1, -1],
+          [-1, -1, -1, 5, 6, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "1", "2", "4"]
+    },
+    {
+     "id": "trioly123134",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 5, 6, 7, -1, -1, -1],
+          [-1, -1, -1, 5, 7, 8],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "1", "3", "4"]
+    },
+     {
+     "id": "trioly321",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 7, 6, 5, -1, -1, -1],
+          [-1, -1, -1, 7, 6, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "1", "3", "2", "1"]
+    },
+    {
+     "id": "trioly421",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 6, 5, -1, -1, -1],
+          [-1, -1, -1, 8, 6, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "1", "4", "2", "1"]
+    },
+    {
+     "id": "trioly431",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 7, 5, -1, -1, -1],
+          [-1, -1, -1, 8, 7, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "1", "4", "3", "1"]
+    },
+    {
+     "id": "trioly432",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 7, 6, -1, -1, -1],
+          [-1, -1, -1, 8, 7, 6],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "3", "2", "4", "3", "2"]
+    },
+    {
+     "id": "trioly421431",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 8, 6, 5, -1, -1, -1],
+          [-1, -1, -1, 8, 7, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["4", "2", "1", "4", "3", "1"]
+    },
+    {
+     "id": "trioly321421",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 7, 6, 5, -1, -1, -1],
+          [-1, -1, -1, 8, 6, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "1", "4", "2", "1"]
+    },
+    {
+     "id": "trioly321431",
+      "title": "Cvičenie troch prstov na dvoch strunách",
+      "desc": "Ukladanie a presúvanie troch prstov po strunách. Cvičenie sa potom dokola opakuje.",
+      "tip": "Ak ide cvičenie s istotou, môžeme skúšať na troch, štyroch ... šiestich strunách. Môžeme pridať aj preskakovanie strún, napr: druhá - štvrtá, druhá - piata...",
+         "tabData": [
+           [-1, -1, -1, -1, -1, -1 ],
+          [-1, -1, -1, -1, -1, -1],
+          [ 7, 6, 5, -1, -1, -1],
+          [-1, -1, -1, 8, 7, 5],
+          [-1, -1, -1, -1, -1, -1],
+          [-1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["3", "2", "1", "4", "3", "1"]
+    },
+
+
+
+
+
+
+
+
+{
+      "id": "chromatic-warmup",
+      "title": "Chromatická rozcvička",
+      "desc": "Striedanie prstov 1-2-3-4 na jednej strune.",
+      "tip": "Drž palec za krkom približne v strede, neohýbaj zápästie.",
+      "tabData": [
+        [1, 2, 3, 4, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1]
+      ],
+      "fingering": ["1", "2", "3", "4", "", "", "", ""]
+    },
+
+    {
+      "id": "priprava-VII-pole",
+      "title": "Prípravné prstové cvičenia v VII. poli",
+      "desc": "Polož prsty ľavej ruky v VII. poli na tretiu (G) strunu...",
+      "tip": "Dvíhanie prstov...",
+      "tabData": [
+           [-1, -1 ],
+          [-1, -1 ],
+          [ 7, 8],
+          [ -1, -1 ],
+          [ -1, -1 ],
+          [ -1, -1 ]
+      ],
+      "fingering": ["1", "2"]
+    },
+    {
+      "id": "prazdna-struna-vsetky",
+            "title": "Cvičenia s prázdnou strunou",
+      "desc": "Pri týchto cvičeniach zo začiatku hráme čo najpomalšie a snažíme sa, aby každý tón znel čo najdlhšie. Ide tu hlavne o súhru ľavej a pravej ruky tzn. aby ľavá ruka stlačila strunu v okamihu, keď pravá ruka brnkne.",
+      "tip": "Stlačenie: V momente úderu pravej ruky ľavá ruka bleskovo pritlačí strunu. Odťah: Pravá ruka brnká prázdnu strunu presne v zlomku sekundy, kedy sa ľavá ruka odťahuje zo znejúceho tónu.",
+      "tabData": [
+        [0, 1, 0, 1, 0, 2, 0, 2, 0, 3, 0, 3, 0, 4, 0, 4],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "dvojice-jedna-struna",
+      "title": "Cvičenia dvojíc prstov na jednej strune",
+      "desc": "Tréning plynulosti a vytrvalosti pre dvojice prstov. Prechádzaj postupne kombinácie od najľahších (1-2) až po tie mechanicky najnáročnejšie (3-4).",
+      "tip": "Hraj v pomalom tempe s metronómom. Sústreď sa na rytmickú vyrovnanosť, aby tóny mali úplne rovnakú dĺžku a dynamickú hlasitosť.",
+      "tabData": [
+        [1, 2, 1, 2, 1, 3, 1, 3, 1, 4, 1, 4, 2, 3, 2, 3, 2, 4, 2, 4, 3, 4, 3, 4],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "trojice-jedna-struna",
+      "title": "Cvičenia trojíc prstov na jednej strune",
+      "desc": "Tieto sekvencie troch prstov výrazne pomáhajú rozvíjať nezávislosť jednotlivých šliach v predlaktí. Zameriava sa na striedanie smeru pohybu prstov.",
+      "tip": "Pri prechode medzi prstami (napríklad 1-3-2) dbaj na to, aby prsty, ktoré práve nehrajú, zbytočne nelietali vysoko nad hmatník. Udržuj ich uvoľnené tesne nad strunou.",
+      "tabData": [
+        [1, 2, 3, 1, 2, 3, 1, 3, 2, 1, 3, 2, 1, 2, 4, 1, 2, 4, 1, 4, 2, 1, 4, 2],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "stvorice-jedna-struna",
+      "title": "Cvičenia štvoríc prstov na jednej strune",
+      "desc": "Komplexné prechody všetkých štyroch prstov. Správne zvládnutie týchto kombinácií zaručuje, že tvoja ľavá ruka získa absolútnu istotu v akejkoľvek tónine alebo sóle.",
+      "tip": "Sústreď sa hlavne na kombináciu 1-3-4-2 a 1-3-2-4, kde sa najčastejšie prejavuje kŕčovitosť prstenníka. Akonáhle ucítiš napätie, ruku okamžite uvoľni a vyklep.",
+      "tabData": [
+        [1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 4, 3, 1, 2, 4, 3, 1, 3, 2, 4, 1, 3, 2, 4, 1, 3, 4, 2, 1, 3, 4, 2],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "dve-struny-1",
+      "title": "Cvičenia na dvoch strunách - Ukotvený 1. prst",
+      "desc": "Prvý prst (ukazovák) slúži ako pevná kotva na strune H (1. pražec) a nesmie sa pohnúť. Ostatné prsty sa postupne striedajú na strune E. Toto cvičenie môžeš neskôr trénovať aj na vzdialenejších strunách (napr. H - D, H - A).",
+      "tip": "Položený prst na strune H musí držať čistý tón po celý čas, kým druhý prst preskakuje a hrá na strune E. Zápästie drž v stabilnej a prirodzenej polohe.",
+      "tabData": [
+        [2, -1, 1, -1, -1, 1, 2, -1, 1, -1, -1, 1],
+        [-1, 2, -1, -1, 2, -1, -1, 2, -1, -1, 2, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "dve-struny-2",
+      "title": "Cvičenia na dvoch strunách - Striedavá kotva",
+      "desc": "Jeden vybraný prst hrá stabilne iba na strune H, zatiaľ čo druhý (aktívny) prst striedavo prechádza a hrá medzi strunami E a H.",
+      "tip": "Snaž sa dosiahnuť plynulý prechod. Pohyb by mal vychádzať čisto z kĺbov prstov, lakťom ani celou rukou nerob žiadne veľké sprievodné pohyby.",
+      "tabData": [
+        [1, -1, -1, -1, 1, -1, -1, -1],
+        [-1, 2, 1, 2, -1, 2, 1, 2],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "dve-struny-3",
+      "title": "Striedanie dvojíc prstov na dvoch strunách",
+      "desc": "Trénujeme bleskovú a presnú výmenu dvoch rôznych dvojíc prstov naprieč strunami E a H. Cvičenie simuluje rýchle zmeny melodických liniek.",
+      "tip": "Sleduj, aby ti pri prechode z jednej struny na druhú nevznikalo nežiaduce preznievanie strún (ako pri akorde) alebo hluché miesta. Tóny musia na seba dokonale nadväzovať.",
+      "tabData": [
+        [2, 1, -1, -1, -1, 1, 2, 1, -1, -1, -1, 1],
+        [-1, -1, 2, 1, 2, -1, -1, -1, 2, 1, 2, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "dve-struny-4",
+      "title": "Striedanie trojíc prstov na dvoch strunách",
+      "desc": "Výrazne komplexnejšie melodické cvičenie vyžadujúce precíznu plynulosť prstov. Striedame rýchle zostupy `3-2-1` na strune E a následné vzostupy na strune H.",
+      "tip": "Udržuj stabilné tempo. Toto cvičenie je vynikajúce na prípravu plynulých legato behov cez viacero strunových rovín.",
+      "tabData": [
+        [3, 2, 1, -1, -1, -1, -1, -1, 1, 2, 3, 2, 1, -1, -1, -1, -1, -1, 1],
+        [-1, -1, -1, 3, 2, 1, 2, 3, -1, -1, -1, -1, -1, 3, 2, 1, 2, 3, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "sucasna-vymena-pary",
+      "title": "Súčasné striedanie strún dvoma prstami",
+      "desc": "Dva prsty súčasne vymenia svoje pozície na dvoch rôznych strunách (E a H). Celá výmena musí vychádzať výhradne z prstov, postavenie zápästia by sa nemalo meniť ani kriviť.",
+      "tip": "Neskôr môžeš pre toto cvičenie vyberať aj vzdialenejšie struny (napríklad E a G, alebo H a D). Sústreď sa na absolútne súčasný dopad oboch prstov na pražce.",
+      "tabData": [
+        [1, -1, 2, -1, 1, -1, 2, -1],
+        [-1, 2, -1, 1, -1, 2, -1, 1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "sucasna-vymena-priputane",
+      "title": "Súčasné striedanie so zadržanými prstami",
+      "desc": "Tretí a štvrtý prst sú pevne položené (zadržané) na strune G. Súčasne striedame prvý a druhý prst na strunách H a D. Extrémne účinné na nezávislosť šliach.",
+      "tip": "Zadržané prsty v zátvorkách musia zostať nehybne na strune G počas celej doby cvičenia. Netlač ich kŕčovito, stačí len jemný tlak na udržanie tónu.",
+      "tabData": [
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, 1, -1, 2, -1, 1, -1, 2],
+        ["(3)", "(3)", "(4)", "(4)", "(3)", "(3)", "(4)", "(4)"],
+        [-1, 2, -1, 1, -1, 2, -1, 1],
+        [-1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "pavuk-1",
+      "title": "Cvičenia nezávislosti prstov (Pavúk vzostupný)",
+      "desc": "Legendárne cvičenie 'Pavúk'. Po prvom uložení prstov prekladáme na ďalšiu strunu vždy iba jeden prst po druhom – ostatné držíme pevne položené na svojom mieste.",
+      "tip": "Pohybuj prstami premyslene a maximálne úsporne. Keď prekladáš ukazovák na strunu A, prostredník, prstenník a malíček musia nehybne ležať na strune E, kým nepríde rad na ne.",
+      "tabData": [
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3, 4],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 2, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 3, 4, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 2, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 3, 4, -1, -1, -1, -1, -1, -1, -1, -1],
+        [1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+    {
+      "id": "pavuk-2",
+      "title": "Cvičenia nezávislosti prstov (Pavúk zostupný)",
+      "desc": "Zostupná variácia pavúka. Začíname na najtenšej strune E a postupne, prst po prste, prekladáme celú ruku smerom k najhrubšej basovej strune E.",
+      "tip": "Sleduj ako sa správa tvoj palec na zadnej strane krku gitary. Mal by byť približne v strede a uľahčovať ti pohodlný dosah bez ohýbania zápästia.",
+      "tabData": [
+        [1, 2, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 3, 4, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 2, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 3, 4, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 2, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 3, 4]
+      ]
+    },
+    {
+      "id": "pavuk-3",
+      "title": "Cvičenia nezávislosti prstov (Pavúk vzostupný)",
+      "desc": "Legendárne cvičenie 'Pavúk'. Po prvom uložení prstov prekladáme na ďalšiu strunu vždy iba jeden prst po druhom – ostatné držíme pevne položené na svojom mieste.",
+      "tip": "Pohybuj prstami premyslene a maximálne úsporne. Keď prekladáš ukazovák na strunu A, prostredník, prstenník a malíček musia nehybne ležať na strune E, kým nepríde rad na ne.",
+      "tabData": [
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 4],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 3, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 2, 4, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 3, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 2, 4, -1, -1, -1, -1, -1, -1, -1, -1],
+        [1, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+     {
+      "id": "pavuk-4",
+      "title": "Cvičenia nezávislosti prstov (Pavúk zostupný)",
+      "desc": "Zostupná variácia pavúka. Začíname na najtenšej strune E a postupne, prst po prste, prekladáme celú ruku smerom k najhrubšej basovej strune E.",
+      "tip": "Sleduj ako sa správa tvoj palec na zadnej strane krku gitary. Mal by byť približne v strede a uľahčovať ti pohodlný dosah bez ohýbania zápästia.",
+      "tabData": [
+        [1, 3, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 2, 4, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 3, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 2, 4, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 3, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 4]
+      ]
+    },
+    {
+      "id": "pavuk-5",
+      "title": "Cvičenia nezávislosti prstov (Pavúk vzostupný)",
+      "desc": "Legendárne cvičenie 'Pavúk'. Po prvom uložení prstov prekladáme na ďalšiu strunu vždy iba jeden prst po druhom – ostatné držíme pevne položené na svojom mieste.",
+      "tip": "Pohybuj prstami premyslene a maximálne úsporne. Keď prekladáš ukazovák na strunu A, prostredník, prstenník a malíček musia nehybne ležať na strune E, kým nepríde rad na ne.",
+      "tabData": [
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 3],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 4, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 2, 3, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 4, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 2, 3, -1, -1, -1, -1, -1, -1, -1, -1],
+        [1, 4, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+      ]
+    },
+     {
+      "id": "pavuk-6",
+      "title": "Cvičenia nezávislosti prstov (Pavúk zostupný)",
+      "desc": "Zostupná variácia pavúka. Začíname na najtenšej strune E a postupne, prst po prste, prekladáme celú ruku smerom k najhrubšej basovej strune E.",
+      "tip": "Sleduj ako sa správa tvoj palec na zadnej strane krku gitary. Mal by byť približne v strede a uľahčovať ti pohodlný dosah bez ohýbania zápästia.",
+      "tabData": [
+        [1, 4, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, 2, 3, -1, -1, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, 1, 4, -1, -1, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, 2, 3, -1, -1, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, 1, 4, -1, -1],
+        [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2, 3]
+      ]
+    },
+  
+    {
+      "id": "right01",
+      "title": "Cvičenie prstov i,m na prázdnych strunách",
+      "desc": "Prst stlačí strunu do otvoru a potom ju uvoľní.",
+      "tip": "Nedávaj prst pod strunu a netlač zápästie k doske gitary!",
+         "tabData": [
+           [0, 0, -1, -1, -1, -1, -1, -1, -1, -1 ],
+          [-1, -1, 0, 0, -1, -1, -1, -1, -1, -1 ],
+          [ -1, -1, -1, -1, 0, 0, -1, -1, -1, -1],
+          [ -1, -1, -1, -1, -1, -1, 0, 0, -1, -1 ],
+          [ -1, -1, -1, -1, -1, -1, -1, -1, 0, 0 ],
+          [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ]
+      ],
+      "fingering": ["i", "m", "i", "m","i", "m","i", "m","i", "m"]
+    }
+    ]
+}

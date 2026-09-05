@@ -1,12 +1,12 @@
 if (window.guitarSystemInitialized) {
-    console.log("GuitarSystem už existuje");
+    debug("GuitarSystem už existuje");
 } else {
     window.guitarSystemInitialized = true;
 
     // =====================================================
     // COLORS
     // =====================================================
-    console.log("GUITARSYSTEM LOADED");
+    debug("GUITARSYSTEM LOADED");
     const gsFingerColors = {
         "1": "#43a047",
         "2": "#1e88e5",
@@ -116,7 +116,7 @@ if (window.guitarSystemInitialized) {
         const item = currentData[currentIndex];
         if (!item || !item.notes) return;
 
-        drawBase();
+        SVGDrawer.drawBase(svg);
         drawNote(item.notes[currentNoteIndex]);
         updateInfo(item.title, item.description, "Krok " + (currentNoteIndex + 1) + "/" + item.notes.length);
         
@@ -131,7 +131,7 @@ if (window.guitarSystemInitialized) {
         const item = currentData[currentIndex];
         if (!item || !item.notes) return;
 
-        drawBase();
+        SVGDrawer.drawBase(svg);
         for (let i = 0; i <= currentNoteIndex; i++) {
             drawNote(item.notes[i]);
         }
@@ -150,10 +150,10 @@ if (window.guitarSystemInitialized) {
         const item = currentData[currentIndex];
         if (!item || !item.notes) return;
 
-        drawBase();
+        SVGDrawer.drawBase(svg);
         const interval = item.notes[currentNoteIndex];
         if (Array.isArray(interval)) {
-            interval.forEach(note => drawNote(note));
+            interval.forEach(note => SVGDrawer.drawNote(svg, note));
         }
         
         updateInfo(item.title, item.description, "Interval " + (currentNoteIndex + 1) + "/" + item.notes.length);
@@ -220,7 +220,7 @@ if (window.guitarSystemInitialized) {
     // UPDATE EXERCISE MENU
     // =====================================================
     function updateExerciseMenu() {
-        console.log("updateExerciseMenu:", currentCategory, currentData?.length);
+
         const select = document.getElementById("exerciseSelect");
 
         let menuData = (currentCategory === "Chords" || currentCategory === "Scales" || currentCategory === "Intervals")
@@ -317,64 +317,26 @@ if (window.guitarSystemInitialized) {
             case "scale":
                 renderScale(item);
                 break;
-            case "intervalExercise":
-                renderIntervalExercise(item);
+            case "interval":
+                renderinterval(item);
                 break;
             case "chord":
                 renderChord(item);
                 break;
         }
     }
+const exerciseRenderer = new ExerciseRenderer(svg);
+exerciseRenderer.render(item);
 
-    function renderExercise(item) {
-        drawBase();
-        if (item.notes) item.notes.forEach(note => drawNote(note));
-        updateInfo(item.title, item.description, "Cvičenie pre prsty");
-    }
+const scaleRenderer = new ScaleRenderer(svg);
+scaleRenderer.render(item);
 
-    function renderScale(item) {
-        drawBase();
-        if (item.notes) item.notes.forEach(note => drawNote(note));
-        updateInfo(item.title, item.description, "Stupnica");
-    }
+const intervalRenderer = new IntervalRenderer(svg);
+intervalRenderer.render(item);
 
-    function renderIntervalExercise(item) {
-        drawBase();
-        if (item.notes) {
-            item.notes.forEach(interval => {
-                if (Array.isArray(interval)) {
-                    interval.forEach(note => drawNote(note));
-                }
-            });
-        }
-        updateInfo(item.title, item.description, "Stupnica v intervaloch");
-    }
+const chordRenderer = new ChordRenderer(svg);
+chordRenderer.render(item, currentVariation);
 
-    function renderChord(item) {
-        drawBase();
-
-        // Podpora pre variácie (ak v objekte sú, vyberie sa aktuálna variácia)
-        const chord = item.variations ? item.variations[currentVariation] : item;
-
-        if (!chord) {
-            console.error("Variácia neexistuje", currentVariation, item);
-            return;
-        }
-
-        if (chord.barre) {
-            drawBarre(chord.barre);
-        }
-
-        if (chord.notes) {
-            chord.notes.forEach(note => drawNote(note));
-        }
-
-        updateInfo(
-            item.title,
-            item.description,
-            chord.caged ? "CAGED: " + chord.caged : "Akordy"
-        );
-    }
 
     // =====================================================
     // UPDATE INFO
@@ -617,7 +579,7 @@ if (window.guitarSystemInitialized) {
                     case "exercise":
                         nextExerciseStep();
                         break;
-                    case "intervalExercise":
+                    case "interval":
                         nextIntervalStep();
                         break;    
                     default:
@@ -633,6 +595,7 @@ if (window.guitarSystemInitialized) {
     // =====================================================
     // SPEED SLIDER LISTENER
     // =====================================================
+    
     const speedSlider = document.getElementById("speedSlider");
     if (speedSlider) {
         speedSlider.addEventListener("input", function() {
@@ -652,7 +615,7 @@ if (window.guitarSystemInitialized) {
                         case "exercise":
                             nextExerciseStep();
                             break;
-                        case "intervalExercise":
+                        case "interval":
                             nextIntervalStep();
                             break;
                         default:

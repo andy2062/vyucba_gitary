@@ -1,5 +1,6 @@
 [
    {
+    "id": "cvic12",
     "type": "exercise",
     "title": "1,2 na jednej strune",
      "playMode": "single",
@@ -10,9 +11,21 @@
             { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
                   { "note": "C", "string": 3, "fret": 5, "finger": "1" },
             { "note": "C#", "string": 3, "fret": 6, "finger": "2"}      
-    ]
-  },
+    ],
+     "measures": [
+    {
+      "notes": [
+        { "keys": ["c/4"], "duration": "q" },
+        { "keys": ["d/4"], "duration": "q" },
+        { "keys": ["e/4"], "duration": "q" },
+        { "keys": ["f/4"], "duration": "q" }
+      ]
+    }
+  ]
+},
+   
   {
+    "id": "cvic13",
     "type": "exercise",
     "title": "1,3 na jednej strune",
      "playMode": "single",
@@ -26,6 +39,7 @@
     ]
   },
    {
+    "id": "cvic14",
     "type": "exercise",
     "title": "1,4 na jednej strune",
      "playMode": "single",
@@ -52,6 +66,7 @@
     ]
   },
    {
+    "id": "cvic24",
     "type": "exercise",
     "title": "2,4 na jednej strune",
      "playMode": "single",
@@ -65,6 +80,7 @@
     ]
   },
   {
+    "id": "cvic34",
     "type": "exercise",
     "title": "3,4 na jednej strune",
      "playMode": "single",
@@ -78,6 +94,7 @@
     ]
   },
    {
+    "id": "cvic123",
     "type": "exercise",
     "title": "1,2,3 na jednej strune",
      "playMode": "single",
@@ -91,6 +108,7 @@
     ]
   },
   {
+    "id": "cvic124",
     "type": "exercise",
     "title": "1,2,4 na jednej strune",
      "playMode": "single",
@@ -104,6 +122,7 @@
     ]
   },
   {
+    "id": "cvic134",
     "type": "exercise",
     "title": "1,3,4 na jednej strune",
      "playMode": "single",
@@ -117,6 +136,7 @@
     ]
   },
   {
+    "id": "cvic234",
     "type": "exercise",
     "title": "2,3,4 na jednej strune",
      "playMode": "single",
@@ -130,6 +150,7 @@
     ]
   },
   {
+    "id": "cvic21",
     "type": "exercise",
     "title": "2,1 na dvoch strunách",
      "playMode": "single",
@@ -144,6 +165,7 @@
     ]
   },
   {
+    "id": "cvic31",
     "type": "exercise",
     "title": "3,1 na dvoch strunách",
      "playMode": "single",
@@ -158,6 +180,7 @@
     ]
   },
   {
+    "id": "cvic41",
     "type": "exercise",
     "title": "4,1 na dvoch strunách",
      "playMode": "single",
@@ -172,6 +195,7 @@
     ]
   },
   {
+    "id": "cvic32",
     "type": "exercise",
     "title": "3,2 na dvoch strunách",
      "playMode": "single",
@@ -186,6 +210,7 @@
     ]
   },
   {
+    "id": "cvic42",
     "type": "exercise",
     "title": "4,2 na dvoch strunách",
      "playMode": "single",
@@ -200,6 +225,7 @@
     ]
   },
   {
+    "id": "cvic43",
     "type": "exercise",
     "title": "4,3 na dvoch strunách",
      "playMode": "single",
@@ -214,6 +240,7 @@
     ]
   },
   {
+    "id": "cvic122",
     "type": "exercise",
     "title": "1,2 na dvoch strunách",
      "playMode": "single",
@@ -228,6 +255,7 @@
     ]
   },
   {
+    "id": "cvic132",
     "type": "exercise",
     "title": "1,3 na dvoch strunách",
      "playMode": "single",
@@ -242,6 +270,7 @@
     ]
   },
   {
+    "id": "cvic142",
     "type": "exercise",
     "title": "1,4 na dvoch strunách",
      "playMode": "single",
@@ -255,7 +284,7 @@
      
     ]
   },
-  {
+  {"id": "cvic232",
     "type": "exercise",
     "title": "2,3 na dvoch strunách",
      "playMode": "single",
@@ -270,6 +299,7 @@
     ]
   },
   {
+    "id": "cvic242",
     "type": "exercise",
     "title": "2,4 na dvoch strunách",
      "playMode": "single",
@@ -284,6 +314,7 @@
     ]
   },
   {
+    "id": "cvic342",
     "type": "exercise",
     "title": "3,4 na dvoch strunách",
      "playMode": "single",
@@ -299,6 +330,7 @@
   },
   
   {
+    "id": "cvic2121",
     "type": "exercise",
     "title": "2,1,2,1 na dvoch strunách",
      "playMode": "single",
@@ -314,6 +346,7 @@
     ]
   },
    {
+    "id": "cvic3131",
     "type": "exercise",
     "title": "3,1,3,1 na dvoch strunách",
      "playMode": "single",
@@ -329,6 +362,7 @@
     ]
   },
   {
+    "id": "cvic4141",
     "type": "exercise",
     "title": "4,1,4,1 na dvoch strunách",
      "playMode": "single",
@@ -344,6 +378,7 @@
     ]
   },
   {
+    "id": "cvic3232",
     "type": "exercise",
     "title": "3,2,3,2 na dvoch strunách",
      "playMode": "single",
@@ -359,6 +394,7 @@
     ]
   },
   {
+    "id": "cvic4242",
     "type": "exercise",
     "title": "4,2,4,2 na dvoch strunách",
      "playMode": "single",
@@ -374,6 +410,7 @@
     ]
   },
   {
+    "id": "cvic4343",
     "type": "exercise",
     "title": "4,3,4,3 na dvoch strunách",
      "playMode": "single",
@@ -381,25 +418,23 @@
     "description": "Striedanie prstov na dvoch strunách G-D 4,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
     "notes": [
       { "note": "D#", "string": 3, "fret": 8, "finger": "4"},
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
-      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
-      { "note": "C#", "string": 3, "fret": 6, "finger": "2" }     
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" }     
     ]
   },
+
   {
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 1,2",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
+    "id": "cvicsuc12",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 1,2",
+     "playMode": "single",
+    "position": 5,
     "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,2. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
-  "notes": [
-    [
+    "notes": [
+       [
       { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
       { "note": "C", "string": 3, "fret": 5, "finger": "1" }
     ],
@@ -408,18 +443,15 @@
       { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
     ]
   ]
-},
+  },
 {
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 1,3",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
+    "id": "cvicsuc13",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 1,3",
+     "playMode": "single",
+    "position": 5,
     "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
-  "notes": [
+    "notes": [
     [
       { "note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "C", "string": 3, "fret": 5, "finger": "1" }
@@ -429,18 +461,15 @@
       { "note": "D", "string": 3, "fret": 7, "finger": "3" }
     ]
   ]
-},
-{
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 1,4",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
-    "description": "Súčasné striedanie prstov na d4och strunách G-D 1,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
-  "notes": [
+  },
+  {
+    "id": "cvicsuc14",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 1,4",
+     "playMode": "single",
+    "position": 5,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+   "notes": [
     [
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
       { "note": "C", "string": 3, "fret": 5, "finger": "1" }
@@ -450,18 +479,15 @@
       { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
     ]
   ]
-},
-{
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 2,3",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
-    "description": "Súčasné striedanie prstov na dvoch strunách G-D 2,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
-  "notes": [
+  },
+  {
+    "id": "cvicsuc23",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 2,3",
+     "playMode": "single",
+    "position": 5,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
+   "notes": [
     [
       { "note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "C#", "string": 3, "fret": 6, "finger": "2" }
@@ -471,17 +497,14 @@
       { "note": "D", "string": 3, "fret": 7, "finger": "3" }
     ]
   ]
-},
-{
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 2,4",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
-    "description": "Súčasné striedanie prstov na dvoch strunách G-D 2,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
+  },
+  {
+    "id": "cvicsuc24",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 2,4",
+     "playMode": "single",
+    "position": 5,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
   "notes": [
     [
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
@@ -492,17 +515,14 @@
       { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
     ]
   ]
-},
-{
-  "type": "intervalExercise",
-  "title": "Súčasné striedanie prstov 3,4",
-  "family": "major",
-   "quality":"dur",
-    "position": 1,
-    "description": "Súčasné striedanie prstov na dvoch strunách G-D 3,4. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
-  "group":"3",
-  "fingering": 1,
-
+  },
+  {
+    "id": "cvicsuc34",
+    "type": "exercise",
+    "title": "Súčasné striedanie prstov 3,4",
+     "playMode": "single",
+    "position": 5,
+    "description": "Súčasné striedanie prstov na dvoch strunách G-D 1,3. Položíme obidva prsty na struny - zahráme dve struny, ktoré držíme a prsty na nich vymeníme. Snažíme sa, aby sme obidva prsty vymenili naraz. Ak to ide môžeme pokračoavať aj na vzdialenejších strunách (H-D, H-A, H-E, E-E). ",
   "notes": [
     [
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
@@ -512,6 +532,244 @@
       { "note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "D#", "string": 3, "fret": 8, "finger": "4" }
     ]
+  ]
+  },
+  {
+    "id": "posuv1",
+    "type": "exercise",
+    "title": "posuv 1,2 o jedno pole",
+     "playMode": "single",
+    "position": 1,
+    "description": "Posúvanie prstov na jednej strune o jedno pole.",
+    "notes": [
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "1" },
+            { "note": "A#", "string": 3, "fret": 3, "finger": "2"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1" },
+            { "note": "B", "string": 3, "fret": 4, "finger": "2"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "1" },
+            { "note": "C", "string": 3, "fret": 5, "finger": "2"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "1" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "1" },
+            { "note": "E", "string": 3, "fret": 9, "finger": "2"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "1" },
+            { "note": "F", "string": 3, "fret": 10, "finger": "2"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "1" },
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "1" },
+            { "note": "G", "string": 3, "fret": 12, "finger": "2"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "2" },
+            { "note": "F#", "string": 3, "fret": 11, "finger": "1"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2" },
+            { "note": "F", "string": 3, "fret": 10, "finger": "1"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "2" },
+            { "note": "E", "string": 3, "fret": 9, "finger": "1"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "2" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "1"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "2" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "1"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "2" },
+            { "note": "B", "string": 3, "fret": 4, "finger": "1"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "2" },
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "2" },
+            { "note": "A", "string": 3, "fret": 2, "finger": "1"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1"}
+
+                ],
+     "measures": [
+    {
+      "notes": [
+        { "keys": ["c/4"], "duration": "q" },
+        { "keys": ["d/4"], "duration": "q" },
+        { "keys": ["e/4"], "duration": "q" },
+        { "keys": ["f/4"], "duration": "q" }
+      ]
+    }
+  ]
+},
+{
+    "id": "posuv2",
+    "type": "exercise",
+    "title": "posuv 1,2 o dve polia",
+     "playMode": "single",
+    "position": 1,
+    "description": "Posúvanie prstov na jednej strune o dve polia.",
+    "notes": [
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1" },
+            { "note": "B", "string": 3, "fret": 4, "finger": "2"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "1" },
+            { "note": "F", "string": 3, "fret": 10, "finger": "2"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "1" },
+            { "note": "G", "string": 3, "fret": 12, "finger": "2"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "2" },
+            { "note": "F#", "string": 3, "fret": 11, "finger": "1"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "2" },
+            { "note": "E", "string": 3, "fret": 9, "finger": "1"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2" },
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+            { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "2" },
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1"}
+
+                ],
+     "measures": [
+    {
+      "notes": [
+        { "keys": ["c/4"], "duration": "q" },
+        { "keys": ["d/4"], "duration": "q" },
+        { "keys": ["e/4"], "duration": "q" },
+        { "keys": ["f/4"], "duration": "q" }
+      ]
+    }
+  ]
+},
+{
+    "id": "posuv3",
+    "type": "exercise",
+    "title": "posuv 1,2,3 o jedno pole",
+     "playMode": "single",
+    "position": 1,
+    "description": "Posúvanie prstov 1,2,3 o jedno pole.",
+    "notes": [
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "3"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "1" },
+            { "note": "A#", "string": 3, "fret": 3, "finger": "2"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "3" },
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "2" },
+            { "note": "C", "string": 3, "fret": 5, "finger": "3"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "1"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "2"},
+            { "note": "C#", "string": 3, "fret":6, "finger": "3"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "1"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "2"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "3"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "3"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "1"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "2"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "3"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "1"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "2"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "3"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "1"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "3"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "3"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "1"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "3"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "2"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "1"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "3"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "2"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "1"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "3"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "3"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "2"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "1"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "3"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "2"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "1"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "3"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "2"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "1"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "3"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "2"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "1"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "3"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1"}
+
+                ],
+     "measures": [
+    {
+      "notes": [
+        { "keys": ["c/4"], "duration": "q" },
+        { "keys": ["d/4"], "duration": "q" },
+        { "keys": ["e/4"], "duration": "q" },
+        { "keys": ["f/4"], "duration": "q" }
+      ]
+    }
+  ]
+}, 
+{
+    "id": "posuv4",
+    "type": "exercise",
+    "title": "posuv 1,2,3 o tri polia",
+     "playMode": "single",
+    "position": 1,
+    "description": "Posúvanie prstov 1,2,3 o tri polia.",
+    "notes": [
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "3"},
+
+            { "note": "B", "string": 3, "fret": 4, "finger": "1"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "2"},
+            { "note": "C#", "string": 3, "fret":6, "finger": "3"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "3"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "1"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "3"},
+            { "note": "G", "string": 3, "fret": 12, "finger": "3"},
+            { "note": "F#", "string": 3, "fret": 11, "finger": "2"},
+            { "note": "F", "string": 3, "fret": 10, "finger": "1"},
+            { "note": "E", "string": 3, "fret": 9, "finger": "3"},
+            { "note": "D#", "string": 3, "fret": 8, "finger": "2"},
+            { "note": "D", "string": 3, "fret": 7, "finger": "1"},
+            { "note": "C#", "string": 3, "fret": 6, "finger": "3"},
+            { "note": "C", "string": 3, "fret": 5, "finger": "2"},
+            { "note": "B", "string": 3, "fret": 4, "finger": "1"},
+            { "note": "A#", "string": 3, "fret": 3, "finger": "3"},
+            { "note": "A", "string": 3, "fret": 2, "finger": "2"},
+            { "note": "G#", "string": 3, "fret": 1, "finger": "1"}
+
+                ],
+     "measures": [
+    {
+      "notes": [
+        { "keys": ["c/4"], "duration": "q" },
+        { "keys": ["d/4"], "duration": "q" },
+        { "keys": ["e/4"], "duration": "q" },
+        { "keys": ["f/4"], "duration": "q" }
+      ]
+    }
   ]
 }
   ]
+  

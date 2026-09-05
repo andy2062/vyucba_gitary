@@ -18,10 +18,10 @@
 <a href="gitara-pro.html" class="menu-btn" target="hlavny-ramec">🎸 Hmatník</a> 
 <a href="stupnice.html" class="menu-btn" target="hlavny-ramec">🎼 Stupnice</a>  
 <a href="intervals_chords.html" class="menu-btn" target="hlavny-ramec">⭕ Intervaly</a>    
-<a href="lefthand.html" class="menu-btn" target="hlavny-ramec">🔥 Cvičenia</a>    
-    <!--
-    <button class="menu-btn" onclick="goTo('rhythms', this)">🥁 Rytmy</button>
-  -->     
+<a href="lefthand.html" class="menu-btn" target="hlavny-ramec">🔥 Cvičenia</a>  
+<a href="exercises.html" class="menu-btn" target="hlavny-ramec">🔥 Rozcvička</a>
+<a href="right1.html" class="menu-btn" target="hlavny-ramec">🔥 Pravá ruka</a>        
+    
   </aside>
 
    <main class="main">
@@ -44,7 +44,32 @@
     </div>
 
   </main>
-
+<!-- Core -->
+   <script src="https://unpkg.com/vexflow@4.2.3/build/cjs/vexflow.js"></script>
   
+ 
+<script src="js/bootstrap/Manifest.js"></script>
+<script src="js/bootstrap/Loader.js"></script>
+
+<script>
+(async () => {
+
+    try {
+
+        await Loader.loadModules(Manifest);
+
+        await App.start();
+
+    }
+
+    catch (err) {
+
+        console.error("BOOTSTRAP FAILED:", err);
+
+    }
+
+})();
+</script>
+
 </body>
 </html>

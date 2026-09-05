@@ -1,0 +1,849 @@
+{
+  "title": "Prstové cvičenia pre pravú ruku",
+  "fingers": {
+    "i": "ukazovák (index)",
+    "m": "prostredník (medius)",
+    "a": "prstenník (anularis)",
+    "p": "palec (pollex)"
+  },
+  "exercises": [
+    {
+      "id": 1,
+      "pattern": "i-m-i-m",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pattern": "m-i-m-i",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pattern": "i-a-i-a",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pattern": "a-i-a-i",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pattern": "m-a-m-a",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pattern": "a-m-a-m",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pattern": "i-m-a-i-m-a",
+      "time": "6/8",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" }
+            ],
+             "lineBreak": true 
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" }            
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" }           
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pattern": "a-m-i-a-m-i",
+      "time": "6/8",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" }
+           
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+             { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+           
+          ],
+           "lineBreak": true 
+        },
+        {
+          "barline": "single",
+          "notes": [
+             { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+           
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+             { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" }
+           
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+          
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" }
+          
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pattern": "i-m-i-a",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pattern": "a-m-a-i",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "pattern": "a-i-a-m",
+      "time": "4/4",
+      "type": "single_string_descending",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "pattern": "m-i across strings",
+      "time": "2/4",
+      "type": "adjacent_strings_alternating",
+      "measures": [
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+          
+          ]
+        },
+         {
+          "barline": "single",
+          "notes": [
+          
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ], "lineBreak": true 
+
+        },
+        {
+          "barline": "single",
+          "notes": [
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" }
+            
+          ]
+        },
+         {
+          "barline": "single",
+          "notes": [
+           
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 6, "note": "e/3", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "pattern": "p-i-m arpeggio",
+      "time": "3/4",
+      "type": "adjacent_strings_alternating",
+      "measures": [
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "4" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "4" }
+          ]
+        },
+        {
+           "barline": "repeat_both",
+           
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "4" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "4" }
+          ],
+          "lineBreak": true  
+        },
+        {
+           "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "4" }
+          ]
+        },
+         {
+           "barline": "repeat_end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "4" },
+              { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "4" }
+          ]
+        }
+      ]
+    },
+     
+    {
+      "id": 14,
+      "pattern": "p-i-m-i arpeggio",
+      "time": "4/4",
+      "type": "adjacent_strings_alternating",
+      "measures": [
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "4" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "4" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "4" }
+          ]
+        },
+        {
+           "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "4" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "4" },
+             { "string": 1, "note": "e/5", "fret": 0, "fingering": "m", "duration": "4" }
+          ],
+           "lineBreak": true  
+        },
+        {
+           "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "4" },
+             { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "4" }
+          ]
+        },
+         {
+           "barline": "repeat_end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "4" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "4" },
+              { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "4" },
+              { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "4" }
+          ]
+        }
+        
+      ]
+    },
+    
+    {
+      "id": 15,
+      "pattern": "p-i-m-i-p-i arpeggio",
+      "time": "6/8",
+      "type": "adjacent_strings_alternating",
+      "measures": [
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "P", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" }
+
+          ]
+        },
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "P", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "m", "duration": "8" }
+
+          ],
+           "lineBreak": true 
+        },
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+
+          ]
+        },
+        {
+          "barline": "repeat_end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "E/5", "fret": 0, "fingering": "a", "duration": "8" }
+
+          ]
+        }
+      ]
+    },
+   
+    {
+      "id": 16,
+      "pattern": "p-i-m-a arpeggio",
+      "time": "4/4",
+      "type": "adjacent_strings_alternating",
+      "measures": [
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        },
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ],
+           "lineBreak": true 
+        },
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+        ]
+        },
+        {
+          "barline": "repeat_both",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+             { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+           { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 4, "note": "d/4", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" }
+          ]
+        },
+         {
+          "barline": "repeat_end",
+          "notes": [
+            { "string": 5, "note": "a/3", "fret": 0, "fingering": "p", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+           { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+             { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" },
+           { "string": 2, "note": "B/4", "fret": 0, "fingering": "m", "duration": "8" },
+            { "string": 3, "note": "g/4", "fret": 0, "fingering": "i", "duration": "8" },
+            { "string": 1, "note": "e/5", "fret": 0, "fingering": "a", "duration": "8" }
+          ]
+        }   
+        
+          ]
+        }
+  ]
+}

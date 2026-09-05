@@ -54,7 +54,7 @@
         header {
             grid-column: 1 / -1;
             padding: 20px 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 800;
             letter-spacing: -0.5px;
             border-bottom: 2px solid var(--border-color);
@@ -227,6 +227,7 @@
         <div class="section section-green">
             <h2>Prípravné prstové cvičenia</h2>
             <div class="exercises-grid">
+               
                 <div class="exercise" onclick="showExercise(this, 'Dvíhanie')">Dvíhanie položených prstov</div>
                 <div class="exercise" onclick="showExercise(this, 'Jedna')">Stláčanie struny prstami</div>
                 <div class="exercise" onclick="showExercise(this, 'Dve struny1')">Striedanie dvoch strún 1</div>
@@ -278,6 +279,8 @@
             <h3 id="exerciseTitle">Názov cvičenia</h3>
             <div id="exerciseInstructions" class="instruction-text"></div>
             <div id="exerciseTab" class="tab-output"></div>
+            <!-- Sem sa vloží tabulatúra a prehrávač -->
+    <div id="exerciseTabContainer" data-exercise=""></div>
         </div>
     </div>
 </div>
@@ -342,6 +345,80 @@ const exercises = {
         tab: `E|--1---1---1---1--|\nH|--2---2---2---2--|\nG|--3---3---3---3--|`
     }
 };
+
+// Globálna premenná pre databázu cvičení
+let exercisesDB = null;
+
+// Načítanie databázy pri štarte
+async function loadExercisesDB() {
+    try {
+        const response = await fetch('kreslenie_tab.json');
+        exercisesDB = await response.json();
+    } catch (err) {
+        console.error("Chyba načítania JSON:", err);
+    }
+}
+loadExercisesDB();
+
+async function showExercise(el, type) {
+    // 1. UI Prepnutie aktívneho tlačidla
+    document.querySelectorAll(".exercise").forEach(e => e.classList.remove("active"));
+    el.classList.add("active");
+
+    document.getElementById("placeholder").style.display = "none";
+    const content = document.getElementById("detailContent");
+    content.style.display = "flex";
+
+    // 2. Nájdenie dát
+    if (!exercisesDB) await loadExercisesDB();
+    const data = exercisesDB.exercises.find(ex => ex.id === type);
+
+    if (!data) {
+        document.getElementById("exerciseTitle").innerText = "Chyba";
+        document.getElementById("exerciseInstructions").innerText = "Cvičenie sa nenašlo.";
+        return;
+    }
+
+    // 3. Vykreslenie názvu a popisu
+    document.getElementById("exerciseTitle").innerText = data.title;
+    document.getElementById("exerciseInstructions").innerText = data.desc || "";
+
+    // 4. Vykreslenie tabulatúry a prehrávača cez tvoj nový renderer
+    const container = document.getElementById("exerciseTabContainer");
+    container.setAttribute('data-exercise', type); // Prepojenie s tvojím rendererom
+    
+    // Použijeme tvoju novú funkciu renderTab
+    const tabHTML = renderTab(data.tabData, data.fingering || null);
+    
+    // Vygenerujeme ovládacie prvky (BPM, Play)
+    const playBtnId = `play-btn-${type}`;
+    const bpmSliderId = `bpm-slider-${type}`;
+    const bpmValueId = `bpm-value-${type}`;
+    
+    container.innerHTML = tabHTML + `
+        <div class="player-controls">
+            <button id="${playBtnId}" class="tab-play-btn">▶ Prehrať cvičenie</button>
+            <div class="bpm-container">
+                <label>Tempo:</label>
+                <input type="range" id="${bpmSliderId}" min="40" max="240" value="100" step="5">
+                <span class="bpm-badge"><span id="${bpmValueId}">100</span> BPM</span>
+            </div>
+        </div>
+    `;
+
+    // 5. Naviazanie eventov na nové tlačidlá
+    const playButton = document.getElementById(playBtnId);
+    playButton.addEventListener('click', () => {
+        togglePlayback(type, data, playButton, container);
+    });
+
+    const bpmSlider = document.getElementById(bpmSliderId);
+    bpmSlider.addEventListener('input', (e) => {
+        document.getElementById(bpmValueId).textContent = e.target.value;
+        if (activePlaybacks[type]) stopPlayback(type, playButton, container);
+    });
+}
+
 
 function showExercise(el, type) {
     document.querySelectorAll(".exercise").forEach(e => {

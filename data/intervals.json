@@ -1,7 +1,8 @@
 [
   {
+    "id": "interval3cmajor",
      "title":"C dur tercie",
-  "type":"intervalExercise",
+  "type":"interval",
   "quality":"dur",
   "group":"3",
   "family": "major",
@@ -45,8 +46,9 @@
     ]
 },
   {
-  "type": "intervalExercise",
-  "title": "A dur",
+    "id": "interval3amajor",
+  "type": "interval",
+  "title": "A dur tercie ",
   "family": "major",
    "quality":"dur",
   "position": 1,
@@ -88,7 +90,8 @@
   ]
 },
  {
-  "type": "intervalExercise",
+  "id": "interval3gmajor",
+  "type": "interval",
   "title": "G dur tercie",
   "family": "major",
    "quality":"dur",
@@ -131,7 +134,8 @@
   ]
 },
  {
-  "type": "intervalExercise",
+  "id": "interval3dmajor",
+  "type": "interval",
   "title": "D dur tercie",
   "family": "major",
    "quality":"dur",
@@ -172,6 +176,52 @@
     [
       { "note": "D", "string": 4, "fret": 12, "finger": "3" },
       { "note": "F#", "string": 3, "fret": 11, "finger": "2" }
+    ]
+    ]
+},
+{
+  "id": "interval6gmajor",
+  "type": "interval",
+  "title": "G dur sexty",
+  "family": "major",
+   "quality":"dur",
+    "description": "Sexty G dur",
+  "position": 1,
+  "group":"6",
+  "fingering": 1,
+
+  "notes": [
+    [
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      { "note": "B", "string": 5, "fret": 2, "finger": "2" }
+    ],
+    [
+    { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      { "note": "C", "string": 5, "fret": 3, "finger": "3" }
+    ],
+    [
+    { "note": "H", "string": 3, "fret": 4, "finger": "2" },
+      { "note": "D", "string": 5, "fret": 5, "finger": "3" }
+    ],
+    [
+    { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "E", "string": 5, "fret": 7, "finger": "3" }
+    ],
+    [
+    { "note": "D", "string": 2, "fret": 3, "finger": "1" },
+      { "note": "F#", "string": 4, "fret": 4, "finger": "2" }
+    ],
+    [
+    { "note": "E", "string": 2, "fret": 5, "finger": "3" },
+      { "note": "G", "string": 4, "fret": 5, "finger": "2" }
+    ],
+    [
+    { "note": "F#", "string": 2, "fret": 7, "finger": "3" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "2" }
+    ],
+    [
+    { "note": "G", "string": 2, "fret": 8, "finger": "1" },
+      { "note": "H", "string": 4, "fret": 9, "finger": "2" }
     ]
     ]
 }
