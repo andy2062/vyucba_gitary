@@ -76,7 +76,7 @@ class LayoutBuilder {
         const left = 70;
         const top = 60;
 
-        const fretSpacing = 100;
+        const fretSpacing = 80;
         const stringSpacing = 45;
 
        const notes = model.notes ?? [];

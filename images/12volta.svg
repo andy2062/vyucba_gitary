@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 200" width="100%" height="auto" style="background-color: white; font-family: serif;">
+  <defs>
+    <!-- Šípka doprava pre modrú a červenú čiaru -->
+    <marker id="arrow-blue-right" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="blue" />
+    </marker>
+    <marker id="arrow-blue-left" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 10 1 L 0 5 L 10 9 z" fill="blue" />
+    </marker>
+    <marker id="arrow-red-right" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="red" />
+    </marker>
+  </defs>
+
+  <!-- HLAVNÁ LINKA MAKTU / OS -->
+  <line x1="50" y1="100" x2="600" y2="100" stroke="black" stroke-width="2" />
+
+  <!-- 1. ZAČATIE REPETÍCIE (||:) -->
+  <line x1="40" y1="65" x2="40" y2="135" stroke="black" stroke-width="5" />
+  <line x1="50" y1="65" x2="50" y2="135" stroke="black" stroke-width="2" />
+  <circle cx="62" cy="88" r="3" fill="black" />
+  <circle cx="62" cy="112" r="3" fill="black" />
+
+  <!-- TAKTOVÉ ČIARY (Takt 1, 2, 3) -->
+  <line x1="130" y1="65" x2="130" y2="135" stroke="black" stroke-width="2" />
+  <line x1="200" y1="65" x2="200" y2="135" stroke="black" stroke-width="2" />
+  <line x1="270" y1="65" x2="270" y2="135" stroke="black" stroke-width="2" />
+
+  <!-- 2. UKONČENIE REPETÍCIE / PRIMA VOLTA (:||) -->
+  <circle cx="388" cy="88" r="3" fill="black" />
+  <circle cx="388" cy="112" r="3" fill="black" />
+  <line x1="400" y1="65" x2="400" y2="135" stroke="black" stroke-width="2" />
+  <line x1="410" y1="65" x2="410" y2="135" stroke="black" stroke-width="5" />
+
+  <!-- DALSIA TAKTOVÁ ČIARA V SECONDA VOLTA -->
+  <line x1="520" y1="65" x2="520" y2="135" stroke="black" stroke-width="2" />
+
+  <!-- KONCOVÁ HRUBÁ ČIARA (||) -->
+  <line x1="595" y1="65" x2="595" y2="135" stroke="black" stroke-width="1.5" />
+  <line x1="600" y1="65" x2="600" y2="135" stroke="black" stroke-width="3" />
+
+  <!-- SVORKA PRIMA VOLTA (1.) -->
+  <polyline points="270,65 270,30 395,30 395,65" fill="none" stroke="black" stroke-width="1.5" />
+  <text x="278" y="52" font-size="20" font-weight="bold">1.</text>
+  <text x="305" y="80" font-size="15">prvý krát</text>
+
+  <!-- SVORKA SECONDA VOLTA (2.) -->
+  <polyline points="415,65 415,30 590,30" fill="none" stroke="black" stroke-width="1.5" />
+  <text x="423" y="52" font-size="20" font-weight="bold">2.</text>
+  <text x="450" y="112" font-size="15">druhý krát</text>
+
+  <!-- MODRÁ ČIARA (Obojsmerný priebeh pri opakovaní) -->
+  <line x1="72" y1="92" x2="378" y2="92" stroke="blue" stroke-width="2" marker-start="url(#arrow-blue-left)" marker-end="url(#arrow-blue-right)" />
+
+  <!-- ČERVENÁ ČIARA 1 (Spodný prvý prechod do Prima Volta) -->
+  <line x1="68" y1="125" x2="260" y2="125" stroke="red" stroke-width="2" marker-end="url(#arrow-red-right)" />
+
+  <!-- ČERVENÁ ČIARA 2 (Spodný druhý prechod po preskoku do Sekunda Volta) -->
+  <!-- Zvislá zarážka -->
+  <line x1="420" y1="120" x2="420" y2="130" stroke="red" stroke-width="2.5" />
+  <!-- Vodorovná čiara so šípkou a koncovou zarážkou -->
+  <line x1="420" y1="125" x2="585" y2="125" stroke="red" stroke-width="2" />
+  <line x1="585" y1="120" x2="585" y2="130" stroke="red" stroke-width="2.5" />
+</svg>
