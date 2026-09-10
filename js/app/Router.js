@@ -1,6 +1,6 @@
 class Router {
 
-   constructor(app) {
+    constructor(app) {
 
         this.app = app;
 
@@ -10,17 +10,20 @@ class Router {
 
     }
 
+
     register(path, controller) {
 
         this.routes[path] = controller;
 
     }
 
+
     setDefault(path) {
 
         this.defaultRoute = path;
 
     }
+
 
     start() {
 
@@ -29,27 +32,162 @@ class Router {
             () => this.navigate()
         );
 
-        
-
         this.navigate();
 
     }
 
+
     navigate() {
 
-        let route =
+        const hash =
             location.hash.replace("#/", "");
-         this.app.ui.setCategory(route);
 
-       if (!route) {
+        // ------------------------------------------
+        // Rozdelenie route na časti
+        // ------------------------------------------
 
-    location.hash = "#/" + this.defaultRoute;
-    
+        const parts =
+            hash.split("/");
+
+
+        // ------------------------------------------
+        // Klasická route
+        //
+        // #/exercises
+        // #/scales
+        // #/intervals
+        // #/chords
+        // ------------------------------------------
+
+        const route =
+            parts[0];
+
+
+        // ------------------------------------------
+        // Parametre
+        //
+        // #/guitarsystem/scale/C-dur
+        //
+        // parts[0] = guitarsystem
+        // parts[1] = scale
+        // parts[2] = C-dur
+        // ------------------------------------------
+
+        const category =
+            parts[1] || null;
+
+        const item =
+            parts[2] || null;
+
+
+        console.log(
+            "ROUTER:",
+            {
+                hash,
+                route,
+                category,
+                item
+            }
+        );
+
+
+        // ------------------------------------------
+        // Žiadna route
+        // ------------------------------------------
+
+        if (!hash) {
+
+            location.hash =
+                "#/" + this.defaultRoute;
+
+            return;
+
+        }
+
+
+        // ------------------------------------------
+        // ŠPECIÁLNA ROUTE GUITAR SYSTEM
+        // ------------------------------------------
+
+        if (route === "guitarsystem") {
+
+    console.log(
+        "GUITAR SYSTEM ROUTE:",
+        category,
+        item
+    );
+
+
+    const routeMap = {
+
+        scale: "scales",
+
+        scales: "scales",
+
+        interval: "intervals",
+
+        intervals: "intervals",
+
+        chord: "chords",
+
+        chords: "chords",
+
+        exercise: "exercises",
+
+        exercises: "exercises"
+
+    };
+
+
+    const controllerRoute =
+        routeMap[category];
+
+
+    const controller =
+        this.routes[controllerRoute];
+
+
+    if (!controller) {
+
+        console.warn(
+            "Unknown Guitar System category:",
+            category
+        );
+
+        return;
+
+    }
+
+
+    console.log(
+        "GUITAR SYSTEM CONTROLLER:",
+        controllerRoute
+    );
+
+
+    if (item) {
+
+        controller.show(item);
+
+    } else {
+
+        controller.show();
+
+    }
+
+
     return;
 
 }
 
-        const controller = this.routes[route];
+
+        // ------------------------------------------
+        // EXISTUJÚCE ROUTES
+        // ------------------------------------------
+
+        const controller =
+            this.routes[route];
+
 
         if (!controller) {
 
@@ -62,10 +200,23 @@ class Router {
 
         }
 
+
+        // ------------------------------------------
+        // Kategória pre UI
+        // ------------------------------------------
+
+        this.app.ui.setCategory(route);
+
+
+        // ------------------------------------------
+        // Controller
+        // ------------------------------------------
+
         controller.show();
 
     }
 
 }
+
 
 window.Router = Router;

@@ -11,17 +11,62 @@ class BaseController {
 
 }
 
-    show() {
+    show(itemId = null) {
 
-        this.ui.setController(this);
+    this.ui.setController(this);
 
-        this.updateFilters();
+    this.updateFilters();
 
-        this.updateItemSelect();
+    this.updateItemSelect();
 
-        this.render();
+
+    // ==========================================
+    // PRIAMY VÝBER POLOŽKY Z URL
+    // napr.
+    // #/guitarsystem/scale/C-dur
+    // ==========================================
+
+    if (itemId) {
+
+        const items =
+            this.repository.getAll();
+
+
+        const index =
+            items.findIndex(
+                item => item.id === itemId
+            );
+
+
+        if (index !== -1) {
+
+            console.log(
+                "DIRECT ITEM:",
+                itemId,
+                "index:",
+                index
+            );
+
+
+            this.repository.setIndex(index);
+
+            this.ui.setItemIndex(index);
+
+        } else {
+
+            console.warn(
+                "DIRECT ITEM NOT FOUND:",
+                itemId
+            );
+
+        }
 
     }
+
+
+    this.render();
+
+}
 
     applyFilter() {
 

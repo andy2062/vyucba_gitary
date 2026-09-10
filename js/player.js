@@ -7,16 +7,103 @@ let useFlats = false; // false = #, true = b
 let rhythmsDB = {};
 
 // načítanie songs.json
-function loadSongs() {
+/*
+function loadSongs() { 
+  fetch("./data/songs1.json") .then(res => res.json()) .then(data => {
+     songs = data.songs; renderCategories(); renderAuthors(); renderSongs(); 
+     // ----------------------------- 
+     // 
+     // DEEP LINK NA KONKRÉTNU PIESEŇ 
+     // 
+     // ----------------------------- 
+     // 
+     const hash = window.location.hash.replace("#/", ""); 
+     const parts = hash.split("/"); 
+     const route = parts[0]; 
+     const songId = parts[1] || null; 
+     if ( route === "songs" && songId ) { 
+      const song = songs.find( song => song.id === songId ); 
+      if (song) { console.log( "DIRECT SONG:", songId ); 
+        showSong(song); } 
+        else { console.warn( "SONG NOT FOUND:", songId ); 
+
+        } } }) 
+        .catch(err => { console.error( "CHYBA PRI NAČÍTANÍ PIESNÍ:", err ); }); 
+      }
+*/
+      function loadSongs() {
+
   fetch("./data/songs1.json")
+
     .then(res => res.json())
+
     .then(data => {
+
       songs = data.songs;
 
       renderCategories();
       renderAuthors();
       renderSongs();
+
+      loadSongFromHash();
+
+    })
+
+    .catch(err => {
+
+      console.error(
+        "CHYBA PRI NAČÍTANÍ PIESNÍ:",
+        err
+      );
+
     });
+
+}
+
+      function loadSongFromHash() {
+
+  const hash =
+    window.location.hash.replace("#/", "");
+
+  const parts =
+    hash.split("/");
+
+  const route =
+    parts[0];
+
+  const songId =
+    parts[1];
+
+  if (
+    route !== "songs" ||
+    !songId
+  ) {
+    return;
+  }
+
+  const song =
+    songs.find(
+      song => song.id === songId
+    );
+
+  if (!song) {
+
+    console.warn(
+      "SONG NOT FOUND:",
+      songId
+    );
+
+    return;
+
+  }
+
+  console.log(
+    "HASH SONG:",
+    songId
+  );
+
+  showSong(song);
+
 }
 
 function loadRhythms() {
@@ -136,10 +223,12 @@ function setupSearch() {
 
 // 🎵 ZOZNAM PIESNÍ
 function renderSongs() {
+
   const list = document.getElementById("songList");
   list.innerHTML = "";
 
   let filtered = songs.filter(song => {
+
     let ok = true;
 
     if (currentCategory) {
@@ -157,18 +246,38 @@ function renderSongs() {
     return ok;
   });
 
-  filtered.sort((a, b) => a.title.localeCompare(b.title));
+  filtered.sort((a, b) =>
+    a.title.localeCompare(b.title)
+  );
 
   filtered.forEach(song => {
+
     const btn = document.createElement("button");
+
     btn.textContent = song.title;
 
-    btn.onclick = () => showSong(song);
+    btn.onclick = () => {
+
+      location.hash =
+        "#/songs/" + song.id;
+
+    };
 
     list.appendChild(btn);
-   
-    });
-  }
+
+  });
+
+}
+
+
+// ======================================
+// REAKCIA NA ZMENU URL
+// ======================================
+
+window.addEventListener(
+  "hashchange",
+  loadSongFromHash
+);
 
 // ===============================
 // 🎸 SVG TABULÁTOR – NOVÝ ENGINE
@@ -465,6 +574,11 @@ text = text.replace(/\{color=(.*?)\}(.*?)\{\/color\}/g, "<span style='color:$1'>
   text = text.replace(/\n/g, "<br>");
 
   textDiv.innerHTML = text;
+
+  window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
 
 function getYouTubeEmbed(url) {
@@ -568,3 +682,8 @@ window.onload = () => {
   loadRhythms();
   setupSearch();
 };
+
+window.addEventListener(
+  "hashchange",
+  loadSongFromHash
+);

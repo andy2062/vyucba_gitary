@@ -10,18 +10,84 @@
   <aside class="sidebar">
     <div class="logo">🎸 Gitarová škola</div>
 
-   <a href="index.html" class="menu-btn">🏠 Domov</a>
-   <a href="skola.html" class="menu-btn" target="hlavny-ramec">🎸 Výučba hry na gitare</a>
-   <a href="songs.html" class="menu-btn" target="hlavny-ramec">🎤 Piesne</a>
-   <a href="guitarsystem.html" class="menu-btn" target="hlavny-ramec">🎸 Guitar System</a>
- <a href="db_akordov.html" class="menu-btn" target="hlavny-ramec">🎵 Akordy</a>
-<a href="gitara-pro.html" class="menu-btn" target="hlavny-ramec">🎸 Hmatník</a> 
-<a href="stupnice.html" class="menu-btn" target="hlavny-ramec">🎼 Stupnice</a>  
-<a href="intervals_chords.html" class="menu-btn" target="hlavny-ramec">⭕ Intervaly</a>    
-<a href="lefthand.html" class="menu-btn" target="hlavny-ramec">🔥 Cvičenia</a>  
-<a href="exercises.html" class="menu-btn" target="hlavny-ramec">🔥 Rozcvička</a>
-<a href="right1.html" class="menu-btn" target="hlavny-ramec">🔥 Pravá ruka</a>        
-    
+    <a href="home.html"
+       class="menu-btn"
+       data-route="#/home"
+       target="hlavny-ramec">
+        🏠 Domov
+    </a>
+
+    <a href="skola.html"
+       class="menu-btn"
+       data-route="#/skola"
+       target="hlavny-ramec">
+        🎸 Výučba hry na gitare
+    </a>
+
+    <a href="songs.html"
+       class="menu-btn"
+       data-route="#/songs"
+       target="hlavny-ramec">
+        🎤 Piesne
+    </a>
+
+    <a href="guitarsystem.html"
+       class="menu-btn"
+       data-route="#/guitarsystem"
+       target="hlavny-ramec">
+        🎸 Guitar System
+    </a>
+
+    <a href="db_akordov.html"
+       class="menu-btn"
+       data-route="#/akordy"
+       target="hlavny-ramec">
+        🎵 Akordy
+    </a>
+
+    <a href="gitara-pro.html"
+       class="menu-btn"
+       data-route="#/hmatnik"
+       target="hlavny-ramec">
+        🎸 Hmatník
+    </a>
+
+    <a href="stupnice.html"
+       class="menu-btn"
+       data-route="#/stupnice"
+       target="hlavny-ramec">
+        🎼 Stupnice
+    </a>
+
+    <a href="intervals_chords.html"
+       class="menu-btn"
+       data-route="#/intervaly"
+       target="hlavny-ramec">
+        ⭕ Intervaly
+    </a>
+
+    <a href="lefthand.html"
+       class="menu-btn"
+       data-route="#/cvicenia"
+       target="hlavny-ramec">
+        🔥 Cvičenia
+    </a>
+
+    <a href="exercises.html"
+       class="menu-btn"
+       data-route="#/rozcvička"
+       target="hlavny-ramec">
+        🔥 Rozcvička
+    </a>
+
+    <a href="right1.html"
+       class="menu-btn"
+       data-route="#/prava-ruka"
+       target="hlavny-ramec">
+        🔥 Pravá ruka
+    </a>
+
+
   </aside>
 
    <main class="main">
@@ -69,6 +135,150 @@
     }
 
 })();
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const iframe =
+        document.querySelector(
+            'iframe[name="hlavny-ramec"]'
+        );
+
+    if (!iframe) return;
+
+
+    // ==========================================
+    // MENU → HASH
+    // ==========================================
+
+    document
+        .querySelectorAll(".menu-btn[data-route]")
+        .forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                const route =
+                    link.dataset.route;
+
+                history.pushState(
+                    null,
+                    "",
+                    route
+                );
+
+            });
+
+        });
+
+
+    // ==========================================
+    // PRIAMY ODKAZ
+    // ==========================================
+
+    const routes = {
+
+        "#/home":
+            "home.html",
+
+        "#/skola":
+            "skola.html",
+
+        "#/songs":
+            "songs.html",
+
+        "#/guitarsystem":
+            "guitarsystem.html",
+
+        "#/akordy":
+            "db_akordov.html",
+
+        "#/hmatnik":
+            "gitara-pro.html",
+
+        "#/stupnice":
+            "stupnice.html",
+
+        "#/intervaly":
+            "intervals_chords.html",
+
+        "#/cvicenia":
+            "lefthand.html",
+
+        "#/rozcvička":
+            "exercises.html",
+
+        "#/prava-ruka":
+            "right1.html"
+
+    };
+
+
+    // ==========================================
+    // PRIAME OTVORENIE index.html#/...
+    // ==========================================
+
+   function loadFromHash() {
+
+    const hash =
+        window.location.hash;
+
+    // GUITAR SYSTEM: preserve deep route
+    if (hash.startsWith("#/guitarsystem/")) {
+
+        const guitarRoute =
+            hash.substring(1);
+
+        iframe.src =
+            "guitarsystem.html#" +
+            guitarRoute;
+
+        return;
+
+    }
+
+    // SONGS: preserve deep route
+    if (hash.startsWith("#/songs/")) {
+
+        const songRoute =
+            hash.substring(1);
+
+        iframe.src =
+            "songs.html#" +
+            songRoute;
+
+        return;
+
+    }
+
+    const page =
+        routes[hash];
+
+    if (!page) return;
+
+    if (
+        iframe.getAttribute("src") !== page
+    ) {
+
+        iframe.src = page;
+
+    }
+
+}
+
+
+    loadFromHash();
+
+    window.addEventListener(
+    "popstate",
+    loadFromHash
+);
+
+window.addEventListener(
+    "hashchange",
+    loadFromHash
+);
+
+});
 </script>
 
 </body>

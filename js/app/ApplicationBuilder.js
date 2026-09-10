@@ -231,7 +231,7 @@ createRouter() {
 
     Object.entries(this.app.controllers)
         .forEach(([route, controller]) => {
-
+           
             this.app.router.register(
                 route,
                 controller
