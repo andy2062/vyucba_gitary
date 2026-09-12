@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" width="100%" height="auto" style="background-color: white; font-family: Arial, sans-serif;">
+  
+  <!-- HLAVNÝ NÁZOV -->
+  <text x="350" y="35" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Notová osnova – Čiary a medzery</text>
+
+  <!-- NOTOVÁ OSNOVA (5 čiar) -->
+  <line x1="80" y1="80" x2="620" y2="80" stroke="#000" stroke-width="2" />
+  <line x1="80" y1="110" x2="620" y2="110" stroke="#000" stroke-width="2" />
+  <line x1="80" y1="140" x2="620" y2="140" stroke="#000" stroke-width="2" />
+  <line x1="80" y1="170" x2="620" y2="170" stroke="#000" stroke-width="2" />
+  <line x1="80" y1="200" x2="620" y2="200" stroke="#000" stroke-width="2" />
+
+  <!-- ZVISLÉ HRANIČNÉ ČIARY -->
+  <line x1="80" y1="80" x2="80" y2="200" stroke="#000" stroke-width="2" />
+  <line x1="620" y1="80" x2="620" y2="200" stroke="#000" stroke-width="2" />
+
+  <!-- 1. ČÍSLA PRIAMO NA ČIARÁCH (Ľavá strana, modrá farba) -->
+  <g font-size="14" font-weight="bold" fill="#1976D2" text-anchor="middle">
+    <!-- Čísla vo vnútri krúžkov na čiarach -->
+    <circle cx="140" cy="200" r="11" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" />
+    <text x="140" y="205">1</text>
+
+    <circle cx="180" cy="170" r="11" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" />
+    <text x="180" y="175">2</text>
+
+    <circle cx="220" cy="140" r="11" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" />
+    <text x="220" y="145">3</text>
+
+    <circle cx="260" cy="110" r="11" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" />
+    <text x="260" y="115">4</text>
+
+    <circle cx="300" cy="80" r="11" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" />
+    <text x="300" y="85">5</text>
+  </g>
+
+  <!-- 2. ČÍSLA V MEDZERÁCH (Pravá strana, zelená farba) -->
+  <g font-size="14" font-weight="bold" fill="#388E3C" text-anchor="middle">
+    <!-- Čísla vo vnútri krúžkov v medzerách -->
+    <circle cx="400" cy="185" r="11" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" />
+    <text x="400" y="190">1</text>
+
+    <circle cx="440" cy="155" r="11" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" />
+    <text x="440" y="160">2</text>
+
+    <circle cx="480" cy="125" r="11" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" />
+    <text x="480" y="130">3</text>
+
+    <circle cx="520" cy="95" r="11" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" />
+    <text x="520" y="100">4</text>
+  </g>
+
+  <!-- SVIERKY / SPÁJACIE ČIARY POD OSNOVU -->
+  <path d="M 130 215 L 130 235 L 310 235 L 310 215" fill="none" stroke="#1976D2" stroke-width="1.5" stroke-dasharray="4" />
+  <path d="M 390 215 L 390 235 L 530 235 L 530 215" fill="none" stroke="#388E3C" stroke-width="1.5" stroke-dasharray="4" />
+
+  <!-- LEGENDA / POPISY POD OSNOVOU -->
+  <text x="220" y="260" font-size="15" font-weight="bold" fill="#1976D2" text-anchor="middle">Čísla čiar (1. až 5. čiara)</text>
+  <text x="220" y="280" font-size="12" fill="#555" text-anchor="middle">(počítame zdola nahor)</text>
+
+  <text x="460" y="260" font-size="15" font-weight="bold" fill="#388E3C" text-anchor="middle">Čísla medzier (1. až 4. medzera)</text>
+  <text x="460" y="280" font-size="12" fill="#555" text-anchor="middle">(počítame zdola nahor)</text>
+
+</svg>
