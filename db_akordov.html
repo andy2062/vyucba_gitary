@@ -3,74 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Databáza akordov</title>
+<link rel="stylesheet" href="css/db_akordov.css">
 
-<style>
-body {
-  font-family: Arial;
-  background: #f4f6f9;
-  margin: 20px;
-}
-
-/* GRID AKORDOV */
-#chordList {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.chordBtn {
-  padding: 8px 14px;
-  border: 1px solid #999;
-  background: #eee;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.chordBtn:hover {
-  background: #ddd;
-}
-
-#akord {
-  background: #f9f9f9;
-  padding: 20px;
-  width: 220px;
-  border-radius: 10px;
-}
-
-/* CARD */
-.chordCard {
-  background: white;
-  border-radius: 12px;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: 0.2s;
-}
-
-.chordCard:hover {
-  transform: scale(1.05);
-}
-
-/* VEĽKÝ AKORD */
-#akordBox {
-  margin-top: 30px;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  width: 220px;
-}
-
-#chordTitle {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-</style>
 </head>
 
 <body>
+  Vysvetlenie zloženia akordov nájdete v časti <a href="index.html#/intervaly" target="_parent">Intervaly</a>.
 <h1>Databáza akordov</h1>
 
 <input type="text" id="search" placeholder="Hľadaj akord...">

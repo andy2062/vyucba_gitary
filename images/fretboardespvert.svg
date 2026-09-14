@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 600" width="100%" height="auto" style="background-color: #f8f9fa;">
+  
+  <defs>
+    <linearGradient id="headstockWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2d170b"/>
+      <stop offset="50%" stop-color="#4a2817"/>
+      <stop offset="100%" stop-color="#2d170b"/>
+    </linearGradient>
+
+    <linearGradient id="fretboardWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f1a17"/>
+      <stop offset="50%" stop-color="#362f2b"/>
+      <stop offset="100%" stop-color="#1f1a17"/>
+    </linearGradient>
+
+    <linearGradient id="pegGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#8a6d1c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LADIACE KOLÍKY / MECHANIKA -->
+  <g fill="url(#pegGold)" stroke="#5c4912" stroke-width="1">
+    <rect x="22" y="70" width="18" height="12" rx="3" />
+    <rect x="22" y="115" width="18" height="12" rx="3" />
+    <rect x="22" y="160" width="18" height="12" rx="3" />
+    
+    <rect x="200" y="70" width="18" height="12" rx="3" />
+    <rect x="200" y="115" width="18" height="12" rx="3" />
+    <rect x="200" y="160" width="18" height="12" rx="3" />
+  </g>
+
+  <!-- HLAVICA GITARY -->
+  <path d="M 50 220 
+           L 40 50 
+           Q 60 40 100 42 
+           Q 120 20 140 42 
+           Q 180 40 200 50 
+           L 190 220 Z" 
+        fill="url(#headstockWood)" stroke="#1a0d06" stroke-width="2" />
+
+  <!-- DVA POZDĹŽNE VÝREZY V HLAVICI -->
+  <rect x="62" y="65" width="28" height="115" rx="12" fill="#120804" stroke="#2d170b" stroke-width="2" />
+  <rect x="150" y="65" width="28" height="115" rx="12" fill="#120804" stroke="#2d170b" stroke-width="2" />
+
+  <!-- LADIACE VALČEKY -->
+  <g fill="#e8e3d3" stroke="#b0a282" stroke-width="1">
+    <rect x="60" y="74" width="32" height="6" rx="2" />
+    <rect x="60" y="119" width="32" height="6" rx="2" />
+    <rect x="60" y="164" width="32" height="6" rx="2" />
+    
+    <rect x="148" y="74" width="32" height="6" rx="2" />
+    <rect x="148" y="119" width="32" height="6" rx="2" />
+    <rect x="148" y="164" width="32" height="6" rx="2" />
+  </g>
+
+  <!-- HMATNÍK -->
+  <rect x="50" y="230" width="140" height="370" fill="url(#fretboardWood)" stroke="#100b08" stroke-width="2" />
+
+  <!-- NULTÝ PRAŽEC -->
+  <rect x="49" y="220" width="142" height="10" fill="#f4ebd9" stroke="#c2b49b" stroke-width="1" />
+
+  <!-- KOVOVÉ PRAŽCE -->
+  <g stroke="#c0c0c0" stroke-width="2.5" opacity="0.85">
+    <line x1="50" y1="275" x2="190" y2="275" />
+    <line x1="50" y1="325" x2="190" y2="325" />
+    <line x1="50" y1="380" x2="190" y2="380" />
+    <line x1="50" y1="440" x2="190" y2="440" />
+    <line x1="50" y1="505" x2="190" y2="505" />
+    <line x1="50" y1="575" x2="190" y2="575" />
+  </g>
+
+  <!-- STRUNY (Od ladiacich valčekov po nultý pražec šikmo, od nultého pražca nadol zvislo a rovnobežne) -->
+  <!-- Struna E (Najhrubšia) -->
+  <path d="M 76 167 L 70 220 L 70 600" stroke="#e0e0e0" stroke-width="3.5" fill="none" />
+  <!-- Struna A -->
+  <path d="M 76 122 L 90 220 L 90 600" stroke="#e0e0e0" stroke-width="3" fill="none" />
+  <!-- Struna D -->
+  <path d="M 76 77  L 110 220 L 110 600" stroke="#e0e0e0" stroke-width="2.5" fill="none" />
+  <!-- Struna G -->
+  <path d="M 164 77  L 130 220 L 130 600" stroke="#ffffff" stroke-width="2" opacity="0.9" fill="none" />
+  <!-- Struna H (B) -->
+  <path d="M 164 122 L 150 220 L 150 600" stroke="#ffffff" stroke-width="1.6" opacity="0.9" fill="none" />
+  <!-- Struna e (Najtenšia) -->
+  <path d="M 164 167 L 170 220 L 170 600" stroke="#ffffff" stroke-width="1.2" opacity="0.9" fill="none" />
+
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 200" width="100%" height="auto" style="background-color: white; font-family: 'Times New Roman', serif;">
+  <style>
+    .white-key { fill: white; stroke: black; stroke-width: 1.5; }
+    .black-key { fill: black; stroke: black; stroke-width: 1.5; rx: 4; ry: 4; }
+    .label-white { font-size: 26px; text-anchor: middle; dominant-baseline: middle; fill: black; }
+    .label-box { fill: white; stroke: black; stroke-width: 1; }
+    .label-black-top { font-size: 15px; text-anchor: middle; fill: black; }
+    .label-black-bottom { font-size: 15px; text-anchor: middle; fill: black; }
+    .divider { stroke: black; stroke-width: 1.5; }
+  </style>
+
+  <!-- BIELE KLÁVESY (14 klávesov: C D E F G A H c d e f g a h) -->
+  <!-- Veľká oktáva -->
+  <path class="white-key" d="M 0 0 L 70 0 L 70 190 Q 65 190 60 195 Q 55 200 35 200 Q 15 200 10 195 Q 5 190 0 190 Z" />
+  <path class="white-key" d="M 70 0 L 140 0 L 140 190 Q 135 190 130 195 Q 125 200 105 200 Q 85 200 80 195 Q 75 190 70 190 Z" />
+  <path class="white-key" d="M 140 0 L 210 0 L 210 190 Q 205 190 200 195 Q 195 200 175 200 Q 155 200 150 195 Q 145 190 140 190 Z" />
+  <path class="white-key" d="M 210 0 L 280 0 L 280 190 Q 275 190 270 195 Q 265 200 245 200 Q 225 200 220 195 Q 215 190 210 190 Z" />
+  <path class="white-key" d="M 280 0 L 350 0 L 350 190 Q 345 190 340 195 Q 335 200 315 200 Q 295 200 290 195 Q 285 190 280 190 Z" />
+  <path class="white-key" d="M 350 0 L 420 0 L 420 190 Q 415 190 410 195 Q 405 200 385 200 Q 365 200 360 195 Q 355 190 350 190 Z" />
+  <path class="white-key" d="M 420 0 L 490 0 L 490 190 Q 485 190 480 195 Q 475 200 455 200 Q 435 200 430 195 Q 425 190 420 190 Z" />
+
+  <!-- Malá oktáva -->
+  <path class="white-key" d="M 490 0 L 560 0 L 560 190 Q 555 190 550 195 Q 545 200 525 200 Q 505 200 500 195 Q 495 190 490 190 Z" />
+  <path class="white-key" d="M 560 0 L 630 0 L 630 190 Q 625 190 620 195 Q 615 200 595 200 Q 575 200 570 195 Q 565 190 560 190 Z" />
+  <path class="white-key" d="M 630 0 L 700 0 L 700 190 Q 695 190 690 195 Q 685 200 665 200 Q 645 200 640 195 Q 635 190 630 190 Z" />
+  <path class="white-key" d="M 700 0 L 770 0 L 770 190 Q 765 190 760 195 Q 755 200 735 200 Q 715 200 710 195 Q 705 190 700 190 Z" />
+  <path class="white-key" d="M 770 0 L 840 0 L 840 190 Q 835 190 830 195 Q 825 200 805 200 Q 785 200 780 195 Q 775 190 770 190 Z" />
+  <path class="white-key" d="M 840 0 L 910 0 L 910 190 Q 905 190 900 195 Q 895 200 875 200 Q 855 200 850 195 Q 845 190 840 190 Z" />
+  <path class="white-key" d="M 910 0 L 980 0 L 980 190 Q 975 190 970 195 Q 965 200 945 200 Q 925 200 920 195 Q 915 190 910 190 Z" />
+
+  <!-- ČIERNE KLÁVESY A ICH ŠTÍTKY -->
+  
+  <!-- 1. Cis / Des -->
+  <rect class="black-key" x="46" y="0" width="48" height="110" />
+  <rect class="label-box" x="50" y="32" width="40" height="52" />
+  <text class="label-black-top" x="70" y="52">cis</text>
+  <text class="label-black-bottom" x="70" y="74">des</text>
+
+  <!-- 2. Dis / Es -->
+  <rect class="black-key" x="116" y="0" width="48" height="110" />
+  <rect class="label-box" x="120" y="32" width="40" height="52" />
+  <text class="label-black-top" x="140" y="52">dis</text>
+  <text class="label-black-bottom" x="140" y="74">es</text>
+
+  <!-- 3. Fis / Ges -->
+  <rect class="black-key" x="256" y="0" width="48" height="110" />
+  <rect class="label-box" x="260" y="32" width="40" height="52" />
+  <text class="label-black-top" x="280" y="52">fis</text>
+  <text class="label-black-bottom" x="280" y="74">ges</text>
+
+  <!-- 4. Gis / As -->
+  <rect class="black-key" x="326" y="0" width="48" height="110" />
+  <rect class="label-box" x="330" y="32" width="40" height="52" />
+  <text class="label-black-top" x="350" y="52">gis</text>
+  <text class="label-black-bottom" x="350" y="74">as</text>
+
+  <!-- 5. Ais / B -->
+  <rect class="black-key" x="396" y="0" width="48" height="110" />
+  <rect class="label-box" x="400" y="32" width="40" height="52" />
+  <text class="label-black-top" x="420" y="52">ais</text>
+  <text class="label-black-bottom" x="420" y="74">b</text>
+
+  <!-- 6. cis / des -->
+  <rect class="black-key" x="536" y="0" width="48" height="110" />
+  <rect class="label-box" x="540" y="32" width="40" height="52" />
+  <text class="label-black-top" x="560" y="52">cis</text>
+  <text class="label-black-bottom" x="560" y="74">des</text>
+
+  <!-- 7. dis / es -->
+  <rect class="black-key" x="606" y="0" width="48" height="110" />
+  <rect class="label-box" x="610" y="32" width="40" height="52" />
+  <text class="label-black-top" x="630" y="52">dis</text>
+  <text class="label-black-bottom" x="630" y="74">es</text>
+
+  <!-- 8. fis / ges -->
+  <rect class="black-key" x="746" y="0" width="48" height="110" />
+  <rect class="label-box" x="750" y="32" width="40" height="52" />
+  <text class="label-black-top" x="770" y="52">fis</text>
+  <text class="label-black-bottom" x="770" y="74">ges</text>
+
+  <!-- 9. gis / as -->
+  <rect class="black-key" x="816" y="0" width="48" height="110" />
+  <rect class="label-box" x="820" y="32" width="40" height="52" />
+  <text class="label-black-top" x="840" y="52">gis</text>
+  <text class="label-black-bottom" x="840" y="74">as</text>
+
+  <!-- 10. ais / b -->
+  <rect class="black-key" x="886" y="0" width="48" height="110" />
+  <rect class="label-box" x="890" y="32" width="40" height="52" />
+  <text class="label-black-top" x="910" y="52">ais</text>
+  <text class="label-black-bottom" x="910" y="74">b</text>
+
+  <!-- POPISKY BIELEKLÁVESY (Veľké a malé písmená) -->
+  <text class="label-white" x="35" y="160">C</text>
+  <text class="label-white" x="105" y="160">D</text>
+  <text class="label-white" x="175" y="160">E</text>
+  <text class="label-white" x="245" y="160">F</text>
+  <text class="label-white" x="315" y="160">G</text>
+  <text class="label-white" x="385" y="160">A</text>
+  <text class="label-white" x="455" y="160">H</text>
+
+  <text class="label-white" x="525" y="160">c</text>
+  <text class="label-white" x="595" y="160">d</text>
+  <text class="label-white" x="665" y="160">e</text>
+  <text class="label-white" x="735" y="160">f</text>
+  <text class="label-white" x="805" y="160">g</text>
+  <text class="label-white" x="875" y="160">a</text>
+  <text class="label-white" x="945" y="160">h</text>
+
+  <!-- HORIZONTÁLNE A ZVISLÉ DELIACE ČIARY MEDZI KLÁVESMI (v spodnej časti) -->
+  <line class="divider" x1="70" y1="110" x2="70" y2="190" />
+  <line class="divider" x1="140" y1="110" x2="140" y2="190" />
+  <line class="divider" x1="210" y1="0" x2="210" y2="190" />
+  <line class="divider" x1="280" y1="110" x2="280" y2="190" />
+  <line class="divider" x1="350" y1="110" x2="350" y2="190" />
+  <line class="divider" x1="420" y1="110" x2="420" y2="190" />
+  <line class="divider" x1="490" y1="0" x2="490" y2="190" />
+  <line class="divider" x1="560" y1="110" x2="560" y2="190" />
+  <line class="divider" x1="630" y1="110" x2="630" y2="190" />
+  <line class="divider" x1="700" y1="0" x2="700" y2="190" />
+  <line class="divider" x1="770" y1="110" x2="770" y2="190" />
+  <line class="divider" x1="840" y1="110" x2="840" y2="190" />
+  <line class="divider" x1="910" y1="110" x2="910" y2="190" />
+  <line class="divider" x1="980" y1="0" x2="980" y2="190" />
+</svg>

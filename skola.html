@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Škola gitary</title>
      <link rel="stylesheet" href="css/skola.css">
+     <style>
+table, td {
+ border: 1px solid black;
+  border-collapse: collapse;
+}
+ /* Kontajner pre celú stupnicu */
+  .stupnica {
+    display: flex;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  /* Spoločný štýl pre tóny */
+  .ton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px; /* Pevná šírka tónu pre rovnomerné zarovnanie */
+  }
+
+  /* Odsadenie pre CELÝ TÓN (veľká medzera) */
+  .cely-ton {
+    margin-right: 30px; 
+  }
+
+  /* Odsadenie pre POLTÓN (malá medzera) */
+  .polton {
+    margin-right: 10px;
+  }
+
+  /* Posledný tón už nepotrebuje medzeru */
+  .stupnica .ton:last-child {
+    margin-right: 0;
+  }
+</style>
    
 </head>
 <body>
@@ -103,8 +139,8 @@
         </table>
 
         <div class="menu-nav">
-            <a class="btn-menu" href="prava.html" target="dolny">Cvičenia pre pravú ruku</a>
-            <a class="btn-menu" href="exercises.html" target="dolny">Cvičenia pre ľavú ruku</a>
+            <a class="btn-menu" href="index.html#/prava-ruka" target="_parent">Cvičenia pre pravú ruku</a>
+            <a class="btn-menu" href="index.html#/rozcvicka" target="_parent">Cvičenia pre ľavú ruku</a>
         </div>
     </div>
 
@@ -129,6 +165,92 @@
             <br>Pre ostatné tóny sa pri úpravách pomocou posuviek (<b>(&#9839;)</b> a <b>(&#9837;)</b>) začali používať prípony -is a -es.
             Tento systém prevzali prakticky všetky nemecky hovoriace krajiny, štáty bývalého Rakúsko-Uhorska a ďalšie regióny pod nemeckým vplyvom, pričom mnohé z nich ho používajú dodnes.
        </p>
+       <p> My používame namiesto písmena <strong>B</strong>
+písmeno <strong>H</strong> (A <strong>H</strong>
+C D E F G). Hudobná abeceda začína
+písmenom C a končí sa písmenom C;
+<br>
+je takáto :
+</p>
+       <div class="stupnica">
+  <!-- C dur príklad: EF a HC sú poltóny, ostatné sú celé tóny -->
+  <span class="ton cely-ton">C</span>
+  <span class="ton cely-ton">D</span>
+  <span class="ton polton">E</span>
+  <span class="ton cely-ton">F</span>
+  <span class="ton cely-ton">G</span>
+  <span class="ton cely-ton">A</span>
+  <span class="ton polton">H</span>
+  <span class="ton">C</span>
+</div>
+<p>
+Je to zároveň stupnica C dur.
+</p>
+<p>Najmenšia vzdialenosť medzi tónmi je
+poltón. 
+<br>V hudobnej abecede sú dva
+poltóny a to medzi tónmi E - F a H - C. 
+<br>Toto pravidlo je potrebné si zapamätať, lebo medzi tieto dva tóny nevsunieme
+iný tón. 
+<br>Medzi ostatnými písmenami je vzdialenosť celý tón a
+môžeme medzi nich vložiť 
+<br>spodný zvýšený alebo vrchný znížený
+poltón. Takto nám vzniknú na jednej klávese (alebo na gitare v jednom poli) 
+dva tóny, ktoré rovnako znejú ak ich zahráme, ale majú dve rôzne mená. 
+
+</p>
+       <p>
+<style>
+th, td {
+  border-style: outset;
+}
+</style>
+<font size="5">
+<table style="width:600px; height:100px; text-align: center;vertical-align: middle; font-weight:bold; margin-left:auto;margin-right:auto;">
+<colgroup><col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+<col style="width:50px">
+  </colgroup><tbody><tr>
+    
+    <td rowspan="2" style="background-color:white;">C</td>
+    <td style="background-color:grey;color:white;">C#<br>Db</td>
+    <td rowspan="2" style="background-color:white;">D</td>
+    <td style="background-color:grey;color:white;">D#<br>Eb</td>
+    <td rowspan="2" style="background-color:white;">E</td>
+    <td rowspan="2" style="background-color:white;">F</td>
+    <td style="background-color:grey;color:white;">F#<br>Gb</td>
+    <td rowspan="2" style="background-color:white;">G</td>
+    <td style="background-color:grey;color:white;">G#<br>Ab</td>
+    <td rowspan="2" style="background-color:white;">A</td>
+    <td style="background-color:grey;color:white;">A#<br>Bb</td>
+    <td rowspan="2" style="background-color:white;">H</td>
+    <td rowspan="2" style="background-color:white;">C</td>
+  </tr>
+   
+</tbody></table>
+</font>
+<br>
+<p>Tóny "cis, des", "dis, es", "fis, ges", "gis, as",
+"ais, b" znejú rovnako vysoko a hrajú sa v tom istom poli na gitare (tá
+istá klávesa) ale majú rozdielne mená. 
+<br>Tóny, ktoré rovnako znejú ale ináč sa píšu nazývame <strong>enharmonické</strong>.
+</p>
+</p>
+<p>Rad, ktorý takto vznikol nazývame chromatický. Chromatický rad obsahuje všetky tóny, ktoré sa v hudbe používajú.<br>
+    Na klavíri sú tóny rozložené takto:
+</p>
+ <img alt="Noty podľa dĺžky" src="images/klavir.svg" width="100%">
+ 
 
     </div>
     
