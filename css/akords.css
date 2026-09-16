@@ -1,0 +1,167 @@
+ body {
+    background-color: #77c;          
+    font-family: Helvetica, Arial, FreeSans, san-serif;
+    color: #eee;
+  }
+    
+  a {
+    color: #88e;
+  }
+  a:hover {
+    color: #333;
+  }
+  .white:hover {
+    color: #000;
+  }
+  h1 {
+    font-size: 3.0em;
+    margin-bottom: 20px;
+    text-shadow: 0px -1px 0px #000;
+  }
+  h2 {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 0px;
+    
+  }
+  h2 a {
+    text-decoration: none;
+  }
+   h3 {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    text-shadow: 0px -1px 0px #000;
+  }
+  
+  pre {
+    background: #000;
+    color: #0b4;
+    padding: 20px 20px 5px;
+    -webkit-box-shadow: 0px 2px 10px 0px #000;
+    -moz-box-shadow: 0px 2px 10px 0px #000;
+    box-shadow: 0px 2px 10px 0px #000;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -khtml-border-radius: 9px;
+    border-radius: 9px;
+  }
+  .bullet {
+    padding: 10px;
+  }
+  .bullet:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .bullet h2 {
+    font-size: 1.2em;
+  }
+ 
+  .download > a {
+    text-decoration: none;
+    float: right;
+  }
+  .footer {
+    padding-top: 30px;
+    font-style: italic;
+  }
+  .subtext {
+    font-size: 0.9em;
+    font-style: italic;
+  }
+  #container {
+    margin: 0 auto;
+    width: 950px;
+  }
+  .bullet > div {
+    background-color: #fff;
+    padding: 20px 30px 5px;
+    -webkit-box-shadow: 0px 2px 10px 0px #000;
+    -moz-box-shadow: 0px 2px 10px 0px #000;
+    box-shadow: 0px 2px 10px 0px #000;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -khtml-border-radius: 9px;
+    border-radius: 9px;
+  }
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.vertical-menu {
+  width: 170px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+aside {
+  width: 15%;
+  padding: 15px ;
+  margin-top: 30px;
+  margin-right: 30px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+/* Style the content */
+.content {
+  /* background-color: #BDEDFF; */
+  padding: 10px;
+   /* Should be removed. Only for demonstration   height: 200px; */
+   margin-right: 50px;
+  margin-left: 50px;
+}
