@@ -42,7 +42,8 @@ class App {
         Scales: "./data/scales.json",
         Intervals: "./data/intervals.json",
         Chords: "./data/chords1.json",
-        Lessons: "./data/lessons.json"
+        Lessons: "./data/lessons.json",
+        Cadences: "./data/cadences.json"
 
     });
 

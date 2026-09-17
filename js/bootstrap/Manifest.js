@@ -6,28 +6,34 @@ function group(path, files) {
 
 window.Manifest = {
 
-   
+
+    // =====================================================
+    // COMMON
+    // =====================================================
+
     common: [
 
-    ...group("js/common/", [
+        ...group("js/common/", [
 
-        "BaseRegistry.js",
-        "ComponentRegistry.js",
-        "ServiceRegistry.js",
-        "EventBus.js"
-        
-    ])
+            "BaseRegistry.js",
+            "ComponentRegistry.js",
+            "ServiceRegistry.js",
+            "EventBus.js"
 
-],
+        ])
 
- // =====================================================
+    ],
+
+
+    // =====================================================
     // BASE
     // =====================================================
 
     base: [
-         ...group("js/renderers/fretboard/", [
 
-           "SVGDrawer1.js"
+        ...group("js/renderers/fretboard/", [
+
+            "SVGDrawer1.js"
 
         ]),
 
@@ -45,20 +51,6 @@ window.Manifest = {
 
     ],
 
-     // =====================================================
-    // PLAYBACK
-    // =====================================================
-
-    playback: [
-
-        ...group("js/playback/", [
-
-            "PlaybackCursor.js"
-           
-        ])
-
-    ],
-    
 
     // =====================================================
     // CORE
@@ -70,15 +62,14 @@ window.Manifest = {
 
             "Debug.js",
             "Database.js",
-           "Player.js"
-           
+            "Player.js"
 
         ])
 
     ],
 
-   
-     // =====================================================
+
+    // =====================================================
     // MUSIC
     // =====================================================
 
@@ -94,24 +85,26 @@ window.Manifest = {
 
     ],
 
+
     // =====================================================
     // AUDIO
     // =====================================================
-audio: [
+
+    audio: [
 
         ...group("js/audio/", [
 
-           "MidiPlayer.js",
-           "Voice.js",
-           "GuitarVoice.js",
-           "InstrumentPreset.js",
-           "GuitarPreset.js",
+            "MidiPlayer.js",
+            "Voice.js",
+            "GuitarVoice.js",
+            "InstrumentPreset.js",
+            "GuitarPreset.js",
             "Tone.js"
-           
-           
+
         ])
 
     ],
+
 
     // =====================================================
     // MODELS
@@ -129,6 +122,7 @@ audio: [
         ])
 
     ],
+
 
     // =====================================================
     // BUILDERS
@@ -149,6 +143,7 @@ audio: [
 
     ],
 
+
     // =====================================================
     // PLAYBACK
     // =====================================================
@@ -157,12 +152,13 @@ audio: [
 
         ...group("js/playback/", [
 
+            "PlaybackCursor.js",
             "PlaybackEngine.js"
 
         ])
 
     ],
-    
+
 
     // =====================================================
     // MODULES
@@ -178,33 +174,33 @@ audio: [
 
     ],
 
-     // =====================================================
+
+    // =====================================================
     // PAINTERS
     // =====================================================
 
-   painters: [
+    painters: [
 
-    ...group("js/painters/", [
+        ...group("js/painters/", [
 
-        "BasePainter.js",
-        "NotationUtils.js",
-       
-"StaffPainter.js",
-"LedgerLinePainter.js",
- "ClefPainter.js",
-"StemPainter.js",
-"MeasureBarPainter.js",
-"NotePositionCalculator.js",
-"NotePainter.js",
-"MeasurePainter.js",
-"FretboardPainter.js",
-"NotationPainter.js",
-"TabPainter.js"
+            "BasePainter.js",
+            "NotationUtils.js",
+            "StaffPainter.js",
+            "LedgerLinePainter.js",
+            "ClefPainter.js",
+            "StemPainter.js",
+            "MeasureBarPainter.js",
+            "NotePositionCalculator.js",
+            "NotePainter.js",
+            "MeasurePainter.js",
+            "FretboardPainter.js",
+            "NotationPainter.js",
+            "TabPainter.js"
 
-    ])
+        ])
 
-],
-    
+    ],
+
 
     // =====================================================
     // RENDERERS
@@ -214,18 +210,19 @@ audio: [
 
         ...group("js/renderers/", [
 
-             "Theme.js",
+            "Theme.js",
             "RendererEngine.js",
             "render_playtab.js"
 
         ]),
 
-       
+
         ...group("js/renderers/notation/layout/", [
 
             "NotationLayout.js"
 
         ]),
+
 
         ...group("js/renderers/notation/factory/", [
 
@@ -234,23 +231,22 @@ audio: [
             "SVGFactory.js"
 
         ]),
-         ...group("js/renderers/notation/", [
 
-           "MeasureRenderer.js"
-        
-        ]),
-
-        ...group("js/renderers/fretboard/", [
-
-            "FretboardRenderer.js",
-           
-        ]),
 
         ...group("js/renderers/notation/", [
 
-          "NotationRenderer.js"
+            "MeasureRenderer.js",
+            "NotationRenderer.js"
 
         ]),
+
+
+        ...group("js/renderers/fretboard/", [
+
+            "FretboardRenderer.js"
+
+        ]),
+
 
         ...group("js/renderers/tab/", [
 
@@ -261,11 +257,9 @@ audio: [
 
     ],
 
-   
-
 
     // =====================================================
-    // REPOSITORY
+    // REPOSITORIES
     // =====================================================
 
     repositories: [
@@ -276,12 +270,13 @@ audio: [
             "ChordsRepository.js",
             "ExercisesRepository.js",
             "IntervalsRepository.js",
-            "ScalesRepository.js"
-                      
+            "ScalesRepository.js",
+            "CadenceRepository.js"
 
         ])
 
     ],
+
 
     // =====================================================
     // ADAPTERS
@@ -296,11 +291,13 @@ audio: [
             "ExerciseAdapter.js",
             "IntervalAdapter.js",
             "ScaleAdapter.js",
+            "CadenceAdapter.js",
             "SongAdapter.js"
 
         ])
 
     ],
+
 
     // =====================================================
     // CONTROLLERS
@@ -313,11 +310,13 @@ audio: [
             "ChordController.js",
             "ExerciseController.js",
             "IntervalController.js",
-            "ScaleController.js"
+            "ScaleController.js",
+            "CadenceController.js"
 
         ])
 
     ],
+
 
     // =====================================================
     // UI
@@ -333,7 +332,8 @@ audio: [
 
     ],
 
-     // =====================================================
+
+    // =====================================================
     // VIEW
     // =====================================================
 
@@ -348,21 +348,23 @@ audio: [
         ])
 
     ],
+
+
     // =====================================================
     // APP
     // =====================================================
 
     app: [
 
-         ...group("js/app/", [
+        ...group("js/app/", [
 
-        "ApplicationBuilder.js",
-        "PageManager.js",
-        "Router.js",
-        "AppState.js",
-        "App.js"
+            "ApplicationBuilder.js",
+            "PageManager.js",
+            "Router.js",
+            "AppState.js",
+            "App.js"
 
-        ])        
+        ])
 
     ]
 

@@ -42,6 +42,7 @@ class Router {
         const hash =
             location.hash.replace("#/", "");
 
+
         // ------------------------------------------
         // Rozdelenie route na časti
         // ------------------------------------------
@@ -57,6 +58,7 @@ class Router {
         // #/scales
         // #/intervals
         // #/chords
+        // #/cadences
         // ------------------------------------------
 
         const route =
@@ -67,10 +69,11 @@ class Router {
         // Parametre
         //
         // #/guitarsystem/scale/C-dur
+        // #/guitarsystem/cadence/cadence_f_major_barre
         //
         // parts[0] = guitarsystem
-        // parts[1] = scale
-        // parts[2] = C-dur
+        // parts[1] = category
+        // parts[2] = item
         // ------------------------------------------
 
         const category =
@@ -111,74 +114,73 @@ class Router {
 
         if (route === "guitarsystem") {
 
-    console.log(
-        "GUITAR SYSTEM ROUTE:",
-        category,
-        item
-    );
+            console.log(
+                "GUITAR SYSTEM ROUTE:",
+                category,
+                item
+            );
 
 
-    const routeMap = {
+            const routeMap = {
 
-        scale: "scales",
+                scale: "scales",
+                scales: "scales",
 
-        scales: "scales",
+                interval: "intervals",
+                intervals: "intervals",
 
-        interval: "intervals",
+                chord: "chords",
+                chords: "chords",
 
-        intervals: "intervals",
+                exercise: "exercises",
+                exercises: "exercises",
 
-        chord: "chords",
+                cadence: "cadences",
+                cadences: "cadences"
 
-        chords: "chords",
-
-        exercise: "exercises",
-
-        exercises: "exercises"
-
-    };
-
-
-    const controllerRoute =
-        routeMap[category];
+            };
 
 
-    const controller =
-        this.routes[controllerRoute];
+            const controllerRoute =
+                routeMap[category];
 
 
-    if (!controller) {
-
-        console.warn(
-            "Unknown Guitar System category:",
-            category
-        );
-
-        return;
-
-    }
+            const controller =
+                this.routes[controllerRoute];
 
 
-    console.log(
-        "GUITAR SYSTEM CONTROLLER:",
-        controllerRoute
-    );
+            if (!controller) {
+
+                console.warn(
+                    "Unknown Guitar System category:",
+                    category
+                );
+
+                return;
+
+            }
 
 
-    if (item) {
-
-        controller.show(item);
-
-    } else {
-
-        controller.show();
-
-    }
+            console.log(
+                "GUITAR SYSTEM CONTROLLER:",
+                controllerRoute
+            );
 
 
-    return;
+            if (item) {
 
-}
+                controller.show(item);
+
+            } else {
+
+                controller.show();
+
+            }
+
+
+            return;
+
+        }
 
 
         // ------------------------------------------

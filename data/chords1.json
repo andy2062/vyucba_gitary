@@ -17,6 +17,176 @@
     ]   
   },
   {
+      "id": "chordcdurz",
+  "title": "C dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"C",
+
+    "description": "Akord C dur základná poloha",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "C", "string": 5, "fret": 3, "finger": "3" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+      "id": "chordgdurz",
+  "title": "G dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"G",
+
+    "description": "Akord G dur základná poloha",
+    "notes": [
+      { "note": "G", "string": 6, "fret": 3, "finger": "2" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "1" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "G", "string": 1, "fret": 3, "finger": "3" }
+    ]   
+  },
+  {
+      "id": "chordddurz",
+  "title": "D dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"D",
+
+    "description": "Akord D dur základná poloha",
+    "notes": [
+      { "note": "", "string": 6, "fret": -1, "finger": "0" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "1" },
+      {"note": "D", "string": 2, "fret": 3, "finger": "3" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "2" }
+    ]   
+  },
+  {
+      "id": "chordadurz",
+  "title": "A dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"A",
+
+    "description": "Akord A dur základná poloha",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "1" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      {"note": "C#", "string": 2, "fret": 2, "finger": "3" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+      "id": "chordedurz",
+  "title": "E dur",
+  "type":"chord",
+  "quality":"dur",
+  "group":"E",
+
+    "description": "Akord E dur základná poloha",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "2" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "3" },
+      { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+      "id": "chordg7z",
+  "title": "G7",
+  "type":"chord",
+  "quality":"7",
+  "group":"G",
+
+    "description": "Akord G7 základná poloha",
+    "notes": [
+      { "note": "G", "string": 6, "fret": 3, "finger": "3" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "2" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ]   
+  },
+  {
+      "id": "chordd7z",
+  "title": "D7",
+  "type":"chord",
+  "quality":"7",
+  "group":"D",
+
+    "description": "Akord D7 základná poloha",
+    "notes": [
+      { "note": "", "string": 6, "fret": -1, "finger": "" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "3" }
+    ]   
+  },
+  {
+      "id": "chorda7z",
+  "title": "A7",
+  "type":"chord",
+  "quality":"7",
+  "group":"A",
+
+    "description": "Akord A7 základná poloha",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "1" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "C#", "string": 2, "fret": 2, "finger": "2" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+      "id": "chorde7z",
+  "title": "E7",
+  "type":"chord",
+  "quality":"7",
+  "group":"E",
+
+    "description": "Akord E7 základná poloha",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "2" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "G#", "string": 3, "fret": 1, "finger": "1" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+      "id": "chordh7z",
+  "title": "H7",
+  "type":"chord",
+  "quality":"7",
+  "group":"C",
+
+    "description": "Akord H7 základná poloha",
+    "notes": [
+      { "note": "0", "string": 6, "fret": -1, "finger": "" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "2" },
+      {"note": "D#", "string": 4, "fret": 1, "finger": "1" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "3" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "F#", "string": 1, "fret": 2, "finger": "4" }
+    ]   
+  },
+  {
     "id": "chordfmajor",
     "type": "chord",
      "group":"E",
@@ -137,6 +307,22 @@
       { "note": "E", "string": 6, "fret": 0, "finger": "0" },
       {"note": "H", "string": 5, "fret": 2, "finger": "3" },
       {"note": "E", "string": 4, "fret": 2, "finger": "4" },
+      { "note": "G", "string": 3, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 2, "fret": 0, "finger": "0" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "id": "chordemolz",
+    "type": "chord",
+     "group":"E",
+  "quality": "mol",
+    "title": "Emi",
+    "description": "Akord v základnej polohe Emi",
+    "notes": [
+      { "note": "E", "string": 6, "fret": 0, "finger": "0" },
+      {"note": "H", "string": 5, "fret": 2, "finger": "2" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "3" },
       { "note": "G", "string": 3, "fret": 0, "finger": "0" },
       {"note": "H", "string": 2, "fret": 0, "finger": "0" },
       { "note": "E", "string": 1, "fret": 0, "finger": "0" }
@@ -378,6 +564,116 @@
       "finger": "1"
     }
   },
+   {
+    "id": "chordd7",
+    "type": "chord",
+     "group":"A",
+  "quality": "7",
+    "title": "D7",
+    "description": "Barre podľa struny A v V.poli: D7",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "D", "string": 5, "fret": 5, "finger": "1" },
+      {"note": "A", "string": 4, "fret": 7, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      {"note": "F#", "string": 2, "fret": 7, "finger": "4" },
+      { "note": "A", "string": 1, "fret": 5, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 5,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+   {
+    "id": "chordd#major5",
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "D# dur",
+    "description": "Barre podľa struny A v V.poli: D# dur",
+    "notes": [
+      { "note": "A#", "string": 6, "fret": -1, "finger": "" },
+      {"note": "D#", "string": 5, "fret": 6, "finger": "1" },
+      {"note": "A#", "string": 4, "fret": 8, "finger": "2" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "3" },
+      {"note": "Fx", "string": 2, "fret": 8, "finger": "4" },
+      { "note": "A#", "string": 1, "fret": 6, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 6,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+   {
+    "id": "chordd#7",
+    "type": "chord",
+     "group":"A",
+  "quality": "7",
+    "title": "D#7",
+    "description": "Barre podľa struny A v V.poli: D#7",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "D#", "string": 5, "fret": 6, "finger": "1" },
+      {"note": "A#", "string": 4, "fret": 8, "finger": "3" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "1" },
+      {"note": "Fx", "string": 2, "fret": 8, "finger": "4" },
+      { "note": "A#", "string": 1, "fret": 6, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 6,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "id": "chordemajor7",
+    "type": "chord",
+     "group":"A",
+  "quality": "dur",
+    "title": "E",
+    "description": "Barre podľa struny A v VII.poli: E",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "E", "string": 5, "fret": 7, "finger": "1" },
+      {"note": "H", "string": 4, "fret": 9, "finger": "2" },
+      { "note": "E", "string": 3, "fret": 9, "finger": "3" },
+      {"note": "G#", "string": 2, "fret": 9, "finger": "4" },
+      { "note": "H", "string": 1, "fret": 7, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 7,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "id": "chorde7",
+    "type": "chord",
+     "group":"A",
+  "quality": "7",
+    "title": "E7",
+    "description": "Barre podľa struny A v VII.poli: E7",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "E", "string": 5, "fret": 7, "finger": "1" },
+      {"note": "H", "string": 4, "fret": 9, "finger": "3" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+      {"note": "G#", "string": 2, "fret": 9, "finger": "4" },
+      { "note": "H", "string": 1, "fret": 7, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 7,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
   {
     "id": "chordaminor",
     "type": "chord",
@@ -385,6 +681,22 @@
   "quality": "mol",
     "title": "Ami",
     "description": "Barre podľa struny A akord Ami",
+    "notes": [
+      { "note": "E", "string": 6, "fret": -1, "finger": "" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "E", "string": 4, "fret": 2, "finger": "2" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "3" },
+      {"note": "C", "string": 2, "fret": 1, "finger": "1" },
+      { "note": "E", "string": 1, "fret": 0, "finger": "0" }
+    ]   
+  },
+  {
+    "id": "chordamolz",
+    "type": "chord",
+     "group":"A",
+  "quality": "mol",
+    "title": "Ami",
+    "description": "Akord v základnej polohe Ami",
     "notes": [
       { "note": "E", "string": 6, "fret": -1, "finger": "" },
       {"note": "A", "string": 5, "fret": 0, "finger": "0" },
@@ -461,7 +773,7 @@
     }
   },
   {
-    "id": "chordcisminor",
+    "id": "chordc#minor",
     "type": "chord",
      "group":"A",
   "quality": "mol",
@@ -494,7 +806,7 @@
       {"note": "D", "string": 5, "fret": 5, "finger": "1" },
       {"note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "D", "string": 3, "fret": 7, "finger": "4" },
-      {"note": "F", "string": 2, "fret": 5, "finger": "2" },
+      {"note": "F", "string": 2, "fret": 6, "finger": "2" },
       { "note": "A", "string": 1, "fret": 5, "finger": "1" }
     ],
     "barre": {
@@ -503,6 +815,22 @@
       "toString": 5,
       "finger": "1"
     }
+  },
+  {
+    "id": "chorddmolz",
+    "type": "chord",
+     "group":"D",
+  "quality": "mol",
+    "title": "Dmi",
+    "description": "Akord v základnej polohe Dmi",
+    "notes": [
+      { "note": "A", "string": 6, "fret": -1, "finger": "" },
+      {"note": "A", "string": 5, "fret": 0, "finger": "0" },
+      {"note": "D", "string": 4, "fret": 0, "finger": "0" },
+      { "note": "A", "string": 3, "fret": 2, "finger": "2" },
+      {"note": "D", "string": 2, "fret": 3, "finger": "3" },
+      { "note": "F", "string": 1, "fret": 1, "finger": "1" }
+    ]    
   },
   {
       "id": "chorde7",
@@ -628,6 +956,50 @@
       "fret": 5,
       "fromString": 1,
       "toString": 6,
+      "finger": "1"
+    }
+  },
+  {
+    "id": "chordc7",
+    "type": "chord",
+     "group":"A",
+  "quality": "7",
+    "title": "C7",
+    "description": "Barre podľa struny A v III.poli: C7",
+    "notes": [
+      { "note": "", "string": 6, "fret": -1, "finger": "" },
+      {"note": "C", "string": 5, "fret": 3, "finger": "1" },
+      {"note": "G", "string": 4, "fret": 5, "finger": "3" },
+      { "note": "Hb", "string": 3, "fret": 3, "finger": "1" },
+      {"note": "E", "string": 2, "fret": 5, "finger": "4" },
+      { "note": "G", "string": 1, "fret": 3, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 3,
+      "fromString": 1,
+      "toString": 5,
+      "finger": "1"
+    }
+  },
+  {
+    "id": "chordc#7",
+    "type": "chord",
+     "group":"A",
+  "quality": "7",
+    "title": "C#7",
+    "description": "Barre podľa struny A v IV.poli: C#7",
+    "notes": [
+      { "note": "", "string": 6, "fret": -1, "finger": "" },
+      {"note": "C#", "string": 5, "fret": 4, "finger": "1" },
+      {"note": "G#", "string": 4, "fret": 6, "finger": "3" },
+      { "note": "H", "string": 3, "fret": 4, "finger": "1" },
+      {"note": "E#", "string": 2, "fret": 6, "finger": "4" },
+      { "note": "G#", "string": 1, "fret": 4, "finger": "1" }
+    ],
+    "barre": {
+      "fret": 4,
+      "fromString": 1,
+      "toString": 5,
       "finger": "1"
     }
   }

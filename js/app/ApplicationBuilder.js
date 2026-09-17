@@ -89,12 +89,11 @@ class ApplicationBuilder {
 
     }
 
-   registerRenderers(
 
+registerRenderers(
     fretboard,
     notation,
     tab
-
 ) {
 
     const types = [
@@ -102,9 +101,11 @@ class ApplicationBuilder {
         "exercise",
         "scale",
         "interval",
-        "chord"
+        "chord",
+        "cadence"
 
     ];
+
 
     const renderTargets = {
 
@@ -114,28 +115,32 @@ class ApplicationBuilder {
 
     };
 
-    Object.entries(renderTargets).forEach(([name, element]) => {
 
-        if (!element) return;
+    Object.entries(renderTargets).forEach(
+        ([name, element]) => {
 
-        if (!ComponentRegistry.has(name)) return;
+            if (!element) return;
 
-        const Renderer =
-            ComponentRegistry.get(name);
+            if (!ComponentRegistry.has(name)) return;
 
-        this.app.engine.registerMany(
 
-            types,
+            const Renderer =
+                ComponentRegistry.get(name);
 
-            new Renderer(element)
 
-        );
+            this.app.engine.registerMany(
 
-    });
+                types,
 
-    
+                new Renderer(element)
+
+            );
+
+        }
+    );
 
 }
+
 
     registerPlayback() {
 
@@ -160,24 +165,29 @@ class ApplicationBuilder {
     }
  
 
-   createRepositories() {
+createRepositories() {
 
     const repositories = {
 
-    exercises: ExercisesRepository,
-    scales: ScalesRepository,
-    intervals: IntervalsRepository,
-    chords: ChordsRepository
-   // lessons: LessonsRepository
+        exercises: ExercisesRepository,
+        scales: ScalesRepository,
+        intervals: IntervalsRepository,
+        chords: ChordsRepository,
+        cadences: CadenceRepository
 
-};
+    };
 
-Object.entries(repositories).forEach(([name, Repository]) => {
 
-    this.app.repositories[name] =
-        new Repository(this.app.database);
+    Object.entries(repositories).forEach(
+        ([name, Repository]) => {
 
-});
+            this.app.repositories[name] =
+                new Repository(
+                    this.app.database
+                );
+
+        }
+    );
 
 }
 
@@ -198,32 +208,66 @@ createLessonSystem() {
 
 
 createControllers() {
-    
+
     const controllers = {
 
-    exercises: ExerciseController,
-    scales: ScaleController,
-    intervals: IntervalController,
-    chords: ChordController
+        exercises: ExerciseController,
+        scales: ScaleController,
+        intervals: IntervalController,
+        chords: ChordController
 
-};
+    };
 
-Object.entries(controllers).forEach(([name, Controller]) => {
 
-    this.app.controllers[name] =
-        new Controller(
+    // ==========================================
+    // BEŽNÉ CONTROLLERY
+    // ==========================================
 
-            this.app.repositories[name],
+    Object.entries(controllers).forEach(
+        ([name, Controller]) => {
+
+            this.app.controllers[name] =
+                new Controller(
+
+                    this.app.repositories[name],
+
+                    this.app.player,
+
+                    this.app.engine,
+
+                    this.app.midi,
+
+                    this.app.ui
+
+                );
+
+        }
+    );
+
+
+    // ==========================================
+    // CADENCE CONTROLLER
+    // ==========================================
+
+    this.app.controllers.cadences =
+        new CadenceController(
+
+            this.app.repositories.cadences,
+
+            this.app.repositories.chords,
+
             this.app.player,
+
             this.app.engine,
+
             this.app.midi,
+
             this.app.ui
 
         );
 
-});
-
 }
+
 
 createRouter() {
 

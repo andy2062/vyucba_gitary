@@ -1,0 +1,510 @@
+{
+  "cadences": [
+    
+    {
+      "id": "cadence_c_dur",
+      "title": "Kadencia C dur",
+      "description": "C – F – G7 – C",
+
+      "steps": [
+        {
+          "chordId": "chordcdurz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordfmajor",
+          "text": "Akord v 1. poli: barré"
+        },
+        {
+          "chordId": "chordg7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordcdurz",
+          "text": "Návrat na C"
+        }
+      ]
+    },
+    {
+      "id": "cadence_g_dur",
+      "title": "Kadencia G dur",
+      "description": "G – C – D7 – G",
+
+      "steps": [
+        {
+          "chordId": "chordgdurz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordcdurz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chordd7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordgdurz",
+          "text": "Návrat na G"
+        }
+      ]
+    },
+    {
+      "id": "cadence_d_dur",
+      "title": "Kadencia D dur",
+      "description": "D – G – A7 – D",
+
+      "steps": [
+        {
+          "chordId": "chordddurz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordgdurz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chorda7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordddurz",
+          "text": "Návrat na D"
+        }
+      ]
+    },
+    {
+      "id": "cadence_a_dur",
+      "title": "Kadencia A dur",
+      "description": "A – D – E7 – A",
+
+      "steps": [
+        {
+          "chordId": "chordadurz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordddurz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chorde7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordadurz",
+          "text": "Návrat na A"
+        }
+      ]
+    },
+    {
+      "id": "cadence_e_dur",
+      "title": "Kadencia E dur",
+      "description": "E – A – H7 – E",
+
+      "steps": [
+        {
+          "chordId": "chordedurz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordadurz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chordh7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordedurz",
+          "text": "Návrat na E"
+        }
+      ]
+    },
+     {
+      "id": "cadence_a_molz",
+      "title": "Kadencia A mol",
+      "description": "Ami – Dmi – E7 – Ami",
+
+      "steps": [
+        {
+          "chordId": "chordamolz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chorddmolz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chorde7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordamolz",
+          "text": "Návrat na Ami"
+        }
+      ]
+    },
+    {
+      "id": "cadence_e_molz",
+      "title": "Kadencia E mol",
+      "description": "Emi – Ami – H7 – Emi",
+
+      "steps": [
+        {
+          "chordId": "chordemolz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordamolz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chordh7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chordemolz",
+          "text": "Návrat na Emi"
+        }
+      ]
+    },
+    
+     {
+      "id": "cadence_d_mol",
+      "title": "Kadencia D mol",
+      "description": "Dmi – Gmi – A7 – Dmi",
+
+      "steps": [
+        {
+          "chordId": "chorddmolz",
+          "text": "Prvý akord v základnej polohe"
+        },
+        {
+          "chordId": "chordgminor",
+          "text": "Akord v III. poli - barré podľa E mol"
+        },
+        {
+          "chordId": "chorda7z",
+          "text": "Tretí akord v základnej polohe"
+        },
+        {
+          "chordId": "chorddmolz",
+          "text": "Návrat na Dmi"
+        }
+      ]
+    },
+    {
+      "id": "cadence_f_major_barre",
+      "title": "Kadencia F dur – barré",
+      "description": "F – B – C7 – F",
+
+      "steps": [
+        {
+          "chordId": "chordfmajor",
+          "text": "Prvý akord v 1. poli: barré"
+        },
+        {
+          "chordId": "chorda#major",
+          "text": "Akord v 1. poli: barré"
+        },
+        {
+          "chordId": "chordc7",
+          "text": "Tretí akord v 3. poli"
+        },
+        {
+          "chordId": "chordfmajor",
+          "text": "Návrat na F"
+        }
+      ]
+    },
+    {
+      "id": "cadence_f#_major_barre",
+      "title": "Kadencia F# dur – barré",
+      "description": "F# – H – C#7 – F#",
+
+      "steps": [
+        {
+          "chordId": "chordf#major",
+          "text": "Prvý akord v II. poli: barré"
+        },
+        {
+          "chordId": "chordhmajor",
+          "text": "Akord v II. poli: barré"
+        },
+        {
+          "chordId": "chordc#7",
+          "text": "Akord v IV. poli barré podľa A7"
+        },
+        {
+          "chordId": "chordf#major",
+          "text": "Návrat na F#"
+        }
+      ]
+    },
+    {
+      "id": "cadence_g_major_barre",
+      "title": "Kadencia G dur – barré",
+      "description": "G – C – D7 – G",
+
+      "steps": [
+        {
+          "chordId": "chordgmajor",
+          "text": "Prvý akord v III. poli: barré"
+        },
+        {
+          "chordId": "chordcmajor3",
+          "text": "Akord v III. poli: barré"
+        },
+        {
+          "chordId": "chordd7",
+          "text": "Tretí akord v V. poli"
+        },
+        {
+          "chordId": "chordgmajor",
+          "text": "Návrat na G"
+        }
+      ]
+    },
+    {
+      "id": "cadence_g#_major_barre",
+      "title": "Kadencia G# dur – barré",
+      "description": "G# – C# – D#7 – G#",
+
+      "steps": [
+        {
+          "chordId": "chordg#major",
+          "text": "Prvý akord v IV. poli: barré"
+        },
+        {
+          "chordId": "chordc#major",
+          "text": "Akord v IV. poli: barré"
+        },
+        {
+          "chordId": "chordd#7",
+          "text": "Tretí akord v VI. poli"
+        },
+        {
+          "chordId": "chordg#major",
+          "text": "Návrat na G#"
+        }
+      ]
+    },
+    {
+      "id": "cadence_a_major_barre",
+      "title": "Kadencia A dur – barré",
+      "description": "A – D – E7 – A",
+
+      "steps": [
+        {
+          "chordId": "chordamajor5",
+          "text": "Prvý akord v V. poli: barré"
+        },
+        {
+          "chordId": "chorddmajor5",
+          "text": "Akord v V. poli: barré"
+        },
+        {
+          "chordId": "chorde7",
+          "text": "Tretí akord v VII. poli"
+        },
+        {
+          "chordId": "chordamajor5",
+          "text": "Návrat na A"
+        }
+      ]
+    },
+    {
+      "id": "cadence_h_major",
+      "title": "Kadencia H dur barré",
+      "description": "H – E – F#7 – H",
+
+      "steps": [
+        {
+          "chordId": "chordhmajor",
+          "text": "Prvý akord v II. poli - barré podľa A dur"
+        },
+        {
+          "chordId": "chordedurz",
+          "text": "Akord v 1. poli: barré podľa E dur"
+        },
+        {
+          "chordId": "chordg7",
+          "text": "Tretí akord v III. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chorhcmajor",
+          "text": "Návrat na H"
+        }
+      ]
+    },
+    {
+      "id": "cadence_c_major",
+      "title": "Kadencia C dur barré",
+      "description": "C – F – G7 – C",
+
+      "steps": [
+        {
+          "chordId": "chordcmajor3",
+          "text": "Prvý akord v III. poli - barré podľa A dur"
+        },
+        {
+          "chordId": "chordfmajor",
+          "text": "Akord v 1. poli: barré podľa E dur"
+        },
+        {
+          "chordId": "chordg7",
+          "text": "Tretí akord v III. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chordcmajor3",
+          "text": "Návrat na C"
+        }
+      ]
+    },
+    {
+      "id": "cadence_c#_major",
+      "title": "Kadencia C# dur barré",
+      "description": "C# – F# – G#7 – C#",
+
+      "steps": [
+        {
+          "chordId": "chordc#major",
+          "text": "Prvý akord v IV. poli - barré podľa A dur"
+        },
+        {
+          "chordId": "chordf#major",
+          "text": "Akord v II. poli: barré podľa E dur"
+        },
+        {
+          "chordId": "chordg#7",
+          "text": "Tretí akord v IV. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chordc#major",
+          "text": "Návrat na C#"
+        }
+      ]
+    },
+    {
+      "id": "cadence_d_major",
+      "title": "Kadencia D dur barré",
+      "description": "D – G – A7 – D",
+
+      "steps": [
+        {
+          "chordId": "chorddmajor5",
+          "text": "Prvý akord v V. poli - barré podľa A dur"
+        },
+        {
+          "chordId": "chordgmajor",
+          "text": "Akord v III. poli: barré podľa E dur"
+        },
+        {
+          "chordId": "chorda7",
+          "text": "Tretí akord v V. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chorddmajor5",
+          "text": "Návrat na D"
+        }
+      ]
+    },
+     {
+      "id": "cadence_h_mol",
+      "title": "Kadencia H mol",
+      "description": "Hmi – Emi – F#7 – Hmi",
+
+      "steps": [
+        {
+          "chordId": "chordhminor",
+          "text": "Prvý akord v II. poli - barré podľa Ami"
+        },
+        {
+          "chordId": "chordemolz",
+          "text": "Akord v základnej polohe"
+        },
+        {
+          "chordId": "chordf#7",
+          "text": "Akord v II. poli - barré podľa E mol"
+        },
+        {
+          "chordId": "chordhminor",
+          "text": "Návrat na Hmi"
+        }
+      ]
+    },
+     {
+      "id": "cadence_c_minor",
+      "title": "Kadencia C mol barré",
+      "description": "Cmi – Fmi – G7 – Cmi",
+
+      "steps": [
+        {
+          "chordId": "chordcminor",
+          "text": "Prvý akord v III. poli - barré podľa A mol"
+        },
+        {
+          "chordId": "chordfminor",
+          "text": "Akord v 1. poli: barré podľa E mol"
+        },
+        {
+          "chordId": "chordg7",
+          "text": "Tretí akord v III. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chordcminor",
+          "text": "Návrat na Cmi"
+        }
+      ]
+    },
+    {
+      "id": "cadence_c#_minor",
+      "title": "Kadencia C# mol barré",
+      "description": "C#mi – F#mi – G#7 – C#mi",
+
+      "steps": [
+        {
+          "chordId": "chordc#minor",
+          "text": "Prvý akord v IV. poli - barré podľa A mol"
+        },
+        {
+          "chordId": "chordf#minor",
+          "text": "Akord v II. poli: barré podľa E mol"
+        },
+        {
+          "chordId": "chordg#7",
+          "text": "Tretí akord v IV. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chordc#minor",
+          "text": "Návrat na C#mi"
+        }
+      ]
+    },
+     {
+      "id": "cadence_d_minor",
+      "title": "Kadencia D mol barré",
+      "description": "Dmi – Gmi – A7 – Dmi",
+
+      "steps": [
+        {
+          "chordId": "chorddminor",
+          "text": "Prvý akord v V. poli - barré podľa A mol"
+        },
+        {
+          "chordId": "chordgminor",
+          "text": "Akord v III. poli: barré podľa E mol"
+        },
+        {
+          "chordId": "chorda7",
+          "text": "Tretí akord v V. poli - barré podľa E7"
+        },
+        {
+          "chordId": "chorddminor",
+          "text": "Návrat na Dmi"
+        }
+      ]
+    }
+  ]
+}

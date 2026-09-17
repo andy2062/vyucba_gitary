@@ -20,7 +20,9 @@ class Modules {
         {
             id: "chords",
             title: "Akordy"
-        }
+        },
+
+        { id: "cadences", title: "Kadencie" }
 
     ];
 
