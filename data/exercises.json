@@ -328,6 +328,90 @@
      
     ]
   },
+  {
+    "id": "cvic231",
+    "type": "exercise",
+    "title": "2,3,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,3,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" }
+    ]
+  },
+    {
+    "id": "cvic241",
+    "type": "exercise",
+    "title": "2,4,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,4,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }
+    ]
+  },
+   {
+    "id": "cvic341",
+    "type": "exercise",
+    "title": "3,4,1 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,4,1. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }
+    ]
+  },
+  {
+    "id": "cvic312",
+    "type": "exercise",
+    "title": "3,1,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,1.2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ]
+  },
+  {
+    "id": "cvic412",
+    "type": "exercise",
+    "title": "4,1,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ]
+  },
+  {
+    "id": "cvic413",
+    "type": "exercise",
+    "title": "4,1,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }
+    ]
+  },
   
   {
     "id": "cvic2121",
@@ -423,6 +507,135 @@
       { "note": "A", "string": 4, "fret": 7, "finger": "3" },
       { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
       { "note": "D", "string": 3, "fret": 7, "finger": "3" }     
+    ]
+  },
+  {
+    "id": "cvic2312",
+    "type": "exercise",
+    "title": "2,3,1,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,3,1,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2"},
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A", "string": 4, "fret": 7, "finger": "3" }     
+    ]
+  },
+  {
+    "id": "cvic2412",
+    "type": "exercise",
+    "title": "2,4,1,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,4,1,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }     
+    ]
+  },
+  {
+    "id": "cvic3412",
+    "type": "exercise",
+    "title": "3,4,1,2 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,4,1,2. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }     
+    ]
+  },
+  {
+    "id": "cvic2413",
+    "type": "exercise",
+    "title": "2,4,1,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 2,4,1,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "G#", "string": 4, "fret": 6, "finger": "2"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }     
+    ]
+  },
+  {
+    "id": "cvic3413",
+    "type": "exercise",
+    "title": "3,4,1,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 3,4,1,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A", "string": 4, "fret": 7, "finger": "3"},
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4" }     
+    ]
+  },
+
+  {
+    "id": "cvic4123",
+    "type": "exercise",
+    "title": "4,1,2,3 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1,2,3. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }     
+    ]
+  },
+  {
+    "id": "cvic4124",
+    "type": "exercise",
+    "title": "4,1,2,4 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1,2,4. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4" },
+      { "note": "C#", "string": 3, "fret": 6, "finger": "2" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }     
+    ]
+  },
+   {
+    "id": "cvic4134",
+    "type": "exercise",
+    "title": "4,1,3,4 na dvoch strunách",
+     "playMode": "single",
+    "position": 5,
+    "description": "Striedanie prstov na dvoch strunách G-D 4,1,3,4. Ak to ide dobre skúšame aj na vzdialenejších strunách H-D, H-A, E-A",
+    "notes": [
+      { "note": "A#", "string": 4, "fret": 8, "finger": "4"},
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "D#", "string": 3, "fret": 8, "finger": "4" },
+      { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+      { "note": "C", "string": 3, "fret": 5, "finger": "1" }     
     ]
   },
 

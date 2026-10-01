@@ -7,30 +7,7 @@ let useFlats = false; // false = #, true = b
 let rhythmsDB = {};
 
 // načítanie songs.json
-/*
-function loadSongs() { 
-  fetch("./data/songs1.json") .then(res => res.json()) .then(data => {
-     songs = data.songs; renderCategories(); renderAuthors(); renderSongs(); 
-     // ----------------------------- 
-     // 
-     // DEEP LINK NA KONKRÉTNU PIESEŇ 
-     // 
-     // ----------------------------- 
-     // 
-     const hash = window.location.hash.replace("#/", ""); 
-     const parts = hash.split("/"); 
-     const route = parts[0]; 
-     const songId = parts[1] || null; 
-     if ( route === "songs" && songId ) { 
-      const song = songs.find( song => song.id === songId ); 
-      if (song) { console.log( "DIRECT SONG:", songId ); 
-        showSong(song); } 
-        else { console.warn( "SONG NOT FOUND:", songId ); 
 
-        } } }) 
-        .catch(err => { console.error( "CHYBA PRI NAČÍTANÍ PIESNÍ:", err ); }); 
-      }
-*/
       function loadSongs() {
 
   fetch("./data/songs1.json")
@@ -555,12 +532,36 @@ if (song.rhythm && rhythmsDB[song.rhythm]) {
 
   let text = song.text;
 
+// ------------------------------------
+// AKORDY V TEXTE: [G]
+// ------------------------------------
+text = text.replace(/\[(.*?)\]/g, (match, chord) => {
+
+  let newChord = transposeChord(chord, transpose);
+
+  return `<sup class="chord" onclick="showChord('${newChord}')">${newChord}</sup>`;
+});
+
+
+// ------------------------------------
+// AKORDY V TAKTOCH: <G>
+// ------------------------------------
+text = text.replace(/<([A-H](?:#|b)?[^>]*)>/g, (match, chord) => {
+
+  let newChord = transposeChord(chord, transpose);
+
+  return `<span class="measure-chord" onclick="showChord('${newChord}')">${newChord}</span>`;
+});
+
+/*
+  let text = song.text;
+
   text = text.replace(/\[(.*?)\]/g, (match, chord) => {
     let newChord = transposeChord(chord, transpose);
 
     return `<sup class="chord" onclick="showChord('${newChord}')">${newChord}</sup>`;
   });
-
+*/
   // tučné C]Toto je {i}kurzíva{/i} [G]Toto je {b}tučné{/b}
 text = text.replace(/\{b\}(.*?)\{\/b\}/g, "<b>$1</b>");
 

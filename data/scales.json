@@ -812,7 +812,99 @@
      { "note": "A", "string": 5, "fret": 0, "finger": "0" },
      {  "note": "G",  "string": 6, "fret": 3, "finger": "3", "root": true }
     ]
-  }
+  },
+  {
+    "id": "scalecminoraiol3",
+  "type": "scale",
+  "title": "C mol melodická - tretia poloha",
+  "playMode": "cumulative",
+  "quality": "mol",
+  "group": "Aiolska",
+  "position": 3,
+  "description": "Stupnica C mol, tri béčka (b,es,as), dve oktávy smerom dole prirodzená",
+
+  "notes": [
+    { "note": "C", "string": 5, "fret": 3, "finger": "1", "root": true },
+    { "note": "D", "string": 5, "fret": 5, "finger": "1" },
+    { "note": "Es", "string": 5, "fret": 6, "finger": "2" },
+    { "note": "F", "string": 5, "fret": 8, "finger": "4" },
+    { "note": "G", "string": 4, "fret": 5, "finger": "1" },
+    { "note": "A", "string": 4, "fret": 7, "finger": "1" },
+    { "note": "H", "string": 4, "fret": 9, "finger": "3" },
+    { "note": "C", "string": 4, "fret": 10, "finger": "4", "root": true },
+     
+    { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+    { "note": "Es", "string": 3, "fret": 8, "finger": "2" },
+    { "note": "F", "string": 3, "fret": 10, "finger": "4" },
+    { "note": "G", "string": 2, "fret": 8, "finger": "2" },
+    { "note": "A", "string": 2, "fret": 10, "finger": "4" },
+    { "note": "H", "string": 1, "fret": 7, "finger": "1" },
+    { "note": "C", "string": 1, "fret": 8, "finger": "1", "root": true },
+    { "note": "C", "string": 1, "fret": 8, "finger": "1", "root": true },
+    { "note": "B", "string": 2, "fret": 11, "finger": "4" },
+    { "note": "As", "string": 2, "fret": 9, "finger": "2" },
+    { "note": "G", "string": 2, "fret": 8, "finger": "1" },
+    { "note": "F", "string": 3, "fret": 10, "finger": "3" },
+    { "note": "Es", "string": 3, "fret": 8, "finger": "1" },
+    { "note": "D", "string": 3, "fret": 7, "finger": "3" },
+    { "note": "C", "string": 3, "fret": 5, "finger": "1", "root": true },
+     
+    { "note": "B", "string": 4, "fret": 8, "finger": "4" },
+    { "note": "As", "string": 4, "fret": 6, "finger": "2" },
+    { "note": "G", "string": 4, "fret": 5, "finger": "1" },
+    { "note": "F", "string": 5, "fret": 8, "finger": "4" },
+    { "note": "Es", "string": 5, "fret": 6, "finger": "2" },
+    { "note": "D", "string": 5, "fret": 5, "finger": "1" },
+    { "note": "C", "string": 5, "fret": 3, "finger": "1", "root": true }
+  ]
+
+},
+ {
+    "id": "scalegminoraiol3",
+  "type": "scale",
+  "title": "G mol melodická - tretia poloha",
+  "playMode": "cumulative",
+  "quality": "mol",
+  "group": "Aiolska",
+  "position": 3,
+  "description": "Stupnica G mol, dve béčka (b,es), dve oktávy smerom dole prirodzená",
+
+  "notes": [
+    { "note": "G", "string": 6, "fret": 3, "finger": "1", "root": true },
+    { "note": "A", "string": 6, "fret": 5, "finger": "1" },
+    { "note": "B", "string": 6, "fret": 6, "finger": "2" },
+    { "note": "C", "string": 6, "fret": 8, "finger": "4" },
+    { "note": "D", "string": 5, "fret": 5, "finger": "1" },
+    { "note": "E", "string": 5, "fret": 7, "finger": "1" },
+    { "note": "F#", "string": 5, "fret": 9, "finger": "3" },
+    { "note": "G", "string": 5, "fret": 10, "finger": "4", "root": true },
+     
+    { "note": "A", "string": 4, "fret": 7, "finger": "1" },
+    { "note": "B", "string": 4, "fret": 8, "finger": "2" },
+    { "note": "C", "string": 4, "fret": 10, "finger": "4" },
+    { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+    { "note": "E", "string": 3, "fret": 9, "finger": "3" },
+    { "note": "F#", "string": 2, "fret": 7, "finger": "1" },
+    { "note": "G", "string": 2, "fret": 8, "finger": "2", "root": true },
+    { "note": "G", "string": 2, "fret": 8, "finger": "2", "root": true },
+    { "note": "F", "string": 3, "fret": 10, "finger": "4" },
+    { "note": "Es", "string": 3, "fret": 8, "finger": "2" },
+    { "note": "D", "string": 3, "fret": 7, "finger": "1" },
+    { "note": "C", "string": 4, "fret": 10, "finger": "4" },
+    { "note": "B", "string": 4, "fret": 8, "finger": "2" },
+    { "note": "A", "string": 4, "fret": 7, "finger": "1" },
+    { "note": "G", "string": 4, "fret": 5, "finger": "1", "root": true },
+     
+    { "note": "F", "string": 5, "fret": 8, "finger": "4" },
+    { "note": "Es", "string": 5, "fret": 6, "finger": "2" },
+    { "note": "D", "string": 5, "fret": 5, "finger": "1" },
+    { "note": "C", "string": 6, "fret": 8, "finger": "4" },
+    { "note": "B", "string": 6, "fret": 6, "finger": "2" },
+    { "note": "A", "string": 6, "fret": 5, "finger": "1" },
+    { "note": "G", "string": 6, "fret": 3, "finger": "1", "root": true }
+  ]
+
+}
 
    
 ]

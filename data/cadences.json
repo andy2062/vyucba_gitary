@@ -315,7 +315,7 @@
       ]
     },
     {
-      "id": "cadence_h_major",
+      "id": "cadence_h_major_barre",
       "title": "Kadencia H dur barré",
       "description": "H – E – F#7 – H",
 
@@ -339,7 +339,7 @@
       ]
     },
     {
-      "id": "cadence_c_major",
+      "id": "cadence_c_major_barre",
       "title": "Kadencia C dur barré",
       "description": "C – F – G7 – C",
 
@@ -369,7 +369,7 @@
 
       "steps": [
         {
-          "chordId": "chordc#major",
+          "chordId": "chordc#major_barre",
           "text": "Prvý akord v IV. poli - barré podľa A dur"
         },
         {
@@ -387,7 +387,7 @@
       ]
     },
     {
-      "id": "cadence_d_major",
+      "id": "cadence_d_major_barre",
       "title": "Kadencia D dur barré",
       "description": "D – G – A7 – D",
 
@@ -411,7 +411,7 @@
       ]
     },
      {
-      "id": "cadence_h_mol",
+      "id": "cadence_h_mol_barre",
       "title": "Kadencia H mol",
       "description": "Hmi – Emi – F#7 – Hmi",
 
@@ -483,7 +483,7 @@
       ]
     },
      {
-      "id": "cadence_d_minor",
+      "id": "cadence_d_minor_barre",
       "title": "Kadencia D mol barré",
       "description": "Dmi – Gmi – A7 – Dmi",
 

@@ -1,0 +1,161 @@
+ :root {
+        --primary-color: #1e88e5;
+        --text-color: #1e293b;
+        --bg-color: #f8fafc;
+        --card-bg: #ffffff;
+        --border-color: #e2e8f0;
+        --code-bg: #0f172a;
+    }
+
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        line-height: 1.6;
+        color: var(--text-color);
+        background: var(--bg-color);
+        padding: 20px;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 850px;
+        margin: 0 auto;
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    h2 {
+        color: #0f172a;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 8px;
+        margin-top: 40px;
+        font-size: 1.6rem;
+    }
+
+    h2:first-of-type {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 1.2rem;
+        text-align: justify;
+    }
+
+    /* Rýchly obsah / Navigácia */
+    .toc {
+        background: #f1f5f9;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+    .toc h3 { margin: 0 0 10px 0; font-size: 1.1rem; color: #334155; }
+    .toc ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 15px; }
+    .toc a { color: var(--primary-color); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+    .toc a:hover { text-decoration: underline; }
+
+    .back-to-top {
+        display: inline-block;
+        font-size: 0.85rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        margin-bottom: 15px;
+    }
+    .back-to-top:hover { text-decoration: underline; }
+
+    /* Zvýraznenie tónov */
+    .note-list {
+        background: #eff6ff;
+        border-left: 4px solid var(--primary-color);
+        padding: 12px 15px;
+        margin: 15px 0;
+        font-weight: 500;
+        border-radius: 0 6px 6px 0;
+    }
+    .note-list span {
+        color: #1d4ed8;
+        font-weight: bold;
+    }
+
+    /* Prehľadné zobrazenie chromatiky (staré <pre>) */
+    pre {
+        background: #f1f5f9;
+        color: var(--code-bg);
+        padding: 15px;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.95rem;
+        line-height: 1.4;
+        margin: 20px 0;
+    }
+    pre b {
+        color: #2f12d1; /* Oranžovo-žltá pre hrubé tóny */
+        font-weight: bold;
+    }
+    pre u {
+        text-decoration: underline;
+        color: #0b6115;
+    }
+
+    /* Grafika / Kruh */
+    .image-container {
+        max-width: 400px;
+        text-align: center;
+        margin: 30px 0;
+        background: #fff;
+        padding: 15px;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+    }
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Moderné tabuľky */
+    .table-container {
+        overflow-x: auto;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--card-bg);
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+        font-size: 0.95rem;
+    }
+
+    th, td {
+        padding: 10px 12px;
+        text-align: center;
+        border: 1px solid var(--border-color);
+    }
+
+    th {
+        background: #f1f5f9;
+        color: #334155;
+        font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+        background: #f8fafc;
+    }
+
+    .pentatonic-table {
+        max-width: 500px;
+    }
+    .pentatonic-table tr:hover {
+        background: #f0f9ff;
+    }
+
+    .stup {
+        display: inline-block;
+        background: #f1f5f9;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        color: #0f172a;
